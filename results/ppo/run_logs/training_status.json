@@ -1,4 +1,35 @@
 {
+    "MLTestSubject": {
+        "checkpoints": [
+            {
+                "steps": 499968,
+                "file_path": "results\\ppo\\MLTestSubject\\MLTestSubject-499968.onnx",
+                "reward": null,
+                "creation_time": 1638195987.338326,
+                "auxillary_file_paths": [
+                    "results\\ppo\\MLTestSubject\\MLTestSubject-499968.pt"
+                ]
+            },
+            {
+                "steps": 500032,
+                "file_path": "results\\ppo\\MLTestSubject\\MLTestSubject-500032.onnx",
+                "reward": null,
+                "creation_time": 1638195987.3688521,
+                "auxillary_file_paths": [
+                    "results\\ppo\\MLTestSubject\\MLTestSubject-500032.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500032,
+            "file_path": "results\\ppo\\MLTestSubject.onnx",
+            "reward": null,
+            "creation_time": 1638195987.3688521,
+            "auxillary_file_paths": [
+                "results\\ppo\\MLTestSubject\\MLTestSubject-500032.pt"
+            ]
+        }
+    },
     "metadata": {
         "stats_format_version": "0.3.0",
         "mlagents_version": "0.27.0",
