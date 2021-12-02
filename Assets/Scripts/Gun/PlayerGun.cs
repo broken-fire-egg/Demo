@@ -13,8 +13,7 @@ public class PlayerGun : MonoBehaviour
     protected float gunAngle;
     public bool reloading;
 
-    public Transform PlayerCenter;
-    public GameObject bullet;
+    private Transform PlayerCenter;
     public GameObject bulletUI;
     public RectTransform magazineUI;
     public RectTransform bulletUIsParent;

@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
         if(collision.gameObject.CompareTag("PlayerBullet"))
         {
             Hit(collision.gameObject.GetComponent<HeroBullet>().damage);
+            collision.gameObject.SetActive(false);
         }
     }
 }

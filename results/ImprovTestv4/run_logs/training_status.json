@@ -1,0 +1,29 @@
+{
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 3096,
+                "file_path": "results\\ImprovTestv4\\MLTestShootingAI2\\MLTestShootingAI2-3096.onnx",
+                "reward": -0.75,
+                "creation_time": 1638331549.1960363,
+                "auxillary_file_paths": [
+                    "results\\ImprovTestv4\\MLTestShootingAI2\\MLTestShootingAI2-3096.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3096,
+            "file_path": "results\\ImprovTestv4\\MLTestShootingAI2.onnx",
+            "reward": -0.75,
+            "creation_time": 1638331549.1960363,
+            "auxillary_file_paths": [
+                "results\\ImprovTestv4\\MLTestShootingAI2\\MLTestShootingAI2-3096.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

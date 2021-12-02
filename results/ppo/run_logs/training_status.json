@@ -1,32 +1,23 @@
 {
-    "MLTestSubject": {
+    "MLTestShootingAI": {
         "checkpoints": [
             {
-                "steps": 499968,
-                "file_path": "results\\ppo\\MLTestSubject\\MLTestSubject-499968.onnx",
-                "reward": null,
-                "creation_time": 1638195987.338326,
+                "steps": 6916,
+                "file_path": "results\\ppo\\MLTestShootingAI\\MLTestShootingAI-6916.onnx",
+                "reward": -0.03669724770642202,
+                "creation_time": 1638278709.87164,
                 "auxillary_file_paths": [
-                    "results\\ppo\\MLTestSubject\\MLTestSubject-499968.pt"
-                ]
-            },
-            {
-                "steps": 500032,
-                "file_path": "results\\ppo\\MLTestSubject\\MLTestSubject-500032.onnx",
-                "reward": null,
-                "creation_time": 1638195987.3688521,
-                "auxillary_file_paths": [
-                    "results\\ppo\\MLTestSubject\\MLTestSubject-500032.pt"
+                    "results\\ppo\\MLTestShootingAI\\MLTestShootingAI-6916.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 500032,
-            "file_path": "results\\ppo\\MLTestSubject.onnx",
-            "reward": null,
-            "creation_time": 1638195987.3688521,
+            "steps": 6916,
+            "file_path": "results\\ppo\\MLTestShootingAI.onnx",
+            "reward": -0.03669724770642202,
+            "creation_time": 1638278709.87164,
             "auxillary_file_paths": [
-                "results\\ppo\\MLTestSubject\\MLTestSubject-500032.pt"
+                "results\\ppo\\MLTestShootingAI\\MLTestShootingAI-6916.pt"
             ]
         }
     },
