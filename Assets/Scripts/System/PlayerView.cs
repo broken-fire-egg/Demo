@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerView : MonoBehaviour
 {
+    [SerializeField] private LayerMask layerMask;
+    Mesh mesh;
+    [SerializeField] Transform HeroTransform;
+    [SerializeField] Vector3 origin;
+
+
     Vector3 GetVectorFromAngle(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
@@ -14,19 +20,20 @@ public class PlayerView : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Mesh mesh = new Mesh();
+        mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
-       
+    }
 
-
-        float fov = 90f;
-        Vector3 origin = Vector3.zero;
-        int rayCount = 2;
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        float fov = 360f;
+        origin = HeroTransform.position;
+        int rayCount = 240;
         float angle = 0f;
         float angleIncrese = fov / rayCount;
         float viewDistance = 10f;
-
-        Vector3[] vertices = new Vector3[rayCount +1 +1];
+        Vector3[] vertices = new Vector3[rayCount + 1 + 1];
         Vector2[] uv = new Vector2[vertices.Length];
         int[] triangles = new int[rayCount * 3];
 
@@ -35,9 +42,20 @@ public class PlayerView : MonoBehaviour
         int vertexIndex = 1;
         int triangleIndex = 0;
 
-        for(int i=0; i<= rayCount; i++)
+        for (int i = 0; i <= rayCount; i++)
         {
-            Vector3 vertex = origin + GetVectorFromAngle(angle) * viewDistance;
+            Vector3 vertex;
+            var raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
+            
+            if (raycastHit2D.collider == null)
+            {
+                vertex = origin + GetVectorFromAngle(angle) * viewDistance;
+            }
+            else
+            {
+                
+                vertex = raycastHit2D.point;
+            }
             vertices[vertexIndex] = vertex;
 
             if (i > 0)
@@ -56,13 +74,5 @@ public class PlayerView : MonoBehaviour
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
