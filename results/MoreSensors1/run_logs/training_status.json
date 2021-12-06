@@ -1,0 +1,69 @@
+{
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 499943,
+                "file_path": "results\\MoreSensors1\\MLTestShootingAI2\\MLTestShootingAI2-499943.onnx",
+                "reward": -0.2,
+                "creation_time": 1638619111.9448507,
+                "auxillary_file_paths": [
+                    "results\\MoreSensors1\\MLTestShootingAI2\\MLTestShootingAI2-499943.pt"
+                ]
+            },
+            {
+                "steps": 500007,
+                "file_path": "results\\MoreSensors1\\MLTestShootingAI2\\MLTestShootingAI2-500007.onnx",
+                "reward": -0.2,
+                "creation_time": 1638619112.1825547,
+                "auxillary_file_paths": [
+                    "results\\MoreSensors1\\MLTestShootingAI2\\MLTestShootingAI2-500007.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500007,
+            "file_path": "results\\MoreSensors1\\MLTestShootingAI2.onnx",
+            "reward": -0.2,
+            "creation_time": 1638619112.1825547,
+            "auxillary_file_paths": [
+                "results\\MoreSensors1\\MLTestShootingAI2\\MLTestShootingAI2-500007.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 499943,
+                "file_path": "results\\MoreSensors1\\MLTestShootingAI\\MLTestShootingAI-499943.onnx",
+                "reward": 0.2,
+                "creation_time": 1638619112.0729601,
+                "auxillary_file_paths": [
+                    "results\\MoreSensors1\\MLTestShootingAI\\MLTestShootingAI-499943.pt"
+                ]
+            },
+            {
+                "steps": 500007,
+                "file_path": "results\\MoreSensors1\\MLTestShootingAI\\MLTestShootingAI-500007.onnx",
+                "reward": 0.2,
+                "creation_time": 1638619112.2956522,
+                "auxillary_file_paths": [
+                    "results\\MoreSensors1\\MLTestShootingAI\\MLTestShootingAI-500007.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500007,
+            "file_path": "results\\MoreSensors1\\MLTestShootingAI.onnx",
+            "reward": 0.2,
+            "creation_time": 1638619112.2956522,
+            "auxillary_file_paths": [
+                "results\\MoreSensors1\\MLTestShootingAI\\MLTestShootingAI-500007.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

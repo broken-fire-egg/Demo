@@ -1,0 +1,51 @@
+{
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 65784,
+                "file_path": "results\\improvShootingAI2\\MLTestShootingAI2\\MLTestShootingAI2-65784.onnx",
+                "reward": -0.06666666600439283,
+                "creation_time": 1638526551.7320023,
+                "auxillary_file_paths": [
+                    "results\\improvShootingAI2\\MLTestShootingAI2\\MLTestShootingAI2-65784.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 65784,
+            "file_path": "results\\improvShootingAI2\\MLTestShootingAI2.onnx",
+            "reward": -0.06666666600439283,
+            "creation_time": 1638526551.7320023,
+            "auxillary_file_paths": [
+                "results\\improvShootingAI2\\MLTestShootingAI2\\MLTestShootingAI2-65784.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 65784,
+                "file_path": "results\\improvShootingAI2\\MLTestShootingAI\\MLTestShootingAI-65784.onnx",
+                "reward": -0.1999999996688631,
+                "creation_time": 1638526551.8310864,
+                "auxillary_file_paths": [
+                    "results\\improvShootingAI2\\MLTestShootingAI\\MLTestShootingAI-65784.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 65784,
+            "file_path": "results\\improvShootingAI2\\MLTestShootingAI.onnx",
+            "reward": -0.1999999996688631,
+            "creation_time": 1638526551.8310864,
+            "auxillary_file_paths": [
+                "results\\improvShootingAI2\\MLTestShootingAI\\MLTestShootingAI-65784.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

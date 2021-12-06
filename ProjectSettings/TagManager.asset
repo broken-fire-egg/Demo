@@ -15,16 +15,16 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - PlayerBullet
   - InventoryItem
   - MLRed
   - MLBlue
-  - 
-  - 
-  - 
+  - Roof
+  - MLRedBullet
+  - MLBlueBullet
   - 
   - 
   - 
@@ -53,4 +53,13 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 74749165
+    locked: 0
+  - name: Wall
+    uniqueID: 1920058863
+    locked: 0
+  - name: Enemy
+    uniqueID: 3847263305
+    locked: 0
+  - name: Roof
+    uniqueID: 2927102067
     locked: 0

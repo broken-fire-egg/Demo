@@ -27,12 +27,14 @@ public class MLTestShootingAIAgent : Agent
     public override void OnEpisodeBegin()
     {
         transform.localPosition = new Vector3(Random.Range(-2.5f, 2.5f), Random.Range(-3.5f, 3.5f));
-        transform.localPosition = Vector3.zero;
+        
         op.OffAll();
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        sensor.AddObservation(transform.position);
+        sensor.AddObservation(opponent.transform.position);
         sensor.AddObservation(isred_);
         if(isred_)
             sensor.AddObservation(op.leftRedBullet);

@@ -37,6 +37,8 @@ public class MLTestShootingAI2Agent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        sensor.AddObservation(transform.position);
+        sensor.AddObservation(opponent.transform.position);
         sensor.AddObservation(isred_);
         if (isred_)
             sensor.AddObservation(op.leftRedBullet);

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_ShadowGroup: 0
   m_HasRenderer: 0
   m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
+  m_CastsShadows: 0
   m_SelfShadows: 1
   m_ApplyToSortingLayers: 0000000011f5ef2eed947404
   m_ShapePath:
@@ -56,7 +56,7 @@ MonoBehaviour:
   - {x: -0.20670295, y: 0.40001237, z: 0}
   m_ShapePathHash: 1912138909
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1284
+  m_InstanceId: -1722
 --- !u!1 &253256148
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276056633}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
@@ -228,7 +228,7 @@ MonoBehaviour:
   - {x: -0.3136685, y: 0.03356397, z: 0}
   m_ShapePathHash: -44606363
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1254
+  m_InstanceId: -1692
 --- !u!1 &659489783
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +259,87 @@ Transform:
   m_Father: {fileID: 7368567016699197455}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1331139503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1331139504}
+  - component: {fileID: 1331139505}
+  m_Layer: 0
+  m_Name: detecter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1331139504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331139503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.01, y: 0.15, z: 0}
+  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3270704994703980590}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!331 &1331139505
+SpriteMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331139503}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4221680252269642823, guid: 66bbd687d886b7a4195608a8db86157c, type: 3}
+  m_MaskAlphaCutoff: 0
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &131892514504544241
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +368,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 253256150}
+  - {fileID: 1331139504}
   m_Father: {fileID: 7368567015861874249}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -393,8 +475,6 @@ MonoBehaviour:
   rebound: 2
   weaponDist: 0.4
   reloading: 0
-  PlayerCenter: {fileID: 0}
-  bullet: {fileID: 0}
   bulletUI: {fileID: 4825586641741455334, guid: 1b00a148e6393d64c81a014ade09b007, type: 3}
   magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
@@ -413,9 +493,11 @@ GameObject:
   - component: {fileID: 7368567016365631675}
   - component: {fileID: 7368567016365631672}
   - component: {fileID: 9196516302804454582}
-  m_Layer: 0
+  - component: {fileID: 737108182}
+  - component: {fileID: 737108181}
+  m_Layer: 3
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,7 +601,7 @@ MonoBehaviour:
   - {fileID: 7368567016699197454}
   debugFloat: 0
   animator: {fileID: 0}
-  animationSpeed: 0.0025
+  animationSpeed: 0.01
   rotation_degree: 0
   bullet_speed: 100
   selectedWeapon: 0
@@ -544,6 +626,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &737108182
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7368567016365631668}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &737108181
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7368567016365631668}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.4}
+  m_Size: {x: 0.4, y: 0.75}
+  m_Direction: 0
 --- !u!1 &7368567016699197448
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,8 +765,6 @@ MonoBehaviour:
   rebound: 6
   weaponDist: 0.5
   reloading: 0
-  PlayerCenter: {fileID: 0}
-  bullet: {fileID: 6203231858871490912, guid: 6dc5a8ea4cbf61d4f86d8f86c97e1ca7, type: 3}
   bulletUI: {fileID: 3279469789436829614, guid: c3bb6f5220812f14f97de9a4945c1cd7, type: 3}
   magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
@@ -819,8 +936,6 @@ MonoBehaviour:
   rebound: 10
   weaponDist: 0.6
   reloading: 0
-  PlayerCenter: {fileID: 0}
-  bullet: {fileID: 4782080321468168793, guid: 6a55090b41481d14296898a888353b46, type: 3}
   bulletUI: {fileID: 8890467602230324598, guid: 8af1c0e8a1a355147a5a6cd69ee8e86b, type: 3}
   magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
