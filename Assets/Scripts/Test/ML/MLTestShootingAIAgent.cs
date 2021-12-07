@@ -12,6 +12,7 @@ public class MLTestShootingAIAgent : Agent
     private SpriteRenderer sr;
     private SpriteRenderer gunsr;
     [SerializeField] private MLTestShootingAI2Agent opponent;
+    public Transform agentCenter;
     //[SerializeField] private Transform targetTransform;
     [SerializeField] private Transform gun;
     [SerializeField] private Transform gunPoint;
@@ -19,7 +20,11 @@ public class MLTestShootingAIAgent : Agent
     [SerializeField] private MLTestOP op;
     [SerializeField] private Animator animator;
     public bool isred_;
-    float degree;
+    [SerializeField] float degree = 0f;
+    [SerializeField] float current_x = 0f;
+    [SerializeField] float current_y = 0f;
+    [SerializeField] float ideal_x = 0f;
+    [SerializeField] float ideal_y = 0f;
     private void Awake()
     {
         gunsr = gun.GetComponent<SpriteRenderer>();
@@ -33,13 +38,13 @@ public class MLTestShootingAIAgent : Agent
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        sensor.AddObservation(ideal_x);
+        sensor.AddObservation(ideal_y);
         sensor.AddObservation(transform.position);
         sensor.AddObservation(opponent.transform.position);
         sensor.AddObservation(isred_);
-        if(isred_)
-            sensor.AddObservation(op.leftRedBullet);
-        else
-            sensor.AddObservation(op.leftBlueBullet);
+        sensor.AddObservation(op.leftRedBullet);
+        sensor.AddObservation(op.leftBlueBullet);
     }
 
 
@@ -61,14 +66,27 @@ public class MLTestShootingAIAgent : Agent
             case 2: vec2.y = -1; break;
         }
         float moveSpeed = 4f;
-        rg2d.velocity = vec2 * moveSpeed;
+        transform.localPosition += new Vector3(vec2.x, vec2.y) * moveSpeed * Time.deltaTime;
+        
 
         float deg1 = actions.ContinuousActions[0];
         float deg2 = actions.ContinuousActions[1];
 
-        float deg = Vector2.Angle(Vector2.right, new Vector2(deg1, deg2));
+        Vector2 gunvec = new Vector2(deg1, deg2);
+        float deg = Vector2.Angle(Vector2.right, gunvec);
+
+        current_x = gunvec.x;
+        current_y = gunvec.y;
         if (deg2 < 0) deg = 360f - deg;
         degree = deg;
+
+
+        Vector3 vec3 = agentCenter.transform.position - opponent.agentCenter.transform.position;
+
+
+        ideal_x = -vec3.normalized.x;
+        ideal_y = -vec3.normalized.y;
+
 
 
         //float deg = Random.Range(-1, 1f);
@@ -144,7 +162,7 @@ public class MLTestShootingAIAgent : Agent
             else
                 sr.color = new Color(0.5f, 0, 0);
             SetReward(-1f);
-            opponent.SetReward(0.2f);
+            opponent.SetReward(1f);
             opponent.EndEpisode();
             EndEpisode();
         }

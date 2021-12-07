@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1638878322",
+        "python_version": "3.8.8 (default, Apr 13 2021, 15:08:03) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\67160\\Documents\\GitHub\\Demo\\venv\\Scripts\\mlagents-learn --run-id=upgraded3 config/configuration.yaml --initialize-from=upgraded2",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.7.0+cu110",
+        "numpy_version": "1.21.4",
+        "end_time_seconds": "1638878387"
+    },
+    "total": 65.245531,
+    "count": 1,
+    "self": 0.03682679999998584,
+    "children": {
+        "run_training.setup": {
+            "total": 0.061695399999999956,
+            "count": 1,
+            "self": 0.061695399999999956
+        },
+        "TrainerController.start_learning": {
+            "total": 65.14700880000001,
+            "count": 1,
+            "self": 9.56000000229551e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 65.14688319999999,
+                    "count": 1,
+                    "self": 65.14688319999999
+                },
+                "TrainerController._save_models": {
+                    "total": 2.9999999995311555e-05,
+                    "count": 1,
+                    "self": 2.9999999995311555e-05
+                }
+            }
+        }
+    }
+}

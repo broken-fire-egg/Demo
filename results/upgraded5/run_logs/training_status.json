@@ -1,0 +1,69 @@
+{
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 499996,
+                "file_path": "results\\upgraded5\\MLTestShootingAI2\\MLTestShootingAI2-499996.onnx",
+                "reward": 0.0,
+                "creation_time": 1638881753.675929,
+                "auxillary_file_paths": [
+                    "results\\upgraded5\\MLTestShootingAI2\\MLTestShootingAI2-499996.pt"
+                ]
+            },
+            {
+                "steps": 500060,
+                "file_path": "results\\upgraded5\\MLTestShootingAI2\\MLTestShootingAI2-500060.onnx",
+                "reward": 0.0,
+                "creation_time": 1638881753.8886135,
+                "auxillary_file_paths": [
+                    "results\\upgraded5\\MLTestShootingAI2\\MLTestShootingAI2-500060.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500060,
+            "file_path": "results\\upgraded5\\MLTestShootingAI2.onnx",
+            "reward": 0.0,
+            "creation_time": 1638881753.8886135,
+            "auxillary_file_paths": [
+                "results\\upgraded5\\MLTestShootingAI2\\MLTestShootingAI2-500060.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 499996,
+                "file_path": "results\\upgraded5\\MLTestShootingAI\\MLTestShootingAI-499996.onnx",
+                "reward": 0.0,
+                "creation_time": 1638881753.7905283,
+                "auxillary_file_paths": [
+                    "results\\upgraded5\\MLTestShootingAI\\MLTestShootingAI-499996.pt"
+                ]
+            },
+            {
+                "steps": 500060,
+                "file_path": "results\\upgraded5\\MLTestShootingAI\\MLTestShootingAI-500060.onnx",
+                "reward": 0.0,
+                "creation_time": 1638881753.988199,
+                "auxillary_file_paths": [
+                    "results\\upgraded5\\MLTestShootingAI\\MLTestShootingAI-500060.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500060,
+            "file_path": "results\\upgraded5\\MLTestShootingAI.onnx",
+            "reward": 0.0,
+            "creation_time": 1638881753.988199,
+            "auxillary_file_paths": [
+                "results\\upgraded5\\MLTestShootingAI\\MLTestShootingAI-500060.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}
