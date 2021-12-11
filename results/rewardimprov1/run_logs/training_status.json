@@ -1,0 +1,123 @@
+{
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 500005,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-500005.onnx",
+                "reward": 16.133333240946133,
+                "creation_time": 1639128703.5540407,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-500005.pt"
+                ]
+            },
+            {
+                "steps": 999992,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-999992.onnx",
+                "reward": -11.183838408779014,
+                "creation_time": 1639132513.3785837,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-999992.pt"
+                ]
+            },
+            {
+                "steps": 1499981,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-1499981.onnx",
+                "reward": 0.10235297916566624,
+                "creation_time": 1639134329.5049977,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-1499981.pt"
+                ]
+            },
+            {
+                "steps": 1999961,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-1999961.onnx",
+                "reward": -16.7822784248598,
+                "creation_time": 1639136190.8542325,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-1999961.pt"
+                ]
+            },
+            {
+                "steps": 2357236,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-2357236.onnx",
+                "reward": -7.700000183284283,
+                "creation_time": 1639137566.3233793,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-2357236.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2357236,
+            "file_path": "results\\rewardimprov1\\MLTestShootingAI.onnx",
+            "reward": -7.700000183284283,
+            "creation_time": 1639137566.3233793,
+            "auxillary_file_paths": [
+                "results\\rewardimprov1\\MLTestShootingAI\\MLTestShootingAI-2357236.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 500005,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-500005.onnx",
+                "reward": -29.33333281179269,
+                "creation_time": 1639128703.6624079,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-500005.pt"
+                ]
+            },
+            {
+                "steps": 999992,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-999992.onnx",
+                "reward": -4.013131217598313,
+                "creation_time": 1639132513.4841745,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-999992.pt"
+                ]
+            },
+            {
+                "steps": 1499981,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-1499981.onnx",
+                "reward": -14.727058822179542,
+                "creation_time": 1639134329.6110888,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-1499981.pt"
+                ]
+            },
+            {
+                "steps": 1999961,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-1999961.onnx",
+                "reward": 2.98860733908943,
+                "creation_time": 1639136190.9788399,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-1999961.pt"
+                ]
+            },
+            {
+                "steps": 2357236,
+                "file_path": "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-2357236.onnx",
+                "reward": -7.9666668320695555,
+                "creation_time": 1639137566.4334743,
+                "auxillary_file_paths": [
+                    "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-2357236.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2357236,
+            "file_path": "results\\rewardimprov1\\MLTestShootingAI2.onnx",
+            "reward": -7.9666668320695555,
+            "creation_time": 1639137566.4334743,
+            "auxillary_file_paths": [
+                "results\\rewardimprov1\\MLTestShootingAI2\\MLTestShootingAI2-2357236.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

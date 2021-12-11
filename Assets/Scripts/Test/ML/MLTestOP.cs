@@ -15,7 +15,7 @@ public class MLTestOP : MonoBehaviour
             bullet.SetActive(false);
     }
     public int leftRedBullet { get { 
-            int x = 5;
+            int x = 10;
             foreach (var bullet in redBullet)
             {
                 if (bullet.activeInHierarchy)
@@ -27,7 +27,7 @@ public class MLTestOP : MonoBehaviour
     {
         get
         {
-            int x = 5;
+            int x = 10;
             foreach (var bullet in blueBullet)
             {
                 if (bullet.activeInHierarchy)
@@ -54,7 +54,7 @@ public class MLTestOP : MonoBehaviour
         return res;
     }
 
-    public void Shot(Vector3 pos, Quaternion rot, bool isred)
+    public bool Shot(Vector3 pos, Quaternion rot, bool isred)
     {
         var newBullet = FindDisabledBullet(isred);
         if (newBullet != null)
@@ -63,6 +63,8 @@ public class MLTestOP : MonoBehaviour
             newBullet.transform.rotation = rot;
             newBullet.SetActive(true);
             newBullet.GetComponent<Bullet>().SetValue(rot, 250f);
+            return true;
         }
+        return false;
     }
 }

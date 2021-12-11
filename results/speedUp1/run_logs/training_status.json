@@ -1,0 +1,51 @@
+{
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 10888,
+                "file_path": "results\\speedUp1\\MLTestShootingAI2\\MLTestShootingAI2-10888.onnx",
+                "reward": -59.81111171510484,
+                "creation_time": 1639137932.637821,
+                "auxillary_file_paths": [
+                    "results\\speedUp1\\MLTestShootingAI2\\MLTestShootingAI2-10888.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10888,
+            "file_path": "results\\speedUp1\\MLTestShootingAI2.onnx",
+            "reward": -59.81111171510484,
+            "creation_time": 1639137932.637821,
+            "auxillary_file_paths": [
+                "results\\speedUp1\\MLTestShootingAI2\\MLTestShootingAI2-10888.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 10888,
+                "file_path": "results\\speedUp1\\MLTestShootingAI\\MLTestShootingAI-10888.onnx",
+                "reward": 51.20000100135803,
+                "creation_time": 1639137932.752419,
+                "auxillary_file_paths": [
+                    "results\\speedUp1\\MLTestShootingAI\\MLTestShootingAI-10888.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10888,
+            "file_path": "results\\speedUp1\\MLTestShootingAI.onnx",
+            "reward": 51.20000100135803,
+            "creation_time": 1639137932.752419,
+            "auxillary_file_paths": [
+                "results\\speedUp1\\MLTestShootingAI\\MLTestShootingAI-10888.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

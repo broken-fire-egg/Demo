@@ -183,7 +183,8 @@ public class MLTestShootingAI2Agent : Agent
         bool isShot = actions.DiscreteActions[2] == 1;
         if (isShot)
         {
-            op.Shot(gunPoint.position, rot, isred_);
+            if(op.Shot(gunPoint.position, rot, isred_))
+                AddReward(-0.1f);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -196,8 +197,8 @@ public class MLTestShootingAI2Agent : Agent
                     sr.color = new Color(0, 0, 0.5f);
                 else
                     sr.color = new Color(0.5f, 0, 0);
-                SetReward(-1f);
-                opponent.SetReward(1f);
+                AddReward(-100f);
+                opponent.AddReward(100f);
                 if (opponent.gameObject.activeInHierarchy)
                     opponent.EndEpisode();
                 EndEpisode();
@@ -210,8 +211,8 @@ public class MLTestShootingAI2Agent : Agent
                 sr.color = new Color(0, 0, 0.5f);
             else
                 sr.color = new Color(0.5f, 0, 0);
-            SetReward(-1f);
-            opponent.SetReward(1f);
+            AddReward(-100f);
+            //opponent.AddReward(100f);
             if (opponent.gameObject.activeInHierarchy)
                 opponent.EndEpisode();
             EndEpisode();
