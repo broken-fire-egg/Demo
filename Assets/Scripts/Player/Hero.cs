@@ -42,6 +42,8 @@ public class Hero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogDisplayer.instance.displaying)
+            return;
         if (Input.GetMouseButtonDown(0))
             GunShot();
 

@@ -43,6 +43,8 @@ public class PlayerGun : MonoBehaviour
     }
     public void Update()
     {
+        if (DialogDisplayer.instance.displaying)
+            return;
         RotateGun();
     }
     public void RotateGun()

@@ -8,6 +8,7 @@ public class TestScript : MonoBehaviour
     private void Start()
     {
         inventory.TryPlaceItem(InventoryTetrisAssets.Instance.ammo, new Vector2Int(0, 0), PlacedObjectTypeSO.Dir.Down);
+        inventory.TryPlaceItem(InventoryTetrisAssets.Instance.ammo, new Vector2Int(0, 1), PlacedObjectTypeSO.Dir.Down);
 
         inventory.TryPlaceItem(InventoryTetrisAssets.Instance.shotgun, new Vector2Int(5, 5), PlacedObjectTypeSO.Dir.Down);
     }

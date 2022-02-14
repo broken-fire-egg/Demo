@@ -4,10 +4,11 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MLTestShootingAI2Agent : Agent
 {
-
+    public Text score;
     [SerializeField]
     private SpriteRenderer sr;
     [SerializeField] private MLTestShootingAIAgent opponent;
@@ -197,6 +198,7 @@ public class MLTestShootingAI2Agent : Agent
                     sr.color = new Color(0, 0, 0.5f);
                 else
                     sr.color = new Color(0.5f, 0, 0);
+                score.text = (int.Parse(score.text) + 1).ToString();
                 AddReward(-100f);
                 opponent.AddReward(100f);
                 if (opponent.gameObject.activeInHierarchy)
@@ -211,6 +213,7 @@ public class MLTestShootingAI2Agent : Agent
                 sr.color = new Color(0, 0, 0.5f);
             else
                 sr.color = new Color(0.5f, 0, 0);
+            score.text = (int.Parse(score.text) + 1).ToString();
             AddReward(-100f);
             //opponent.AddReward(100f);
             if (opponent.gameObject.activeInHierarchy)

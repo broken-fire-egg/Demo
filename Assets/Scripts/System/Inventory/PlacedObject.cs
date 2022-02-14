@@ -6,7 +6,7 @@ public class PlacedObject : MonoBehaviour {
 
     public static PlacedObject Create(Vector3 worldPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO) {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, worldPosition, Quaternion.Euler(0, placedObjectTypeSO.GetRotationAngle(dir), 0));
-
+        placedObjectTransform.name = placedObjectTransform.name.Replace("(Clone)", "");
         PlacedObject placedObject = placedObjectTransform.GetComponent<PlacedObject>();
         placedObject.placedObjectTypeSO = placedObjectTypeSO;
         placedObject.origin = origin;
@@ -19,6 +19,7 @@ public class PlacedObject : MonoBehaviour {
 
     public static PlacedObject CreateCanvas(Transform parent, Vector2 anchoredPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO) {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, parent);
+        placedObjectTransform.name = placedObjectTransform.name.Replace("(Clone)", "");
         placedObjectTransform.rotation = Quaternion.Euler(0, placedObjectTypeSO.GetRotationAngle(dir), 0);
         placedObjectTransform.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
 

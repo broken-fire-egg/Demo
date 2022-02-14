@@ -1,0 +1,87 @@
+{
+    "MLTestShootingAI": {
+        "checkpoints": [
+            {
+                "steps": 499960,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-499960.onnx",
+                "reward": -28.02727220986377,
+                "creation_time": 1639302894.9960687,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-499960.pt"
+                ]
+            },
+            {
+                "steps": 999997,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-999997.onnx",
+                "reward": 8.233334140231213,
+                "creation_time": 1639318082.049898,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-999997.pt"
+                ]
+            },
+            {
+                "steps": 1264316,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-1264316.onnx",
+                "reward": null,
+                "creation_time": 1639325814.0355666,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-1264316.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1264316,
+            "file_path": "results\\CameraUpgrade2\\MLTestShootingAI.onnx",
+            "reward": null,
+            "creation_time": 1639325814.0355666,
+            "auxillary_file_paths": [
+                "results\\CameraUpgrade2\\MLTestShootingAI\\MLTestShootingAI-1264316.pt"
+            ]
+        }
+    },
+    "MLTestShootingAI2": {
+        "checkpoints": [
+            {
+                "steps": 499960,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-499960.onnx",
+                "reward": -16.98409031060609,
+                "creation_time": 1639302895.1992433,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-499960.pt"
+                ]
+            },
+            {
+                "steps": 999997,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-999997.onnx",
+                "reward": -25.572221597035725,
+                "creation_time": 1639318082.2545738,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-999997.pt"
+                ]
+            },
+            {
+                "steps": 1264316,
+                "file_path": "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-1264316.onnx",
+                "reward": null,
+                "creation_time": 1639325814.1834216,
+                "auxillary_file_paths": [
+                    "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-1264316.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1264316,
+            "file_path": "results\\CameraUpgrade2\\MLTestShootingAI2.onnx",
+            "reward": null,
+            "creation_time": 1639325814.1834216,
+            "auxillary_file_paths": [
+                "results\\CameraUpgrade2\\MLTestShootingAI2\\MLTestShootingAI2-1264316.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.7.0+cu110"
+    }
+}

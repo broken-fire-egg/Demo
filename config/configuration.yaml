@@ -1,10 +1,10 @@
 default_settings: null
 behaviors:
-  MLTestShootingAI:
+  MLTestShootingAI2:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 10240
-      buffer_size: 102400
+      batch_size: 1024
+      buffer_size: 10240
       learning_rate: 0.0003
       beta: 0.005
       epsilon: 0.2
@@ -38,11 +38,11 @@ behaviors:
     threaded: false
     self_play: null
     behavioral_cloning: null
-  MLTestShootingAI2:
+  MLTestShootingAI:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 10240
-      buffer_size: 102400
+      batch_size: 1024
+      buffer_size: 10240
       learning_rate: 0.0003
       beta: 0.005
       epsilon: 0.2
@@ -92,7 +92,7 @@ engine_settings:
   no_graphics: false
 environment_parameters: null
 checkpoint_settings:
-  run_id: rewardimprov1
+  run_id: CameraUpgrade1
   initialize_from: null
   load_model: false
   resume: false

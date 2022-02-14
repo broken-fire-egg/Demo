@@ -8,6 +8,8 @@ public class HeroMove : MonoBehaviour
     public bool ismoving;
     void FixedUpdate()
     {
+        if (DialogDisplayer.instance.displaying)
+            return;
         KeyCheck();
     }
 

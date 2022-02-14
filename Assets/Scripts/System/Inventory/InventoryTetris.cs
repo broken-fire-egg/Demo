@@ -8,16 +8,17 @@ public class InventoryTetris : MonoBehaviour {
     public static InventoryTetris Instance { get; private set; }
     public InventoryTetrisBackground InventoryBackground;
     public event EventHandler<PlacedObject> OnObjectPlaced;
-
+    public int gridWidth = 10;
+    public int gridHeight = 10;
     private Grid<GridObject> grid;
-    private RectTransform itemContainer;
+    [HideInInspector] public RectTransform itemContainer;
 
 
     private void Awake() {
         Instance = this;
 
-        int gridWidth = 10;
-        int gridHeight = 10;
+       
+        
         float cellSize = 50f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
 
