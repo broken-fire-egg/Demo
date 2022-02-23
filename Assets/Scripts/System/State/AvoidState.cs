@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AvoidState : State
 {
+    Vector3 v;
+    public GameObject hero;
     public int t = 0;
     public Vector3 detectedBulletDirection = Vector3.zero;
     public Transform b;
@@ -30,9 +32,6 @@ public class AvoidState : State
     }
     private void Update()
     {
-
-
-
         if (sManager.currentState == this && sManager.detectedBullets.Count > 0)
         {
             if (prev == Vector3.zero)
@@ -47,11 +46,24 @@ public class AvoidState : State
                 prev = b.position;
             }
             if (sManager.detectedBullets[0].gameObject.activeInHierarchy && t < 5)
-            { 
-                sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
-
+            {
+                if (sex(hero) - sManager.detectedBullets[0].gameObject.transform.eulerAngles.z > 0)
+                {
+                    if (sex(hero) > sManager.detectedBullets[0].gameObject.transform.eulerAngles.z)
+                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
+                    else
+                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position - (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
+                }
+                else
+                    sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
             }
             t++;
         }
+    }
+
+    private float sex(GameObject her)
+    {
+        Vector3 v = gameObject.transform.position - her.transform.position;
+        return Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
     }
 }
