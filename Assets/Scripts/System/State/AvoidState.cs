@@ -5,7 +5,6 @@ using UnityEngine;
 public class AvoidState : State
 {
     Vector3 v;
-    public GameObject hero;
     public int t = 0;
     public Vector3 detectedBulletDirection = Vector3.zero;
     public Transform b;
@@ -15,7 +14,7 @@ public class AvoidState : State
     {
         sManager.avoiding = true;
 
-        
+
 
 
         if (t < 5)
@@ -32,6 +31,7 @@ public class AvoidState : State
     }
     private void Update()
     {
+        //Debug.Log(sManager.detectedBullets[0].gameObject.transform.rotation.z);
         if (sManager.currentState == this && sManager.detectedBullets.Count > 0)
         {
             if (prev == Vector3.zero)
@@ -47,23 +47,25 @@ public class AvoidState : State
             }
             if (sManager.detectedBullets[0].gameObject.activeInHierarchy && t < 5)
             {
-                if (sex(hero) - sManager.detectedBullets[0].gameObject.transform.eulerAngles.z > 0)
+                if (TwoObjectAngle(Hero.instance.gameObject) < TwoObjectAngle(sManager.detectedBullets[0].gameObject))
                 {
-                    if (sex(hero) > sManager.detectedBullets[0].gameObject.transform.eulerAngles.z)
-                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
-                    else
-                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position - (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
+                    sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
                 }
                 else
-                    sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);//아래로
+                {
+                    if(TwoObjectAngle(Hero.instance.gameObject) - TwoObjectAngle(sManager.detectedBullets[0].gameObject) > 290)
+                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
+                    else
+                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position - (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
+                }
             }
             t++;
         }
     }
 
-    private float sex(GameObject her)
+    private float TwoObjectAngle(GameObject her)
     {
         Vector3 v = gameObject.transform.position - her.transform.position;
-        return Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
+            return Mathf.Atan2(v.y, v.x) * Mathf.Rad2Deg;
     }
 }
