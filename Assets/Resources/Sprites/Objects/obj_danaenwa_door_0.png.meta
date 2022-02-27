@@ -1,7 +1,70 @@
 fileFormatVersion: 2
 guid: c56e8faccbf3b5f489449689262fb873
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4260854312425259414
+    second: obj_danaenwa_door_0_0
+  - first:
+      213: 6057501909392813463
+    second: obj_danaenwa_door_0_1
+  - first:
+      213: -3534128363190156161
+    second: obj_danaenwa_door_0_2
+  - first:
+      213: -6956813088877383451
+    second: obj_danaenwa_door_0_3
+  - first:
+      213: 8970931475173686221
+    second: obj_danaenwa_door_0_4
+  - first:
+      213: 1810485833824327173
+    second: obj_danaenwa_door_0_5
+  - first:
+      213: -7304187077637200695
+    second: obj_danaenwa_door_0_6
+  - first:
+      213: 2490807113777155150
+    second: obj_danaenwa_door_0_7
+  - first:
+      213: -7290818655080984180
+    second: obj_danaenwa_door_0_8
+  - first:
+      213: -5399906701906024954
+    second: obj_danaenwa_door_0_9
+  - first:
+      213: 3431978678452734899
+    second: obj_danaenwa_door_0_10
+  - first:
+      213: -6309259745437884647
+    second: obj_danaenwa_door_0_11
+  - first:
+      213: 325438093698989659
+    second: obj_danaenwa_door_0_12
+  - first:
+      213: -4969394475742593446
+    second: obj_danaenwa_door_0_13
+  - first:
+      213: 29509310742034806
+    second: obj_danaenwa_door_0_14
+  - first:
+      213: -3863854158036044961
+    second: obj_danaenwa_door_0_15
+  - first:
+      213: 3776349345630577406
+    second: obj_danaenwa_door_0_16
+  - first:
+      213: -8132586626605795960
+    second: obj_danaenwa_door_0_17
+  - first:
+      213: -5653149238182687045
+    second: obj_danaenwa_door_0_18
+  - first:
+      213: 2593317634343883446
+    second: obj_danaenwa_door_0_19
+  - first:
+      213: 2187063182758613021
+    second: obj_danaenwa_door_0_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +104,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +138,462 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6918cc31c68912b30800000000000000
+      internalID: 4260854312425259414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79deb9f74e1901450800000000000000
+      internalID: 6057501909392813463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f740b617af044fec0800000000000000
+      internalID: -3534128363190156161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0fcacba5f647f90800000000000000
+      internalID: -6956813088877383451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb391a85a62f7c70800000000000000
+      internalID: 8970931475173686221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506d9f30643202910800000000000000
+      internalID: 1810485833824327173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 768
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4af685d8052aa90800000000000000
+      internalID: -7304187077637200695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c04b48fdf119220800000000000000
+      internalID: 2490807113777155150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c815b16cf0fc1da90800000000000000
+      internalID: -7290818655080984180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606e3ace67daf05b0800000000000000
+      internalID: -5399906701906024954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc3e5bc66d0af20800000000000000
+      internalID: 3431978678452734899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fd08d70b10178a0800000000000000
+      internalID: -6309259745437884647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5efe43d830348400800000000000000
+      internalID: 325438093698989659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 384
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ef294ad0a290bb0800000000000000
+      internalID: -4969394475742593446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6797850df86d86000800000000000000
+      internalID: 29509310742034806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5378566d15d06ac0800000000000000
+      internalID: -3863854158036044961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2e61ec8b9486430800000000000000
+      internalID: 3776349345630577406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885b1182d8f332f80800000000000000
+      internalID: -8132586626605795960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbec9d338bafb81b0800000000000000
+      internalID: -5653149238182687045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d2d006a05df320800000000000000
+      internalID: 2593317634343883446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: obj_danaenwa_door_0_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1099ad80620a5e10800000000000000
+      internalID: 2187063182758613021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

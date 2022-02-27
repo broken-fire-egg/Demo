@@ -17,6 +17,9 @@ public class AssultRifle : PlayerGun
             bulletRects.Add(rt);
             bulletUIs.Add(newGo);
         }
+        //bulletRects.Add(bullet)
+
+
         SetSequence();
     }
     public override void SetSequence()

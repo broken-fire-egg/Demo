@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: cf2c790408278634dbea9549ddb4eb8e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6098210305532469777
+    second: enemy_danaenwa_robot_1_0
+  - first:
+      213: 8254694542089253657
+    second: enemy_danaenwa_robot_1_1
+  - first:
+      213: 3587684777161317021
+    second: enemy_danaenwa_robot_1_2
+  - first:
+      213: -6568355954490821611
+    second: enemy_danaenwa_robot_1_3
+  - first:
+      213: 7411276594935859303
+    second: enemy_danaenwa_robot_1_4
+  - first:
+      213: 4717881746037696186
+    second: enemy_danaenwa_robot_1_5
+  - first:
+      213: 3975550589118645412
+    second: enemy_danaenwa_robot_1_6
+  - first:
+      213: -7025749252288878309
+    second: enemy_danaenwa_robot_1_7
+  - first:
+      213: -3589333744794121858
+    second: enemy_danaenwa_robot_1_8
+  - first:
+      213: 2200111290118096984
+    second: enemy_danaenwa_robot_1_9
+  - first:
+      213: -4389649854131223129
+    second: enemy_danaenwa_robot_1_10
+  - first:
+      213: 5867798567497543887
+    second: enemy_danaenwa_robot_1_11
+  - first:
+      213: 1487040338600686641
+    second: enemy_danaenwa_robot_1_12
+  - first:
+      213: 3523791442445930661
+    second: enemy_danaenwa_robot_1_13
+  - first:
+      213: 6356518886507722463
+    second: enemy_danaenwa_robot_1_14
+  - first:
+      213: -8480750208692817311
+    second: enemy_danaenwa_robot_1_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +123,357 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112a3e296f131a450800000000000000
+      internalID: 6098210305532469777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 660
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913f59663f09e8270800000000000000
+      internalID: 8254694542089253657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 660
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ad6c4eb440ac130800000000000000
+      internalID: 3587684777161317021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_3
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 660
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514b04e5f0388d4a0800000000000000
+      internalID: -6568355954490821611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7688155ebc42ad660800000000000000
+      internalID: 7411276594935859303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 440
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab660ec9378497140800000000000000
+      internalID: 4717881746037696186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_6
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 440
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4030b823efb2730800000000000000
+      internalID: 3975550589118645412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_7
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 440
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19ea5077468f7e90800000000000000
+      internalID: -7025749252288878309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e794939e9ff103ec0800000000000000
+      internalID: -3589333744794121858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 220
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858c0d9cf8d588e10800000000000000
+      internalID: 2200111290118096984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_10
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 220
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5c92c07b4d413c0800000000000000
+      internalID: -4389649854131223129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_11
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 220
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0bc3d45bb9e6150800000000000000
+      internalID: 5867798567497543887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13478fc2f4703a410800000000000000
+      internalID: 1487040338600686641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a01d85a5a507e030800000000000000
+      internalID: 3523791442445930661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_14
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6ba5ebf34e63850800000000000000
+      internalID: 6356518886507722463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_robot_1_15
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 272
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1627b0e3e925e4a80800000000000000
+      internalID: -8480750208692817311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
