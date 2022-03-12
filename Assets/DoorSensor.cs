@@ -56,7 +56,7 @@ public class DoorSensor : MonoBehaviour
         int i;
         for (i = 0;i< sprites.Length-1;i++)
         {
-            if(progress < i * (float)1/ (float)sprites.Length)
+            if(progress <= i * (float)1/ (float)sprites.Length)
                 break;
 
         }

@@ -18,7 +18,8 @@ public class Enemy : MonoBehaviour
         hp -= damage;
         if (hp <= 0)
             Destroy(gameObject);
-        hpBar.localScale = new Vector3(1, hp / maxhp, 1);
+        if(hpBar)
+         hpBar.localScale = new Vector3(1, hp / maxhp, 1);
     }
 
     // Update is called once per frame

@@ -1,7 +1,82 @@
 fileFormatVersion: 2
 guid: 5dde93f6b4554b9458944ab9014eb708
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7026423896547711445
+    second: hero_0_dash_0
+  - first:
+      213: 441203383310934743
+    second: hero_0_dash_1
+  - first:
+      213: -5456806705831404202
+    second: hero_0_dash_2
+  - first:
+      213: -757825943573663528
+    second: hero_0_dash_3
+  - first:
+      213: 7283130235898617792
+    second: hero_0_dash_4
+  - first:
+      213: 2537132975346058243
+    second: hero_0_dash_5
+  - first:
+      213: 8398876706600934827
+    second: hero_0_dash_6
+  - first:
+      213: 4256064102485038273
+    second: hero_0_dash_7
+  - first:
+      213: 1795774712484175728
+    second: hero_0_dash_8
+  - first:
+      213: -3309072674683619131
+    second: hero_0_dash_9
+  - first:
+      213: -2792450761466229844
+    second: hero_0_dash_10
+  - first:
+      213: 6449765034718715250
+    second: hero_0_dash_11
+  - first:
+      213: -2657355719777970578
+    second: hero_0_dash_12
+  - first:
+      213: -1601813902968924119
+    second: hero_0_dash_13
+  - first:
+      213: 3342572046302477391
+    second: hero_0_dash_14
+  - first:
+      213: -7257422963827993670
+    second: hero_0_dash_15
+  - first:
+      213: -3533332779685191022
+    second: hero_0_dash_16
+  - first:
+      213: -1573070138648004012
+    second: hero_0_dash_17
+  - first:
+      213: 3841704647236169664
+    second: hero_0_dash_18
+  - first:
+      213: -3547488499681077601
+    second: hero_0_dash_19
+  - first:
+      213: 1966930618827542839
+    second: hero_0_dash_20
+  - first:
+      213: -5451262575971074074
+    second: hero_0_dash_21
+  - first:
+      213: -254560227082042125
+    second: hero_0_dash_22
+  - first:
+      213: -6485458826049928519
+    second: hero_0_dash_23
+  - first:
+      213: 1657799746713450760
+    second: hero_0_dash_24
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +116,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +150,546 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hero_0_dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9da0b6e4fd28160800000000000000
+      internalID: 7026423896547711445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 448
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2e2f7b3287f1600800000000000000
+      internalID: 441203383310934743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 448
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d13f266378544b0800000000000000
+      internalID: -5456806705831404202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 448
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d077b7c159ab75f0800000000000000
+      internalID: -757825943573663528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 448
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfd4a3ac50e21560800000000000000
+      internalID: 7283130235898617792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3048e6faff4b53320800000000000000
+      internalID: 2537132975346058243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 336
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad50419dddce8470800000000000000
+      internalID: 8398876706600934827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 336
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c499e960c3901b30800000000000000
+      internalID: 4256064102485038273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_8
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 336
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f9f3a269fdbe810800000000000000
+      internalID: 1795774712484175728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_9
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 336
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8f7814fefc312d0800000000000000
+      internalID: -3309072674683619131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab4906d3d83f39d0800000000000000
+      internalID: -2792450761466229844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 224
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dd423702b228950800000000000000
+      internalID: 6449765034718715250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 224
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6618c85d0d2f1bd0800000000000000
+      internalID: -2657355719777970578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 224
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9285145fdb635c9e0800000000000000
+      internalID: -1601813902968924119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 224
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c72000193336e20800000000000000
+      internalID: 3342572046302477391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 112
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab315401444784b90800000000000000
+      internalID: -7257422963827993670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 112
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292ee99ae8417fec0800000000000000
+      internalID: -3533332779685191022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 112
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a7c1b1b055b2ae0800000000000000
+      internalID: -1573070138648004012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_18
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 112
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfaa7eb50a705530800000000000000
+      internalID: 3841704647236169664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_19
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 112
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96d9b3410ac4cec0800000000000000
+      internalID: -3547488499681077601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7311e010af0fb4b10800000000000000
+      internalID: 1966930618827542839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_21
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6effcd5b1993954b0800000000000000
+      internalID: -5451262575971074074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_22
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f405da72de977cf0800000000000000
+      internalID: -254560227082042125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_23
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b24fd32f850ff5a0800000000000000
+      internalID: -6485458826049928519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_0_dash_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 140
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80976931610b10710800000000000000
+      internalID: 1657799746713450760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

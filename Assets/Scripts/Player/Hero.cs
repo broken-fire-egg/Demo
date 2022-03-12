@@ -53,6 +53,13 @@ public class Hero : MonoBehaviour
     }
     public void ChangeSpriteAnimation()
     {
+        if (!move.onground)
+        {
+            animator.Play("hero_0_dash_0");
+            return;
+        }
+
+
         UpdateRotationDegree();
         if (currentanimationframe > 1f)
             currentanimationframe -= 1f;
