@@ -23,7 +23,8 @@ public class CameraMove : MonoBehaviour
     // Start is called before the first frame update
     void FixedUpdate()
     {
-        if(DialogDisplayer.instance.displaying)
+        if (DialogDisplayer.instance)
+            if (DialogDisplayer.instance.displaying)
             return;
         SetCurrentMousePosition();
         UpdateShake();

@@ -21,8 +21,9 @@ public class HeroMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (DialogDisplayer.instance.displaying)
-            return;
+        if(DialogDisplayer.instance)
+            if (DialogDisplayer.instance.displaying)
+                return;
         KeyCheck();
         
     }
