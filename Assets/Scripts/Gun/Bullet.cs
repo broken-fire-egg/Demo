@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
     }
     public void SetValue(Quaternion dir, float speed)
     {
-        rb2d.AddForce(dir * Vector2.right * speed);
+        rb2d.AddForce(transform.right * speed);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

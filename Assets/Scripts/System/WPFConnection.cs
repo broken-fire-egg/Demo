@@ -9,7 +9,7 @@ using System.Threading;
 using System;
 using System.Diagnostics;
 using UnityEngine.UI;
-
+using System.Runtime.InteropServices;
 public class WPFConnection : MonoBehaviour
 {
     NamedPipeServerStream namedPipeServerStream;
@@ -19,13 +19,35 @@ public class WPFConnection : MonoBehaviour
     public Text bombPosText;
     int status = 0;
     Vector2 bombPos = Vector2.zero;
+
+
+
+
+    [DllImport("user32.dll")]
+
+    private static extern bool ShowWindow(IntPtr hwnd, int nCmdShow);
+
+
+
+    [DllImport("user32.dll")]
+
+    private static extern IntPtr GetActiveWindow();
+
+
     // Start is called before the first frame update
     void Start()
     {
         Application.runInBackground = true;
-        Thread serverReadThread = new Thread(ServerThread_Read);
-        serverReadThread.Start();
-        Process.Start("TouchBomb.exe");
+        //Thread serverReadThread = new Thread(ServerThread_Read);
+        //serverReadThread.Start();
+        Process.Start("WinSeparator.exe");
+        StartCoroutine(delay());
+    }
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(1f);
+        ShowWindow(GetActiveWindow(), 6);
+
     }
     void ServerThread_Read()
     {
@@ -65,12 +87,12 @@ public class WPFConnection : MonoBehaviour
         switch (status)
         {
             case 1:
-                bombMsg.SetActive(true);
                 status = 0;
                 break;
             case 2:
+                bombMsg.SetActive(true);
                 bombMsg.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
-                StartCoroutine(WindowPositionSetter.instance.Shake(2f,75, bombPos));
+                StartCoroutine(WindowPositionSetter.instance.Shake(4f,300, bombPos));
                 status = 0;
                 break;
             default:
@@ -85,7 +107,8 @@ public class WPFConnection : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        namedPipeServerStream.Close();
+        if (namedPipeServerStream != null)
+            namedPipeServerStream.Close();
 
     }
 

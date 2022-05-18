@@ -36,7 +36,10 @@ public class Hero : MonoBehaviour
             pgs[i] = transform.GetChild(0).GetChild(i).GetComponent<PlayerGun>();
     }
 
-
+    public void Hit()
+    {
+        Debug.LogError("¾Æ! ¾ÆÆÄ¿ê!!");
+    }
 
 
     // Update is called once per frame
@@ -45,7 +48,7 @@ public class Hero : MonoBehaviour
         if (DialogDisplayer.instance)
             if (DialogDisplayer.instance.displaying)
             return;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && pgs[selectedWeapon].gameObject.activeInHierarchy)
             GunShot();
 
         KeyCheck();
@@ -54,11 +57,11 @@ public class Hero : MonoBehaviour
     }
     public void ChangeSpriteAnimation()
     {
-        if (!move.onground)
-        {
-            animator.Play("hero_0_dash_0");
-            return;
-        }
+        //if (!move.onground)
+        //{
+        //    animator.Play("hero_0_dash_0");
+        //    return;
+        //}
 
 
         UpdateRotationDegree();

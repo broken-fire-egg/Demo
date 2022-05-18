@@ -35,4 +35,16 @@ public class BulletObjectPool : MonoBehaviour
             newBullet.GetComponent<HeroBullet>().SetValue(rot, speed);
         }
     }
+
+    public void EnemyShot(Vector3 pos, Quaternion rot, float speed, int bulletnum = 0)
+    {
+        var newBullet = FindDisabledBullet();
+        if (newBullet != null)
+        {
+            newBullet.transform.position = pos;
+            newBullet.transform.rotation = rot;
+            newBullet.SetActive(true);
+            newBullet.GetComponent<HeroBullet>().SetValue(rot, speed);
+        }
+    }
 }

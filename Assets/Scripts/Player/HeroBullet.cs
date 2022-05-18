@@ -10,8 +10,6 @@ public class HeroBullet : Bullet
     private void OnBecameInvisible()
     {
         gameObject.SetActive(false);
-       // transform.position = Vector3.zero;
-       // transform.rotation = Quaternion.identity;
     }
 
 

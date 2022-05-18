@@ -1,7 +1,121 @@
 fileFormatVersion: 2
 guid: dff0f9e524c26d147a87279493621ca0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -988462045132245214
+    second: enemy_danaenwa_damaga_0
+  - first:
+      213: -4250331454578671728
+    second: enemy_danaenwa_damaga_1
+  - first:
+      213: -4618309112889222090
+    second: enemy_danaenwa_damaga_2
+  - first:
+      213: -8080065907115571914
+    second: enemy_danaenwa_damaga_3
+  - first:
+      213: 7486403248919481067
+    second: enemy_danaenwa_damaga_4
+  - first:
+      213: 3940491847916870029
+    second: enemy_danaenwa_damaga_5
+  - first:
+      213: 5728095798401375154
+    second: enemy_danaenwa_damaga_6
+  - first:
+      213: 5186491136877641937
+    second: enemy_danaenwa_damaga_7
+  - first:
+      213: -3131194739905233758
+    second: enemy_danaenwa_damaga_8
+  - first:
+      213: -7184623080353637222
+    second: enemy_danaenwa_damaga_9
+  - first:
+      213: 7095988597564323591
+    second: enemy_danaenwa_damaga_10
+  - first:
+      213: -407815503302013700
+    second: enemy_danaenwa_damaga_11
+  - first:
+      213: -9122427168403318392
+    second: enemy_danaenwa_damaga_12
+  - first:
+      213: 7825854717403364797
+    second: enemy_danaenwa_damaga_13
+  - first:
+      213: -2650323300245458579
+    second: enemy_danaenwa_damaga_14
+  - first:
+      213: 7313451156067128701
+    second: enemy_danaenwa_damaga_15
+  - first:
+      213: 1650915196353117639
+    second: enemy_danaenwa_damaga_16
+  - first:
+      213: 1219545550362109333
+    second: enemy_danaenwa_damaga_17
+  - first:
+      213: 7911851790225834591
+    second: enemy_danaenwa_damaga_18
+  - first:
+      213: 44545416640538197
+    second: enemy_danaenwa_damaga_19
+  - first:
+      213: -1855095567049595183
+    second: enemy_danaenwa_damaga_20
+  - first:
+      213: -7721119793690878439
+    second: enemy_danaenwa_damaga_21
+  - first:
+      213: -3658965112195241041
+    second: enemy_danaenwa_damaga_22
+  - first:
+      213: -5850933769680692174
+    second: enemy_danaenwa_damaga_23
+  - first:
+      213: -1514375182726490642
+    second: enemy_danaenwa_damaga_24
+  - first:
+      213: -1253072700186784292
+    second: enemy_danaenwa_damaga_25
+  - first:
+      213: 546107293475336073
+    second: enemy_danaenwa_damaga_26
+  - first:
+      213: -3520334775298631703
+    second: enemy_danaenwa_damaga_27
+  - first:
+      213: 3779261732491468822
+    second: enemy_danaenwa_damaga_28
+  - first:
+      213: -2788560048413411587
+    second: enemy_danaenwa_damaga_29
+  - first:
+      213: 4296628917009549933
+    second: enemy_danaenwa_damaga_30
+  - first:
+      213: -6460591565125487301
+    second: enemy_danaenwa_damaga_31
+  - first:
+      213: 8966629202738469204
+    second: enemy_danaenwa_damaga_32
+  - first:
+      213: -8176186817958952256
+    second: enemy_danaenwa_damaga_33
+  - first:
+      213: 6774317747269032738
+    second: enemy_danaenwa_damaga_34
+  - first:
+      213: -3493233280926528618
+    second: enemy_danaenwa_damaga_35
+  - first:
+      213: -2180325577801197478
+    second: enemy_danaenwa_damaga_36
+  - first:
+      213: -6742320572770372381
+    second: enemy_danaenwa_damaga_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +155,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +189,819 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227bfedc1074842f0800000000000000
+      internalID: -988462045132245214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f3b20bf0ac305c0800000000000000
+      internalID: -4250331454578671728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cd947a45878efb0800000000000000
+      internalID: -4618309112889222090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_3
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635c1a41ed6dddf80800000000000000
+      internalID: -8080065907115571914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea0d29171c05e760800000000000000
+      internalID: 7486403248919481067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_5
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89586345707fa630800000000000000
+      internalID: 3940491847916870029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_6
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb1f17a7c84e7f40800000000000000
+      internalID: 5728095798401375154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_7
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 405
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0cd44b53e1af740800000000000000
+      internalID: 5186491136877641937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac706d49f2cb84d0800000000000000
+      internalID: -3131194739905233758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cd27acf571b4c90800000000000000
+      internalID: -7184623080353637222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_10
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7073b0888040a7260800000000000000
+      internalID: 7095988597564323591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc49cfd5f5275af0800000000000000
+      internalID: -407815503302013700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88992f1b2d0a66180800000000000000
+      internalID: -9122427168403318392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd74aef6650b9c60800000000000000
+      internalID: 7825854717403364797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_14
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61bdec1009283bd0800000000000000
+      internalID: -2650323300245458579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_15
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 324
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d751d8ff3199e7560800000000000000
+      internalID: 7313451156067128701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdfbe8cf9a39e610800000000000000
+      internalID: 1650915196353117639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_17
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595edb47732bce010800000000000000
+      internalID: 1219545550362109333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_18
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5203ffc84b8ccd60800000000000000
+      internalID: 7911851790225834591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_19
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5562b3702d14e9000800000000000000
+      internalID: 44545416640538197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_20
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d66b9519606146e0800000000000000
+      internalID: -1855095567049595183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_21
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e51d4b47219d490800000000000000
+      internalID: -7721119793690878439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_22
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab2e02dd9eb83dc0800000000000000
+      internalID: -3658965112195241041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_23
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 243
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c58dd6cbe4dcea0800000000000000
+      internalID: -5850933769680692174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee59be87bcbdbfae0800000000000000
+      internalID: -1514375182726490642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_25
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 162
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd80aba4013c9ee0800000000000000
+      internalID: -1253072700186784292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_26
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 162
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fe8d4a0b9249700800000000000000
+      internalID: 546107293475336073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7ded36c22452fc0800000000000000
+      internalID: -3520334775298631703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610a166b582a27430800000000000000
+      internalID: 3779261732491468822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_29
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6f87f096b0d49d0800000000000000
+      internalID: -2788560048413411587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_30
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a860a4c31b0ab30800000000000000
+      internalID: 4296628917009549933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_31
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b357fc1833e5756a0800000000000000
+      internalID: -6460591565125487301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459dedda0cddf6c70800000000000000
+      internalID: 8966629202738469204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_33
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2435a8869588e80800000000000000
+      internalID: -8176186817958952256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_34
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 81
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b58996916330e50800000000000000
+      internalID: 6774317747269032738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b4dc4c6da858fc0800000000000000
+      internalID: -3493233280926528618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_36
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a581678507dedb1e0800000000000000
+      internalID: -2180325577801197478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_danaenwa_damaga_37
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 92
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4b63259277e62a0800000000000000
+      internalID: -6742320572770372381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

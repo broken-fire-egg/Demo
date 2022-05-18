@@ -40,20 +40,22 @@ public class WindowPositionSetter : MonoBehaviour
     private void Start()
     {
         Screen.fullScreen = false;
-        
-        
+        //SetPosition(Screen.currentResolution.width / 2 - Screen.width, Screen.currentResolution.height / 2 - Screen.height / 2);
+
+
     }
     // Update is called once per frame
     private void Update()
     {
         GetWindowRect(FindWindow(null, "UntitledGame"), ref Srect);
-        
+        text.text =(Screen.currentResolution.width / 2 - Screen.width / 2).ToString() + "," + (Screen.currentResolution.height / 2 - Screen.height / 2).ToString();
+        SetPosition(Screen.currentResolution.width / 2 - Screen.width / 2, Screen.currentResolution.height / 2 - Screen.height / 2);
     }
     public IEnumerator Shake(float duration, float magnitude, Vector2 ForceDir = new Vector2())
     {
         float elapsed = 0.0f;
-        int minH = Screen.height,
-            minW = Screen.width,
+        int minH = 0,
+            minW = 0,
             maxH = Screen.currentResolution.height - Screen.height,
             maxW = Screen.currentResolution.width - Screen.width;
         int Xpos = Screen.currentResolution.width / 2 - Screen.width / 2, Ypos = Screen.currentResolution.height / 2 - Screen.height / 2;
@@ -73,7 +75,7 @@ public class WindowPositionSetter : MonoBehaviour
             dir *= (duration - elapsed) / duration;
 
             Xpos +=  (int)dir.x  + (int)(movedir * magnitude / 1.2f).x;
-            Ypos += (int)dir.y  + (int)(movedir * magnitude / 1.2f).y;
+            Ypos += (int)dir.y  + (int)(movedir * -magnitude / 1.2f).y;
 
             Offset += (movedir * magnitude / 1.2f);
             text.text = movedir.x.ToString() + "," + movedir.y.ToString();

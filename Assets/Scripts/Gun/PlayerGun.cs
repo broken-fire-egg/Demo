@@ -36,6 +36,7 @@ public class PlayerGun : MonoBehaviour
         cam = mainCamera.GetComponent<CameraMove>();
         bulletRects = new List<RectTransform>();
         weaponRenderer = GetComponent<SpriteRenderer>();
+        if(bulletUIsParent)
         initBulletUIPos = bulletUIsParent.anchoredPosition;
         gunpoint = transform.GetChild(0);
         originalGunpoint = gunpoint.localPosition;
