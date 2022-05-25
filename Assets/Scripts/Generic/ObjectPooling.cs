@@ -4,51 +4,38 @@ using UnityEngine;
 
 public class ObjectPooling<T> : MonoBehaviour
 {
+    public class PoolObject
+    {
+        public T component;
+        public GameObject gameObject;
+        public PoolObject(T component, GameObject gameObject)
+        {
+            this.gameObject = gameObject;
+            this.component = component;
+        }
+    }
     public int defaultCap;
     public GameObject origin;
-    public List<GameObject> gameObjects;
-    //public List<Transform> transforms;
-    //public List<T> components;
+    public List<PoolObject> poolObjects;
     public void Start()
     {
+        poolObjects = new List<PoolObject>();
         for (int i = 0; i < defaultCap; i++)
         {
             var newgo = Instantiate(origin, gameObject.transform);
-            gameObjects.Add(newgo);
-
+            poolObjects.Add(new PoolObject(newgo.GetComponent<T>(), newgo.gameObject));
         }
 
     }
-
-    public GameObject GetGameObjectFromOP()
+    public PoolObject GetRestingPoolObject()
     {
-        foreach(GameObject go in gameObjects)
+        foreach (var po in poolObjects)
         {
-            if (!go.activeInHierarchy)
-                return go;
+            if (!po.gameObject.activeInHierarchy)
+                return po;
         }
         return null;
-    }
 
-
-    public T GetComponentFromOP()
-    {
-        foreach (GameObject go in gameObjects)
-        {
-            if (!go.activeInHierarchy)
-                return go.GetComponent<T>();
-        }
-        return default(T);
     }
-    public Transform GetTransformFromOP()
-    {
-        foreach (GameObject go in gameObjects)
-        {
-            if (!go.activeInHierarchy)
-                return go.transform;
-        }
-        return null;
-    }
-
 
 }

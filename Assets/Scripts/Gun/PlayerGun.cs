@@ -85,7 +85,10 @@ public class PlayerGun : MonoBehaviour
         }
     }
 
-
+    public void MakeDashEffect()
+    {
+        DashEffect.instance.MakeAfterImage(weaponRenderer, transform.position, transform.rotation);
+    }
     public bool CanShot()
     {
         if (bulletcount <= 0)

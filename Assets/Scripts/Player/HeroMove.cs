@@ -7,7 +7,7 @@ public class HeroMove : MonoBehaviour
     public float speed;
     public bool ismoving;
     public Rigidbody2D rb2d;
-
+    SpriteRenderer sr;
     public float dashpower;
     public float dashspeed;
     public float dashprogress;
@@ -19,6 +19,7 @@ public class HeroMove : MonoBehaviour
 
     private void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
         dashindex = 0;
         dashmaxindex = 12;
     }
@@ -35,7 +36,8 @@ public class HeroMove : MonoBehaviour
         if (dashprogress > ((float)1 / dashmaxindex) * dashindex)
         {
             dashindex++;
-            DashEffect.instance.MakeAfterImage();
+            DashEffect.instance.MakeAfterImage(sr,transform.position,transform.rotation);
+            Hero.instance.pgs[Hero.instance.selectedWeapon].MakeDashEffect();
         }
         KeyCheck();
 
@@ -82,6 +84,7 @@ public class HeroMove : MonoBehaviour
             {
                 dashdirection = vec3.normalized;
                 onground = false;
+                Hero.instance.animator.enabled = false;
             }
         }
 
@@ -112,6 +115,7 @@ public class HeroMove : MonoBehaviour
                 dashindex = 0;
                 rb2d.velocity = Vector2.zero;
                 onground = true;
+                Hero.instance.animator.enabled = true;
             }
         }
     }

@@ -7,8 +7,8 @@ public class AfterImage : MonoBehaviour
     public float progress = 0;
     public float fadeTime = 0.02f;
 
-    private SpriteRenderer targetsr;
-    private SpriteRenderer sr;
+    public SpriteRenderer targetsr;
+    public SpriteRenderer sr;
 
     // Start is called before the first frame update
     private void Awake()
@@ -17,9 +17,7 @@ public class AfterImage : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         
     }
-    void Start()
-    {
-    }
+
     private void OnEnable()
     {
         sr.sprite = targetsr.sprite;

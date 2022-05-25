@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class DashEffect : ObjectPooling<DashEffect>
+public class DashEffect : ObjectPooling<AfterImage>
 {
     public GameObject gunObject;
     static public DashEffect instance;
@@ -17,20 +17,16 @@ public class DashEffect : ObjectPooling<DashEffect>
 
 
     }
-
-
-    // Update is called once per frame
-    void Update()
+    public void MakeAfterImage(SpriteRenderer sr, Vector3 pos, Quaternion rot)
     {
-
-    }
-    public void MakeAfterImage()
-    {
-        GameObject aii = GetGameObjectFromOP();
-        if (aii)
+        PoolObject po = GetRestingPoolObject();
+        if (po.gameObject)
         {
-            aii.transform.position = Hero.instance.transform.position;
-            aii.SetActive(true);
+
+            po.component.targetsr = sr;
+            po.gameObject.transform.position = pos;
+            po.gameObject.transform.rotation = rot;
+            po.gameObject.SetActive(true);
         }
     }
 }
