@@ -7,13 +7,14 @@ public abstract class State : MonoBehaviour
 
     public abstract State RunCurrentState();
     public StateManager sManager;
+    public StateManagerTest sManagerTest;
     public State[] nextState;
 
     // Start is called before the first frame update
     void Start()
     {
-        sManager = transform.parent.GetComponent<StateManager>();
-
+        sManager = transform.parent.parent.GetComponent<StateManager>();
+        sManagerTest = transform.parent.parent.GetComponent<StateManagerTest>();
 
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackState : State
 {
-
+    public bool attack = false;
     public float cooltime;
     public float delay;
     private void Update()

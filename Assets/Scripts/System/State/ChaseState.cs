@@ -4,31 +4,43 @@ using UnityEngine;
 
 public class ChaseState : State
 {
+    public float cooltime;
 
-    
     public override State RunCurrentState()
     {
-        if(sManager.playerInrange)
+        if(sManagerTest.IfChange)
         {
+            sManagerTest.IfChange = false;
             return nextState[0];
         }
-        else if(sManager.bulletDetected)
-        {
-            if(sManager.avoidCurrentCooltime <= 0)
-                return nextState[1];
-        }
+       else if(sManagerTest.bulletDetected)
+       {
+               return nextState[1];
+       }
         return this;
     }
     private void FixedUpdate()
     {
-        if(sManager.currentState == this)
+        if (sManagerTest.NowState == StateManagerTest.StateKind.Attack && sManagerTest.IfChange == false)
+            //if(sManager.currentState == this)
             sManager.subject.transform.position = Vector3.MoveTowards(transform.position, Hero.instance.transform.position, 0.05f);
+            
     }
     private void Update()
     {
-        if (Vector2.Distance(transform.position, Hero.instance.transform.position) < 1.8f)
-            sManager.playerInrange = true;
+        cooltime += Time.deltaTime;
+        if (Vector2.Distance(transform.position, Hero.instance.transform.position) < 1.0f && transform.parent.GetChild(2).GetComponent<AttackState>().cooltime <= 0)
+        {
+            sManagerTest.IfChange = true;
+        }
         else
-            sManager.playerInrange = false;
+        {
+            sManagerTest.IfChange = false;
+        }
+        if (Vector2.Distance(transform.position, Hero.instance.transform.position) > 4f && cooltime >= 5.0f)
+        {
+            sManagerTest.NowState = StateManagerTest.StateKind.idle;
+            cooltime = 0f;
+        }
     }
 }

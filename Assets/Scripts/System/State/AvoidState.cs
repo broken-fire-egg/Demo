@@ -9,10 +9,10 @@ public class AvoidState : State
     public Vector3 detectedBulletDirection = Vector3.zero;
     public Transform b;
     Vector3 prev;
-
+    public List<Transform> detectedBullets;
     public override State RunCurrentState()
     {
-        sManager.avoiding = true;
+        //sManager.avoiding = true;
 
 
 
@@ -25,18 +25,17 @@ public class AvoidState : State
             detectedBulletDirection = Vector3.zero;
             b = null;
             prev = Vector3.zero;
-            sManager.avoidCurrentCooltime = sManager.avoidCooltime;
+            //sManager.avoidCurrentCooltime = sManager.avoidCooltime;
             return nextState[0];
         }
     }
     private void Update()
     {
-        //Debug.Log(sManager.detectedBullets[0].gameObject.transform.rotation.z);
-        if (sManager.currentState == this && sManager.detectedBullets.Count > 0)
+        if (detectedBullets.Count > 0 && sManagerTest.bulletDetected == true)
         {
             if (prev == Vector3.zero)
             {
-                b = sManager.detectedBullets[0];
+                b = detectedBullets[0];
                 prev = b.position;
                 return;
             }
@@ -45,22 +44,39 @@ public class AvoidState : State
                 detectedBulletDirection = b.position - prev;
                 prev = b.position;
             }
-            if (sManager.detectedBullets[0].gameObject.activeInHierarchy && t < 5)
+            if (detectedBullets[0].gameObject.activeInHierarchy && t < 5)
             {
-                if (TwoObjectAngle(Hero.instance.gameObject) < TwoObjectAngle(sManager.detectedBullets[0].gameObject))
+                
+                if (TwoObjectAngle(Hero.instance.gameObject) < TwoObjectAngle(detectedBullets[0].gameObject))
                 {
-                    sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
+                    gameObject.transform.parent.parent.parent.gameObject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
                 }
                 else
                 {
-                    if(TwoObjectAngle(Hero.instance.gameObject) - TwoObjectAngle(sManager.detectedBullets[0].gameObject) > 290)
-                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
+                    if(TwoObjectAngle(Hero.instance.gameObject) - TwoObjectAngle(detectedBullets[0].gameObject) > 290)
+                        gameObject.transform.parent.parent.parent.gameObject.transform.position = Vector3.MoveTowards(transform.position, transform.position + (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
                     else
-                        sManager.subject.transform.position = Vector3.MoveTowards(transform.position, transform.position - (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
+                        gameObject.transform.parent.parent.parent.gameObject.transform.position = Vector3.MoveTowards(transform.position, transform.position - (Vector3)Vector2.Perpendicular(transform.position - Hero.instance.transform.position) * 3, 0.15f);
                 }
             }
             t++;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+             detectedBullets.Add(collision.transform);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet"))
+        {
+             detectedBullets.Remove(collision.transform);
+        }
+
     }
 
     private float TwoObjectAngle(GameObject her)
