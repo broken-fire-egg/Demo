@@ -7,7 +7,7 @@ public class HeroMove : MonoBehaviour
     public float speed;
     public bool ismoving;
     public Rigidbody2D rb2d;
-    SpriteRenderer sr;
+    public SpriteRenderer sr;
     public float dashpower;
     public float dashspeed;
     public float dashprogress;
@@ -23,11 +23,13 @@ public class HeroMove : MonoBehaviour
         dashindex = 0;
         dashmaxindex = 12;
     }
+
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         dashprogress = 0f;
     }
+
     void FixedUpdate()
     {
         if (DialogDisplayer.instance)

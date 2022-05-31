@@ -13,18 +13,21 @@ public class AfterImage : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        targetsr = Hero.instance.GetComponent<SpriteRenderer>();
         sr = GetComponent<SpriteRenderer>();
+        //targetsr = Hero.instance.GetComponent<SpriteRenderer>();
         
     }
-
-    private void OnEnable()
+    public void Init()
     {
         sr.sprite = targetsr.sprite;
         sr.flipX = targetsr.flipX;
         sr.flipY = targetsr.flipY;
         progress = 0;
-        
+
+    }
+    private void OnEnable()
+    {
+        Init();
     }
     // Update is called once per frame
     void Update()
