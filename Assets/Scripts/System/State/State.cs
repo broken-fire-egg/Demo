@@ -11,16 +11,10 @@ public abstract class State : MonoBehaviour
     public State[] nextState;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         sManager = transform.parent.parent.GetComponent<StateManager>();
         sManagerTest = transform.parent.parent.GetComponent<StateManagerTest>();
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

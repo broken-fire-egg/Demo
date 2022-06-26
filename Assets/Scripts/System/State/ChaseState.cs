@@ -39,7 +39,7 @@ public class ChaseState : State
         }
         if (Vector2.Distance(transform.position, Hero.instance.transform.position) > 4f && cooltime >= 5.0f)
         {
-            sManagerTest.NowState = StateManagerTest.StateKind.idle;
+            sManagerTest.NowState = StateManagerTest.StateKind.Idle;
             cooltime = 0f;
         }
     }

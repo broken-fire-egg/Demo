@@ -11,30 +11,33 @@ public class StateManagerTest : MonoBehaviour
     public GameObject IdleGame;
     public GameObject CautionGame;
     public GameObject AttackGame;
-    public GameObject Colbullet;
 
     public Rigidbody2D rigid;
 
     public StateKind NowState;
+    public StateKind PrevState;
 
     public bool IfChange = false;
 
 
     public enum StateKind
     {
-        idle = 1,
-        caution,
+        None = 0,
+        Idle = 1,
+        Caution,
         Attack
     }
 
     void Awake()
     {
-        NowState = StateKind.idle;
+        rigid = transform.parent.GetComponent<Rigidbody2D>();
+        NowState = StateKind.Idle;
+        PrevState = StateKind.None;
     }
     // Start is called before the first frame update
     void Start()
     {
-        rigid = gameObject.transform.parent.GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -46,22 +49,26 @@ public class StateManagerTest : MonoBehaviour
 
     void Statefsm()
     {
-        switch(NowState)
+        if (PrevState != NowState)
         {
-            case StateKind.idle:
-                IdleGame.SetActive(true);
-                CautionGame.SetActive(false); AttackGame.SetActive(false);
-                break;
-            case StateKind.caution:
-                CautionGame.SetActive(true);
-                IdleGame.SetActive(false); AttackGame.SetActive(false);
-                break;
+            switch (NowState)
+            {
+                case StateKind.Idle:
+                    IdleGame.SetActive(true);
+                    CautionGame.SetActive(false); AttackGame.SetActive(false);
+                    break;
+                case StateKind.Caution:
+                    CautionGame.SetActive(true);
+                    IdleGame.SetActive(false); AttackGame.SetActive(false);
+                    break;
 
-            case StateKind.Attack:
-                AttackGame.SetActive(true);
-                CautionGame.SetActive(false); IdleGame.SetActive(false);
-                break;
+                case StateKind.Attack:
+                    AttackGame.SetActive(true);
+                    CautionGame.SetActive(false); IdleGame.SetActive(false);
+                    break;
 
+            }
+            PrevState = NowState;
         }
     }
 

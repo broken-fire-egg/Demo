@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 3845e459a8df8d04d8cd123065f63849
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5968362471699478400
+    second: ui_ingame_bosshp_0
+  - first:
+      213: -3979193028529150986
+    second: ui_ingame_bosshp_1
+  - first:
+      213: 5742220970931578215
+    second: ui_ingame_bosshp_2
+  - first:
+      213: 5666891743232480758
+    second: ui_ingame_bosshp_3
+  - first:
+      213: -2278428143245890378
+    second: ui_ingame_bosshp_4
+  - first:
+      213: 1466192594702687841
+    second: ui_ingame_bosshp_5
+  - first:
+      213: -7182169044403645077
+    second: ui_ingame_bosshp_6
+  - first:
+      213: -7291669556318174473
+    second: ui_ingame_bosshp_7
+  - first:
+      213: 6713769516759034593
+    second: ui_ingame_bosshp_8
+  - first:
+      213: -8833805637242041322
+    second: ui_ingame_bosshp_9
+  - first:
+      213: -3848665077768537295
+    second: ui_ingame_bosshp_10
+  - first:
+      213: 8052518072464128035
+    second: ui_ingame_bosshp_11
+  - first:
+      213: 2230182361138473811
+    second: ui_ingame_bosshp_12
+  - first:
+      213: -2724641200895774801
+    second: ui_ingame_bosshp_13
+  - first:
+      213: -6179728944268640801
+    second: ui_ingame_bosshp_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +120,336 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0877b68db02e3d250800000000000000
+      internalID: 5968362471699478400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_1
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 640
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f32fc1f50117c8c0800000000000000
+      internalID: -3979193028529150986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_2
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 640
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765ec2aac8770bf40800000000000000
+      internalID: 5742220970931578215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f557f71408d4ae40800000000000000
+      internalID: 5666891743232480758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_4
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 574
+        width: 180
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 86, y: 0, z: 86, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc6393eca56160e0800000000000000
+      internalID: -2278428143245890378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_5
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 480
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16edf8b8566f85410800000000000000
+      internalID: 1466192594702687841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65938f8e4fc35c90800000000000000
+      internalID: -7182169044403645077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_7
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 320
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f20024eb29ceca90800000000000000
+      internalID: -7291669556318174473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_8
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 320
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaa44eedc91c2d50800000000000000
+      internalID: 6713769516759034593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c48519394086580800000000000000
+      internalID: -8833805637242041322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_10
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 160
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bb72cb08bc69ac0800000000000000
+      internalID: -3848665077768537295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_11
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 160
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32833a8d58a40cf60800000000000000
+      internalID: 8052518072464128035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b200c9a0333fe10800000000000000
+      internalID: 2230182361138473811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_13
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 0
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafa6387341203ad0800000000000000
+      internalID: -2724641200895774801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_ingame_bosshp_14
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 0
+        width: 1352
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddfaac44413d3aa0800000000000000
+      internalID: -6179728944268640801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
