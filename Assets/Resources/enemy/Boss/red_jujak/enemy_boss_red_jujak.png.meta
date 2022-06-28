@@ -1,0 +1,1836 @@
+fileFormatVersion: 2
+guid: 95515cb211a6b8e42b6bd4cc194db34a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 842330938159869440
+    second: enemy_boss_red_jujak_0
+  - first:
+      213: -169811540161019629
+    second: enemy_boss_red_jujak_1
+  - first:
+      213: 5051931996746642263
+    second: enemy_boss_red_jujak_2
+  - first:
+      213: 1294373796174802123
+    second: enemy_boss_red_jujak_3
+  - first:
+      213: -8846217400603130182
+    second: enemy_boss_red_jujak_4
+  - first:
+      213: -9121966662036715972
+    second: enemy_boss_red_jujak_5
+  - first:
+      213: 5334716655029727468
+    second: enemy_boss_red_jujak_6
+  - first:
+      213: 5372081413591449205
+    second: enemy_boss_red_jujak_7
+  - first:
+      213: 3270366506204384515
+    second: enemy_boss_red_jujak_8
+  - first:
+      213: -7070911089222168730
+    second: enemy_boss_red_jujak_9
+  - first:
+      213: -767211631193449010
+    second: enemy_boss_red_jujak_10
+  - first:
+      213: -1371563815427847819
+    second: enemy_boss_red_jujak_11
+  - first:
+      213: -7938668462311083808
+    second: enemy_boss_red_jujak_12
+  - first:
+      213: -1476290272774961206
+    second: enemy_boss_red_jujak_13
+  - first:
+      213: -1406067079997492972
+    second: enemy_boss_red_jujak_14
+  - first:
+      213: -4678700486579308396
+    second: enemy_boss_red_jujak_15
+  - first:
+      213: -1164832885206949889
+    second: enemy_boss_red_jujak_16
+  - first:
+      213: -7725345150968886453
+    second: enemy_boss_red_jujak_17
+  - first:
+      213: -7495764127821840736
+    second: enemy_boss_red_jujak_18
+  - first:
+      213: 4902067488964922363
+    second: enemy_boss_red_jujak_19
+  - first:
+      213: -8175045933301364106
+    second: enemy_boss_red_jujak_20
+  - first:
+      213: 3781779624733820209
+    second: enemy_boss_red_jujak_21
+  - first:
+      213: 5983268033685411059
+    second: enemy_boss_red_jujak_22
+  - first:
+      213: -1159311036042215190
+    second: enemy_boss_red_jujak_23
+  - first:
+      213: -6589242729387485404
+    second: enemy_boss_red_jujak_24
+  - first:
+      213: -562910685789448487
+    second: enemy_boss_red_jujak_25
+  - first:
+      213: 4865946875257631878
+    second: enemy_boss_red_jujak_26
+  - first:
+      213: 7871619391118504748
+    second: enemy_boss_red_jujak_27
+  - first:
+      213: -5687349145304462040
+    second: enemy_boss_red_jujak_28
+  - first:
+      213: -7012734125621201427
+    second: enemy_boss_red_jujak_29
+  - first:
+      213: 6109489913022568973
+    second: enemy_boss_red_jujak_30
+  - first:
+      213: 6320243012270271393
+    second: enemy_boss_red_jujak_31
+  - first:
+      213: -6437782005818262232
+    second: enemy_boss_red_jujak_32
+  - first:
+      213: 3660893132968538455
+    second: enemy_boss_red_jujak_33
+  - first:
+      213: -458768238667780849
+    second: enemy_boss_red_jujak_34
+  - first:
+      213: -3046390699951053930
+    second: enemy_boss_red_jujak_35
+  - first:
+      213: 5285443170509203654
+    second: enemy_boss_red_jujak_36
+  - first:
+      213: -4855352600377453672
+    second: enemy_boss_red_jujak_37
+  - first:
+      213: 7812764331613158389
+    second: enemy_boss_red_jujak_38
+  - first:
+      213: -748370232674795230
+    second: enemy_boss_red_jujak_39
+  - first:
+      213: -1564078523060467449
+    second: enemy_boss_red_jujak_40
+  - first:
+      213: 7911959637356430390
+    second: enemy_boss_red_jujak_41
+  - first:
+      213: 5692305239674595051
+    second: enemy_boss_red_jujak_42
+  - first:
+      213: 7784998985925149452
+    second: enemy_boss_red_jujak_43
+  - first:
+      213: -1727904258034679183
+    second: enemy_boss_red_jujak_44
+  - first:
+      213: -8149760958986486376
+    second: enemy_boss_red_jujak_45
+  - first:
+      213: 1557153530718155138
+    second: enemy_boss_red_jujak_46
+  - first:
+      213: 3637567974432924052
+    second: enemy_boss_red_jujak_47
+  - first:
+      213: -5666659235232397468
+    second: enemy_boss_red_jujak_48
+  - first:
+      213: -456965127397961663
+    second: enemy_boss_red_jujak_49
+  - first:
+      213: 9022836177710974127
+    second: enemy_boss_red_jujak_50
+  - first:
+      213: 327914194374424053
+    second: enemy_boss_red_jujak_51
+  - first:
+      213: 682524632323551703
+    second: enemy_boss_red_jujak_52
+  - first:
+      213: -4339195051802066018
+    second: enemy_boss_red_jujak_53
+  - first:
+      213: 4153302294328249549
+    second: enemy_boss_red_jujak_54
+  - first:
+      213: -3994421546294793551
+    second: enemy_boss_red_jujak_55
+  - first:
+      213: -6707422150055823946
+    second: enemy_boss_red_jujak_56
+  - first:
+      213: 330329753767809967
+    second: enemy_boss_red_jujak_57
+  - first:
+      213: -1766483531127242301
+    second: enemy_boss_red_jujak_58
+  - first:
+      213: 4782316482866224150
+    second: enemy_boss_red_jujak_59
+  - first:
+      213: 7271233966932401924
+    second: enemy_boss_red_jujak_60
+  - first:
+      213: -7452726504155001159
+    second: enemy_boss_red_jujak_61
+  - first:
+      213: 419613710692766163
+    second: enemy_boss_red_jujak_62
+  - first:
+      213: -7191685328676619236
+    second: enemy_boss_red_jujak_63
+  - first:
+      213: -6869709641857800221
+    second: enemy_boss_red_jujak_64
+  - first:
+      213: -3252060835458193702
+    second: enemy_boss_red_jujak_65
+  - first:
+      213: -1109874608100593492
+    second: enemy_boss_red_jujak_66
+  - first:
+      213: -2547591733551868713
+    second: enemy_boss_red_jujak_67
+  - first:
+      213: 7728394354884628828
+    second: enemy_boss_red_jujak_68
+  - first:
+      213: -1392853818756537533
+    second: enemy_boss_red_jujak_69
+  - first:
+      213: 2907484776534871982
+    second: enemy_boss_red_jujak_70
+  - first:
+      213: 715425277911058872
+    second: enemy_boss_red_jujak_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8892
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e2750868f80bb00800000000000000
+      internalID: 842330938159869440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_1
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 8892
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311c0fdcd45b4adf0800000000000000
+      internalID: -169811540161019629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_2
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 8892
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753738f72611c1640800000000000000
+      internalID: 5051931996746642263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_3
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 8892
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcca2971c1a86f110800000000000000
+      internalID: 1294373796174802123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6cb27b42ceb3580800000000000000
+      internalID: -8846217400603130182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_5
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c368850b6a3486180800000000000000
+      internalID: -9121966662036715972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_6
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce038608888b80a40800000000000000
+      internalID: 5334716655029727468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_7
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57eb89945977d8a40800000000000000
+      internalID: 5372081413591449205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_8
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dc5af920da26d20800000000000000
+      internalID: 3270366506204384515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_9
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fca80e3d31fdd90800000000000000
+      internalID: -7070911089222168730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_10
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd9a2716115a55f0800000000000000
+      internalID: -767211631193449010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_11
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579c4aa0af937fce0800000000000000
+      internalID: -1371563815427847819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_12
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0f95a281f24d190800000000000000
+      internalID: -7938668462311083808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_13
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 7904
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac742e191d9238be0800000000000000
+      internalID: -1476290272774961206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6916
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411f06eb075ac7ce0800000000000000
+      internalID: -1406067079997492972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_15
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 6916
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4983efe32bae11fb0800000000000000
+      internalID: -4678700486579308396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffdb8699aea5dfe0800000000000000
+      internalID: -1164832885206949889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_17
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b863d048f0ac490800000000000000
+      internalID: -7725345150968886453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_18
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae30117d32b9f790800000000000000
+      internalID: -7495764127821840736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_19
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbceb0b864a70440800000000000000
+      internalID: 4902067488964922363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_20
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a021379076c8e80800000000000000
+      internalID: -8175045933301364106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_21
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135c11f28849b7430800000000000000
+      internalID: 3781779624733820209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_22
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4d4cf6396d80350800000000000000
+      internalID: 5983268033685411059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_23
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0838841cc49efe0800000000000000
+      internalID: -1159311036042215190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_24
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427980026ae4e84a0800000000000000
+      internalID: -6589242729387485404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_25
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 5928
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d69f35b6b32038f0800000000000000
+      internalID: -562910685789448487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4940
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68437a3f6e0578340800000000000000
+      internalID: 4865946875257631878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_27
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 4940
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23f1be612c9d3d60800000000000000
+      internalID: 7871619391118504748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_28
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 4940
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d8180d51a7211b0800000000000000
+      internalID: -5687349145304462040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_29
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 4940
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5b612c773cdae90800000000000000
+      internalID: -7012734125621201427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_30
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 4940
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ada88d4b449c450800000000000000
+      internalID: 6109489913022568973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aba388988306b750800000000000000
+      internalID: 6320243012270271393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_32
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dfcc1ef5768a6a0800000000000000
+      internalID: -6437782005818262232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_33
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751b14f78ea1ec230800000000000000
+      internalID: 3660893132968538455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_34
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0da9f3b7b022a9f0800000000000000
+      internalID: -458768238667780849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_35
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6932d528ccb09b5d0800000000000000
+      internalID: -3046390699951053930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_36
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c827b26f8aa95940800000000000000
+      internalID: 5285443170509203654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_37
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8939b33e8825e9cb0800000000000000
+      internalID: -4855352600377453672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_38
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbf4ab04c38c6c60800000000000000
+      internalID: 7812764331613158389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_39
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22141f80d314d95f0800000000000000
+      internalID: -748370232674795230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_40
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 3952
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709c920ced64b4ae0800000000000000
+      internalID: -1564078523060467449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2964
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634cbddee5deccd60800000000000000
+      internalID: 7911959637356430390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_42
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 2964
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be626e3d4712ffe40800000000000000
+      internalID: 5692305239674595051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_43
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 2964
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0348dcb45fd90c60800000000000000
+      internalID: 7784998985925149452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17245fd6b304508e0800000000000000
+      internalID: -1727904258034679183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_45
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d734b469b36ee80800000000000000
+      internalID: -8149760958986486376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_46
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2817333d2ee1c9510800000000000000
+      internalID: 1557153530718155138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_47
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4916962dccc3b7230800000000000000
+      internalID: 3637567974432924052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_48
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46749c4e27bfb51b0800000000000000
+      internalID: -5666659235232397468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_49
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14014b243a888a9f0800000000000000
+      internalID: -456965127397961663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_50
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa48107d2bd873d70800000000000000
+      internalID: 9022836177710974127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_51
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5fe70f83cfc8400800000000000000
+      internalID: 327914194374424053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_52
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d179147980d87900800000000000000
+      internalID: 682524632323551703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_53
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 1976
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e938436271518c3c0800000000000000
+      internalID: -4339195051802066018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc004a7e6e73a930800000000000000
+      internalID: 4153302294328249549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_55
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baaee954c6f098c0800000000000000
+      internalID: -3994421546294793551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_56
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5f55b87137ae2a0800000000000000
+      internalID: -6707422150055823946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_57
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa392103921959400800000000000000
+      internalID: 330329753767809967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_58
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1459176903c77e0800000000000000
+      internalID: -1766483531127242301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_59
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c9cbcd0833e5240800000000000000
+      internalID: 4782316482866224150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_60
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f92cda4cc98e460800000000000000
+      internalID: 7271233966932401924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_61
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bec3bf0bb8929890800000000000000
+      internalID: -7452726504155001159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_62
+      rect:
+        serializedVersion: 2
+        x: 6112
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d9b85274c2d500800000000000000
+      internalID: 419613710692766163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_63
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 988
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c77d7fb40023c90800000000000000
+      internalID: -7191685328676619236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e76dfe5a73e9a0a0800000000000000
+      internalID: -6869709641857800221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_65
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6ed8a76eb5ed2d0800000000000000
+      internalID: -3252060835458193702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_66
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca030fe9ceee890f0800000000000000
+      internalID: -1109874608100593492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_67
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d45be8e0d225acd0800000000000000
+      internalID: -2547591733551868713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_68
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51580f08b5c04b60800000000000000
+      internalID: 7728394354884628828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_69
+      rect:
+        serializedVersion: 2
+        x: 3820
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34368fcd4d69bace0800000000000000
+      internalID: -1392853818756537533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_70
+      rect:
+        serializedVersion: 2
+        x: 4584
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf873feff5795820800000000000000
+      internalID: 2907484776534871982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_red_jujak_71
+      rect:
+        serializedVersion: 2
+        x: 5348
+        y: 0
+        width: 764
+        height: 988
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b94931ff73bde900800000000000000
+      internalID: 715425277911058872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -6,11 +6,15 @@ public class BossState : MonoBehaviour
 {
     public Queue<IEnumerator> CoroutineQueue;
     public int PatternCount;
-
+    protected Animator animator;
     protected int prev;
     protected IEnumerator NextPattern;
     protected IEnumerator CurrentPattern;
     // Start is called before the first frame update
+    protected void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     protected void Start()
     {
         CoroutineQueue = new Queue<IEnumerator>();

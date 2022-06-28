@@ -6,11 +6,7 @@ public class BossDamaga : BossState
 {
     public GameObject bullet;
     public float bulletSpeed;
-    Animator animator;
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
-    }
+    
     new void Start()
     {
         base.Start();

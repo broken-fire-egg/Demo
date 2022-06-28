@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyBulletObjectPool : MonoBehaviour
 {
+    //ªË¡¶ø‰∏¡
+
     static public EnemyBulletObjectPool instance;
     List<GameObject> EnemyBullets;
     GameObject origin;
