@@ -15,7 +15,9 @@ public class PheonixScreenBullet : MonoBehaviour
     }
     public void Init(Vector3 worldPos, Vector2 dir)
     {
+        dir = dir.normalized;
         Vector3 origin = Camera.main.WorldToScreenPoint(worldPos);
+        transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg, Vector3.forward);
         xpos = origin.x;
         ypos = origin.y;
         xspeed = dir.x * speedweight;
