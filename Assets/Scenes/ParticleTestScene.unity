@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: eft_boss_hyena_wick
       objectReference: {fileID: 0}
+    - target: {fileID: 1909437652855608496, guid: 95300e1d4ede0d84ebb2f52bbc81af25, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1909437652855608501, guid: 95300e1d4ede0d84ebb2f52bbc81af25, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -702,6 +706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: eft_boss_snow_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2446761375962318262, guid: b8814824cd2a28c40b15fed88076acbc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8814824cd2a28c40b15fed88076acbc, type: 3}
 --- !u!1001 &5612237809695394298
@@ -714,6 +722,10 @@ PrefabInstance:
     - target: {fileID: 5612237809962932739, guid: 6fdd1e66d7d139a4eb09ede6909fbec0, type: 3}
       propertyPath: m_Name
       value: eft_boss_snow_blizzard_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612237809962932739, guid: 6fdd1e66d7d139a4eb09ede6909fbec0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5612237809962932740, guid: 6fdd1e66d7d139a4eb09ede6909fbec0, type: 3}
       propertyPath: m_RootOrder
@@ -771,6 +783,10 @@ PrefabInstance:
     - target: {fileID: 6216455674106287495, guid: 9402a60b15196ab4abbc0773e9ff0ac9, type: 3}
       propertyPath: m_Name
       value: eft_boss_hyena_dust
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216455674106287495, guid: 9402a60b15196ab4abbc0773e9ff0ac9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6216455674106287516, guid: 9402a60b15196ab4abbc0773e9ff0ac9, type: 3}
       propertyPath: m_RootOrder
@@ -873,6 +889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: eft_boss_snow_babyelemental
       objectReference: {fileID: 0}
+    - target: {fileID: 6456986516460423021, guid: 2744d2265523e824ca06e8e7a41dc93f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2744d2265523e824ca06e8e7a41dc93f, type: 3}
 --- !u!1001 &8565080059607459900
@@ -929,6 +949,10 @@ PrefabInstance:
     - target: {fileID: 8565080059993705343, guid: 045d979b239b1284c821451320822722, type: 3}
       propertyPath: m_Name
       value: eft_boss_snow_elemental
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565080059993705343, guid: 045d979b239b1284c821451320822722, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045d979b239b1284c821451320822722, type: 3}
