@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BossPhoenix : BossState
 {
-
+    
     public GameObject bullet_Screen;
     public GameObject bullet_Normal;
     public GameObject bullet_Flame;
@@ -85,6 +85,10 @@ public class BossPhoenix : BossState
     WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.2f);
     WaitForSeconds ss_AfterDelay = new WaitForSeconds(0.2f);
 
+    public void DecreaseAttackCount()
+    {
+        animator.SetInteger("LeftAttack", animator.GetInteger("LeftAttack") - 1);
+    }
     IEnumerator ScreenShot()
     {
         yield return ss_BeforeDelay;
