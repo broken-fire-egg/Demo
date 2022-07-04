@@ -1,0 +1,17 @@
+C:\Users\67160\source\repos\GameFrame\GameFrame\bin\Debug\GameFrame.exe.config
+C:\Users\67160\source\repos\GameFrame\GameFrame\bin\Debug\GameFrame.exe
+C:\Users\67160\source\repos\GameFrame\GameFrame\bin\Debug\GameFrame.pdb
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.csproj.AssemblyReference.cache
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\MainWindow.g.cs
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\App.g.cs
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame_MarkupCompile.cache
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame_MarkupCompile.lref
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\MainWindow.baml
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.g.resources
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.Properties.Resources.resources
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.csproj.GenerateResource.cache
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.csproj.CoreCompileInputs.cache
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.exe
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.pdb
+C:\Users\67160\source\repos\GameFrame\GameFrame\bin\Debug\UnityController.dll
+C:\Users\67160\source\repos\GameFrame\GameFrame\obj\Debug\GameFrame.csproj.CopyComplete

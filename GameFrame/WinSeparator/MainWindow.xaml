@@ -1,0 +1,36 @@
+﻿<Window x:Class="WinSeparator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:WinSeparator"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        Title="MainWindow" AllowsTransparency="True" WindowStyle="None" Background="Transparent" ResizeMode="NoResize">
+    <Grid Name ="grid" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Polygon Points="0,0 560,0 417.5,219 192,228 0,180" Fill="Red"/>
+        <Polygon Points="560,0 960,0 960,60 832,188 417.5,219" Fill="Lime" >
+        </Polygon>
+        <Polygon Points="0,180 0,240 192,228" Fill="Blue" >
+        </Polygon>
+        <Polygon Points="960,60 960,180 832,188" Fill="Black" >
+        </Polygon>
+        <Polygon Points="0,240 0,360 240,480 377,274.26 192,228" Fill="#FFF1FF00" >
+        </Polygon>
+        <Polygon Points="192,228 377,274.26 417.5,219" Fill="#FFFF00D2" >
+        </Polygon>
+        <Polygon Points="0,360 240,480 200,540 0,540" Fill="#FF00FFED" >
+        </Polygon>
+        <Polygon Points="417.5,219 377,274.26 672,348 832,188" Fill="#FFFFAF00" >
+        </Polygon>
+        <Polygon Points="672,348 832,188 960,180 960,420" Fill="#FF6B5CB3" >
+        </Polygon>
+        <Polygon Points="672,348 960,420 960,540 480,540" Fill="#FF5C7DB3" >
+        </Polygon>
+        <Polygon Points="672,348 480,540 360,540 240,480 377,274.26" Fill="#FF38BB40" >
+        </Polygon>
+        <Polygon Points="360,540 240,480 200,540 " Fill="#FF8438BB" >
+        </Polygon>
+    </Grid>
+</Window>
