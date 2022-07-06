@@ -17,9 +17,10 @@ public class PheonixFlameBullet : MonoBehaviour
     public void Init(Vector3 pos, Vector3 _dir)
     {
         progress = 0.0f;
-        speed = 0.04f;
+        speed = 0.02f;
         transform.position = pos;
         dir = _dir;
+        transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(-dir.y,-dir.x)*Mathf.Rad2Deg,Vector3.forward);
         gameObject.SetActive(true);
     }
     private void FixedUpdate()
@@ -33,6 +34,9 @@ public class PheonixFlameBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spriteRenderer.color = new Color(progress, 0, 1 - progress);
+        if(progress < 0.333f)
+            spriteRenderer.color = new Color(1 , 1 , 1 , 1 );
+        else
+            spriteRenderer.color = new Color((1 - progress) * 3, (1 - progress) * 3, (1 - progress) * 3, (1 - progress) * 6);
     }
 }

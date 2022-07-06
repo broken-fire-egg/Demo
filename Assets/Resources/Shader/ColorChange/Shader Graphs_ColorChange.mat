@@ -39,8 +39,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - Boolean_81be63c332324070a8572ec9d3fdb076: 0
     m_Colors:
-    - Color_1a88e6e110784e0785b46b195ba80eb6: {r: 0, g: 0.73798466, b: 1, a: 0}
-    - Color_1cbe6081659a4a72a3ad426396bc0ac8: {r: 0.745283, g: 0.745283, b: 0.745283, a: 0}
+    - Color_1a88e6e110784e0785b46b195ba80eb6: {r: 1, g: 0.7122642, b: 0.93481344, a: 0}
+    - Color_1cbe6081659a4a72a3ad426396bc0ac8: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

@@ -19,7 +19,6 @@ public class BossState : MonoBehaviour
     {
         CoroutineQueue = new Queue<IEnumerator>();
         RandomizePattern();
-        StartCoroutine(CheckQueue());
     }
     protected void RandomizePattern(int _prev = -1)
     {
@@ -42,7 +41,7 @@ public class BossState : MonoBehaviour
     {
         return null;
     }
-    IEnumerator CheckQueue()
+    protected IEnumerator CheckQueue()
     {
         while(true)
         {

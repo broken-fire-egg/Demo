@@ -61,6 +61,10 @@ public class BossPhoenix : BossState
         base.Start();
     }
 
+    public void StartPattern()
+    {
+        StartCoroutine(CheckQueue());
+    }
     protected override IEnumerator GetPattern(int n)
     {
         Debug.Log(n);
@@ -96,20 +100,25 @@ public class BossPhoenix : BossState
         yield return ss_AfterDelay;
     }
 
-    WaitForSeconds fs_BeforeDelay = new WaitForSeconds(0.2f);
+    WaitForSeconds fs_BeforeDelay = new WaitForSeconds(1.5f);
     WaitForSeconds fs_FireDelay = new WaitForSeconds(0.05f);
-    WaitForSeconds fs_AfterDelay = new WaitForSeconds(0.2f);
+    WaitForSeconds fs_AfterDelay = new WaitForSeconds(1f);
+    Vector3 bulletdir;
     IEnumerator FlameShot()
     {
+        animator.SetTrigger("Attack");
+        animator.SetInteger("LeftAttack", 3);
         yield return fs_BeforeDelay;
         for(int i = 0; i < 30; i++)
         {
             var po = bullet_Flame_Pool.GetRestingPoolObject();
             if (po.component == null)
                 Debug.Log("huh?");
-            po.component.Init(transform.position, (Hero.instance.transform.position - transform.position).normalized);
+            bulletdir = (Hero.instance.transform.position - transform.position).normalized;
+            po.component.Init(transform.position + bulletdir * 1.5f, bulletdir);
             yield return fs_FireDelay;
         }
+
         yield return fs_AfterDelay;
 
     }
