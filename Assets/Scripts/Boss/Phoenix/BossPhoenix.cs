@@ -71,13 +71,12 @@ public class BossPhoenix : BossState
         switch (n)
         {
             case 0:
-                // return ScreenShot();
-                return FlameShot();
+                 return ScreenShot();
             case 1:
                 return FlameShot();
             case 2:
-                // return SetBomb();
-                return FlameShot();
+                return SetBomb();
+                //return FlameShot();
             case 3:
                 // return BurnAround();
                 return FlameShot();
@@ -86,8 +85,8 @@ public class BossPhoenix : BossState
         }
     }
 
-    WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds ss_AfterDelay = new WaitForSeconds(0.2f);
+    WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.5f);
+    WaitForSeconds ss_AfterDelay = new WaitForSeconds(1f);
 
     public void DecreaseAttackCount()
     {
@@ -95,8 +94,10 @@ public class BossPhoenix : BossState
     }
     IEnumerator ScreenShot()
     {
+        animator.SetTrigger("UIAttack");
         yield return ss_BeforeDelay;
-        bullet_Screen_Pool.GetRestingPoolObject();
+        var newbullet = bullet_Screen_Pool.GetRestingPoolObject();
+        newbullet.component.Init(transform.position,Hero.instance.transform.position - transform.position);
         yield return ss_AfterDelay;
     }
 
@@ -129,12 +130,12 @@ public class BossPhoenix : BossState
     IEnumerator SetBomb()
     {
         yield return sb_BeforeDelay;
-
+        Debug.Log("Bomb Planted");
         yield return sb_AfterDelay;
     }
 
     WaitForSeconds ba_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds ba_AfterDelay = new WaitForSeconds(0.2f);
+    WaitForSeconds ba_AfterDelay = new WaitForSeconds(1f);
 
     IEnumerator BurnAround()
     {
