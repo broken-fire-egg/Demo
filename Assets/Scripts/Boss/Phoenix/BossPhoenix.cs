@@ -59,6 +59,7 @@ public class BossPhoenix : BossState
         bullet_Flame_Pool.Init(bullet_Flame);
 
         base.Start();
+
     }
 
     public void StartPattern()
