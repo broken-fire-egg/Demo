@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
+using System.IO.Pipes;
+using System.Diagnostics;
+
+using System.Runtime.InteropServices;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class BossPhoenix : BossState
 {
@@ -43,21 +48,53 @@ public class BossPhoenix : BossState
         }
     }
     FlameBulletPool bullet_Flame_Pool;
-
+    public class BurnAroundBulletPool : ObjectPooling<PheonixFlameBullet>
+    {
+        public GameObject center;
+        public void Init(GameObject go)
+        {
+            center = new GameObject("bac",typeof(TurnAround), typeof(ShrinkChildrenPosition));
+            center.SetActive(false);
+            defaultCap = 60;
+            origin = go;
+            base.Start();
+            int i=0;
+            float angle = 0;
+            foreach(var po in poolObjects)
+            {
+                po.gameObject.transform.SetParent(center.transform);
+                i = po.gameObject.transform.GetSiblingIndex();
+                angle = (360f / defaultCap) * i;
+                po.gameObject.transform.localPosition = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
+                po.gameObject.transform.localPosition *= 30;
+                po.gameObject.transform.localRotation = Quaternion.Euler(0, 0, angle);
+                po.gameObject.SetActive(true);
+                po.spriteRenderer.sortingOrder = 10;
+            }
+        }
+    }
+    BurnAroundBulletPool bullet_ba_Pool;
     public float bulletSpeed;
+
+    NamedPipeServerStream namedPipeServerStream;
+    StreamString streamString;
+    bool connection = false;
+    int status = 0;
+    Vector2 bombPos = Vector2.zero;
+
+
+
     new void Start()
     {
-
+        Application.runInBackground = true;
         bullet_Screen_Pool = gameObject.AddComponent<ScreenBulletPool>();
         bullet_Normal_Pool = gameObject.AddComponent<NormalBulletpool>();
         bullet_Flame_Pool = gameObject.AddComponent<FlameBulletPool>();
-
+        bullet_ba_Pool = gameObject.AddComponent<BurnAroundBulletPool>();
         bullet_Screen_Pool.Init(bullet_Screen);
-
         bullet_Normal_Pool.Init(bullet_Normal);
-
         bullet_Flame_Pool.Init(bullet_Flame);
-
+        bullet_ba_Pool.Init(bullet_Normal);
         base.Start();
 
     }
@@ -66,6 +103,7 @@ public class BossPhoenix : BossState
     {
         StartCoroutine(CheckQueue());
     }
+    bool BurnArounding;
     protected override IEnumerator GetPattern(int n)
     {
         Debug.Log(n);
@@ -77,10 +115,14 @@ public class BossPhoenix : BossState
                 return FlameShot();
             case 2:
                 return SetBomb();
-                //return FlameShot();
             case 3:
-                // return BurnAround();
-                return FlameShot();
+                if (!BurnArounding)
+                {
+                    BurnArounding = true;
+                    return BurnAround();
+                }
+                else
+                    return ScreenShot();
             default:
                 return null;
         }
@@ -98,7 +140,8 @@ public class BossPhoenix : BossState
         animator.SetTrigger("UIAttack");
         yield return ss_BeforeDelay;
         var newbullet = bullet_Screen_Pool.GetRestingPoolObject();
-        newbullet.component.Init(transform.position,Hero.instance.transform.position - transform.position);
+        newbullet.gameObject.SetActive(true);
+        newbullet.component.Init(transform.position);
         yield return ss_AfterDelay;
     }
 

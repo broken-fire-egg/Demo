@@ -8,10 +8,12 @@ public class ObjectPooling<T> : MonoBehaviour
     {
         public T component;
         public GameObject gameObject;
+        public SpriteRenderer spriteRenderer;
         public PoolObject(T component, GameObject gameObject)
         {
             this.gameObject = gameObject;
             this.component = component;
+            this.spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         }
     }
     public int defaultCap;
@@ -25,7 +27,14 @@ public class ObjectPooling<T> : MonoBehaviour
             var newgo = Instantiate(origin, gameObject.transform);
             poolObjects.Add(new PoolObject(newgo.GetComponent<T>(), newgo.gameObject));
         }
-
+    }
+    public void SetLayerOrder(int n)
+    {
+        if (poolObjects[0].spriteRenderer)
+            foreach (var po in poolObjects)
+            {
+                po.spriteRenderer.sortingOrder = n;
+            }
     }
     public PoolObject GetRestingPoolObject()
     {

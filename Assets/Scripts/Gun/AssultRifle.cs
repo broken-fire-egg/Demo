@@ -9,6 +9,7 @@ public class AssultRifle : PlayerGun
     private new void Start()
     {
         base.Start();
+        if(bulletUI && bulletUIsParent)
         for (int i = 0; i < magazineCapacity; i++)
         {
             GameObject newGo = Instantiate(bulletUI, bulletUIsParent.transform);

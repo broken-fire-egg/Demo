@@ -108,6 +108,8 @@ public class PlayerGun : MonoBehaviour
     public virtual void ChangeMagazine() { bulletcount = magazineCapacity; }
     public virtual void GunShot(float speed)
     {
+        if (!BulletObjectPool.instance)
+            return;
         BulletObjectPool.instance.Shot(gunpoint.position,transform.rotation,speed);
         bulletcount--;
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
