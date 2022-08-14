@@ -58,4 +58,9 @@ public class BossState : MonoBehaviour
         }
     }
 
+    public virtual void SendMessageToBoss(string msg)
+    {
+        Debug.Log(msg);
+    }
+
 }

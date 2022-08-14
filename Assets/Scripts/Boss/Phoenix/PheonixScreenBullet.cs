@@ -16,7 +16,7 @@ public class PheonixScreenBullet : MonoBehaviour
     {
         worldPos.y += 1.5f;
         Vector2 dir = Hero.instance.transform.position - worldPos;
-        dir = dir.normalized;
+        dir = dir.normalized * Random.Range(0.8f,1.2f);
         Vector3 origin = Camera.main.WorldToScreenPoint(worldPos);
         transform.position = origin;
         transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg, Vector3.forward);

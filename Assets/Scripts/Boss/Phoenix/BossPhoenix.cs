@@ -10,7 +10,7 @@ using Debug = UnityEngine.Debug;
 
 public class BossPhoenix : BossState
 {
-    
+
     public GameObject bullet_Screen;
     public GameObject bullet_Normal;
     public GameObject bullet_Flame;
@@ -53,14 +53,19 @@ public class BossPhoenix : BossState
         public GameObject center;
         public void Init(GameObject go)
         {
-            center = new GameObject("bac",typeof(TurnAround), typeof(ShrinkChildrenPosition));
+            center = new GameObject("bac", typeof(TurnAround), typeof(ShrinkChildrenPosition),typeof(MoveToPosition),typeof(DisableInvoke));
             center.SetActive(false);
             defaultCap = 60;
             origin = go;
             base.Start();
-            int i=0;
-            float angle = 0;
-            foreach(var po in poolObjects)
+            ResetPosition();
+        }
+        public void ResetPosition()
+        {
+            center.transform.position = transform.position;
+            int i;
+            float angle;
+            foreach (var po in poolObjects)
             {
                 po.gameObject.transform.SetParent(center.transform);
                 i = po.gameObject.transform.GetSiblingIndex();
@@ -110,7 +115,7 @@ public class BossPhoenix : BossState
         switch (n)
         {
             case 0:
-                 return ScreenShot();
+                return ScreenShot();
             case 1:
                 return FlameShot();
             case 2:
@@ -129,7 +134,7 @@ public class BossPhoenix : BossState
     }
 
     WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.5f);
-    WaitForSeconds ss_AfterDelay = new WaitForSeconds(1f);
+    WaitForSeconds ss_AfterDelay = new WaitForSeconds(3f);
 
     public void DecreaseAttackCount()
     {
@@ -147,14 +152,14 @@ public class BossPhoenix : BossState
 
     WaitForSeconds fs_BeforeDelay = new WaitForSeconds(1.5f);
     WaitForSeconds fs_FireDelay = new WaitForSeconds(0.05f);
-    WaitForSeconds fs_AfterDelay = new WaitForSeconds(1f);
+    WaitForSeconds fs_AfterDelay = new WaitForSeconds(3f);
     Vector3 bulletdir;
     IEnumerator FlameShot()
     {
         animator.SetTrigger("Attack");
         animator.SetInteger("LeftAttack", 3);
         yield return fs_BeforeDelay;
-        for(int i = 0; i < 30; i++)
+        for (int i = 0; i < 30; i++)
         {
             var po = bullet_Flame_Pool.GetRestingPoolObject();
             if (po.component == null)
@@ -169,7 +174,7 @@ public class BossPhoenix : BossState
     }
 
     WaitForSeconds sb_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds sb_AfterDelay = new WaitForSeconds(0.2f);
+    WaitForSeconds sb_AfterDelay = new WaitForSeconds(3f);
 
     IEnumerator SetBomb()
     {
@@ -179,12 +184,26 @@ public class BossPhoenix : BossState
     }
 
     WaitForSeconds ba_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds ba_AfterDelay = new WaitForSeconds(1f);
+    WaitForSeconds ba_AfterDelay = new WaitForSeconds(3f);
 
     IEnumerator BurnAround()
     {
+        animator.SetTrigger("Attack");
+        animator.SetInteger("LeftAttack", 1);
         yield return ba_BeforeDelay;
 
         yield return ba_AfterDelay;
+    }
+    public override void SendMessageToBoss(string msg)
+    {
+        base.SendMessageToBoss(msg);
+        switch(msg)
+        {
+            case "resetSCP":
+                bullet_ba_Pool.ResetPosition();
+                BurnArounding = false;
+                break;
+        }
+
     }
 }

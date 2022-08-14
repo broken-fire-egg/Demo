@@ -6,6 +6,7 @@ public class ShrinkChildrenPosition : MonoBehaviour
 {
     public float speed;
     public float minlength;
+    public BossState bossState;
     void Start()
     {
         speed = 0.9975f;
@@ -27,5 +28,10 @@ public class ShrinkChildrenPosition : MonoBehaviour
                 target.localPosition = value;
             }
         }
+    }
+    private void OnDisable()
+    {
+        if (bossState)
+            bossState.SendMessageToBoss("resetSCP");
     }
 }
