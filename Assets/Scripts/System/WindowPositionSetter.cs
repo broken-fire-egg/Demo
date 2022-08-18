@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class WindowPositionSetter : MonoBehaviour
 {
     static public WindowPositionSetter instance;
+    public static IntPtr hndl;
 
     public Text text;
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR
@@ -23,7 +24,7 @@ public class WindowPositionSetter : MonoBehaviour
     }
     public static void SetPosition(int x, int y, int resX = 0, int resY = 0)
     {
-        SetWindowPos(FindWindow(null, "UntitledGame"), 0, x, y, resX, resY, resX * resY == 0 ? 1 : 0);
+        SetWindowPos(hndl, 0, x, y, resX, resY, resX * resY == 0 ? 1 : 0);
     }
 
     [DllImport("user32.dll")]
@@ -35,6 +36,7 @@ public class WindowPositionSetter : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        hndl = FindWindow(null, "UntitledGame");
     }
         SimpleRect Srect = new SimpleRect();
     private void Start()
@@ -47,8 +49,9 @@ public class WindowPositionSetter : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        GetWindowRect(FindWindow(null, "UntitledGame"), ref Srect);
-        text.text =(Screen.currentResolution.width / 2 - Screen.width / 2).ToString() + "," + (Screen.currentResolution.height / 2 - Screen.height / 2).ToString();
+        GetWindowRect(hndl, ref Srect);
+        if(text)
+            text.text =(Screen.currentResolution.width / 2 - Screen.width / 2).ToString() + "," + (Screen.currentResolution.height / 2 - Screen.height / 2).ToString();
         SetPosition(Screen.currentResolution.width / 2 - Screen.width / 2, Screen.currentResolution.height / 2 - Screen.height / 2);
     }
     public IEnumerator Shake(float duration, float magnitude, Vector2 ForceDir = new Vector2())
@@ -62,7 +65,7 @@ public class WindowPositionSetter : MonoBehaviour
 
         Vector2 windCenter = new Vector2((Srect.Left + Srect.Right) / 2, Screen.currentResolution.height - (Srect.Top + Srect.Bottom) / 2);
         Vector2 Offset = new Vector2();
-        Vector2 movedir = new Vector2();
+        Vector2 movedir;
         ForceDir = new Vector2(ForceDir.x, Screen.currentResolution.height - ForceDir.y);
         movedir = (windCenter - ForceDir).normalized;
 

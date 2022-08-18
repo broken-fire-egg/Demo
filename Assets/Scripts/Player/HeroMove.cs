@@ -38,7 +38,8 @@ public class HeroMove : MonoBehaviour
         if (dashprogress > ((float)1 / dashmaxindex) * dashindex)
         {
             dashindex++;
-            DashEffect.instance.MakeAfterImage(sr,transform.position,transform.rotation);
+            if(DashEffect.instance)
+                DashEffect.instance.MakeAfterImage(sr,transform.position,transform.rotation);
             Hero.instance.pgs[Hero.instance.selectedWeapon].MakeDashEffect();
         }
         KeyCheck();
