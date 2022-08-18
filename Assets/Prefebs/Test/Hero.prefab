@@ -56,7 +56,7 @@ MonoBehaviour:
   - {x: -0.20670295, y: 0.40001237, z: 0}
   m_ShapePathHash: 1912138909
   m_Mesh: {fileID: 0}
-  m_InstanceId: 31392
+  m_InstanceId: -1310
 --- !u!1 &253256148
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   bulletcount: 30
   initBulletUIPos: {x: 0, y: 0}
   rebound: 2
-  weaponDist: 0.4
+  weaponDist: 0.6
   reloading: 0
   bulletUI: {fileID: 4825586641741455334, guid: 1b00a148e6393d64c81a014ade09b007, type: 3}
   magazineUI: {fileID: 0}
@@ -557,7 +557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 15
   m_Sprite: {fileID: -156346959484391507, guid: 9b8072ceb224dbe418bb50e9f9950a6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -584,8 +584,9 @@ MonoBehaviour:
   speed: 0.125
   ismoving: 0
   rb2d: {fileID: 0}
-  dashpower: 25
-  dashspeed: 0.015
+  sr: {fileID: 0}
+  dashpower: 30
+  dashspeed: 0.02
   dashprogress: 0
   onground: 1
 --- !u!114 &7368567016365631672
@@ -665,7 +666,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.4}
+  m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 0.4, y: 0.75}
   m_Direction: 0
 --- !u!1 &7368567016699197448
@@ -800,7 +801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7368567017280124520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7368567015861874249}

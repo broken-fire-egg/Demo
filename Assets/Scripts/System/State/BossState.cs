@@ -6,7 +6,9 @@ public class BossState : MonoBehaviour
 {
     public Queue<IEnumerator> CoroutineQueue;
     public int PatternCount;
+    public Transform[] MapVertex;
     protected Animator animator;
+    protected Rigidbody2D rigid;
     protected int prev;
     protected IEnumerator NextPattern;
     protected IEnumerator CurrentPattern;
@@ -14,6 +16,7 @@ public class BossState : MonoBehaviour
     protected void Awake()
     {
         animator = GetComponent<Animator>();
+        TryGetComponent(out rigid);
     }
     protected void Start()
     {
