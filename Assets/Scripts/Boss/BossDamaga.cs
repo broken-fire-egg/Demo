@@ -64,8 +64,8 @@ public class BossDamaga : BossState
         int n = 0;
         while (n <= 360)
         {
-            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack")) ;
-            animator.Play("Attack");
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                animator.Play("Attack");
             EnemyBulletObjectPool.instance.Shot(transform.position, Quaternion.AngleAxis(270f-n, Vector3.back), bulletSpeed);
             yield return fwait;
             n += 15;

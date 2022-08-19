@@ -21,8 +21,7 @@ public class HeroBullet : Bullet
             newGo.transform.localScale = new Vector3(0.7f, 0.7f, 1);
             newGo.GetComponent<BarrierHitMask>().RemoveAfterFewSec();
             gameObject.SetActive(false);
-            
-
+            return;
         }
     }
 }

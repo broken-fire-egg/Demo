@@ -66,6 +66,7 @@ public class BossPhoenix : BossState
             center.transform.position = transform.position;
             int i;
             float angle;
+            center.GetComponent<MoveToPosition>().Init(Hero.instance.transform.position);
             foreach (var po in poolObjects)
             {
                 po.gameObject.transform.SetParent(center.transform);
@@ -117,10 +118,10 @@ public class BossPhoenix : BossState
         serverReadThread.Abort();
 #endif
     }
-    private void Update()
+    private new void Update()
     {
 
-        Debug.Log(Vector3.Distance(Hero.instance.transform.position, transform.position));
+        //Debug.Log(Vector3.Distance(Hero.instance.transform.position, transform.position));
 
         switch (status)
         {
@@ -134,6 +135,7 @@ public class BossPhoenix : BossState
             default:
                 break;
         }
+        base.Update();
     }
     public void StartPattern()
     {
@@ -280,7 +282,7 @@ public class BossPhoenix : BossState
         animator.SetTrigger("Attack");
         animator.SetInteger("LeftAttack", 1);
         yield return ba_BeforeDelay;
-
+        bullet_ba_Pool.center.SetActive(true);
         yield return ba_AfterDelay;
     }
     public override void SendMessageToBoss(string msg)
