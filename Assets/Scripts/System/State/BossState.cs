@@ -10,16 +10,23 @@ public class BossState : MonoBehaviour
     public HitEffectHPGage hpGage;
     protected Animator animator;
     protected Rigidbody2D rigid;
+    protected SpriteRenderer spriteRenderer;
+    protected Material mat;
+    protected int shdpropID;
     protected int prev;
     protected IEnumerator NextPattern;
     protected IEnumerator CurrentPattern;
+    protected float hit_effect_glow_time;
     protected float hit_effect_cooltime;
-    protected float max_hp;
-    protected float hp;
+    public float max_hp;
+    public float hp;
     // Start is called before the first frame update
     protected void Awake()
     {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        mat = spriteRenderer.material;
+        shdpropID = Shader.PropertyToID("Vector1_1a86493a026c45d681477ade9a8e96e3");
         TryGetComponent(out rigid);
     }
     protected void Start()
@@ -30,6 +37,14 @@ public class BossState : MonoBehaviour
     protected void Update()
     {
         hit_effect_cooltime -= Time.deltaTime;
+
+        mat.SetFloat(shdpropID, hit_effect_glow_time);
+
+        if (hit_effect_glow_time < 0)
+            hit_effect_glow_time = 0;
+        else
+            hit_effect_glow_time -= 0.05f;
+        
     }
     protected void RandomizePattern(int _prev = -1)
     {
@@ -84,6 +99,9 @@ public class BossState : MonoBehaviour
         {
             hit_effect_cooltime = 1.5f;
             hpGage.val = 255f;
+            hit_effect_glow_time = 1;
+
+
         }
     }
 
