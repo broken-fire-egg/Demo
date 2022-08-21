@@ -19,14 +19,14 @@ public class Revolver : PlayerGun
     new void Start()
     {
         base.Start();
-        for (int i = 0; i < magazineCapacity; i++)
-        {
-            GameObject newGo = Instantiate(bulletUI, bulletUIsParent.transform);
-            RectTransform rt = newGo.GetComponent<RectTransform>();
-            rt.anchoredPosition += DegreeToVector2(360 - (i * 60) + 30) * 45;
-            bulletRects.Add(rt);
-            bulletUIs.Add(newGo);
-        }
+        //for (int i = 0; i < magazineCapacity; i++)
+        //{
+        //    GameObject newGo = Instantiate(bulletUI, bulletUIsParent.transform);
+        //    RectTransform rt = newGo.GetComponent<RectTransform>();
+        //    rt.anchoredPosition += DegreeToVector2(360 - (i * 60) + 30) * 45;
+        //    bulletRects.Add(rt);
+        //    bulletUIs.Add(newGo);
+        //}
 
         angle = 0;
         SetSequence();
@@ -40,7 +40,8 @@ public class Revolver : PlayerGun
         angle -= 60;
         if (angle == -360)
             angle = 0;
-        bulletRects[bulletcount].GetChild(1).gameObject.SetActive(true);
+        //bulletRects[bulletcount].GetChild(1).gameObject.SetActive(true);
+        GunMagazine.transform.GetChild(1).transform.GetChild(bulletcount).gameObject.SetActive(false);
         bulletUIsParent.DORotate(new Vector3(0,0, angle), 0.25f);
     }
     public override void ChangeMagazine()
@@ -56,6 +57,12 @@ public class Revolver : PlayerGun
         reloadSeq = DOTween.Sequence();
         reloadSeq.Pause();
         reloadSeq.SetAutoKill(false);
+        reloadSeq.AppendCallback(() => { GunMagazine.transform.GetChild(1).transform.rotation = GunMagazine.transform.GetChild(1).transform.rotation; });
+        reloadSeq.Append(GunMagazine.transform.GetChild(1).DORotate(new Vector3(0, 0, 0), 0.25f));
+        reloadSeq.AppendInterval(0.3f);
+        for (int i = 0; i < magazineCapacity; i++)
+            reloadSeq.AppendCallback(GameobjectSetActiveTrue);
+        /*
         reloadSeq.Append(bulletRects[0].DOScale(2, 0.3f));
         for (int i = 1; i < magazineCapacity; i++)
             reloadSeq.Join(bulletRects[i].DOScale(2, 0.3f));
@@ -76,12 +83,13 @@ public class Revolver : PlayerGun
             //    angle -= 60;
             //    reloadSeq.Append(bulletUIsParent.DORotate(new Vector3(0, 0, angle), 0.25f));
             //}
-        }
+        }*/
         reloadSeq.AppendCallback(() => { ChangeMagazine();  reloading = false; angle = 0; k = 0; });
     }
     public void GameobjectSetActiveTrue()
     {
-        bulletUIs[k].SetActive(true);
+        GunMagazine.transform.GetChild(1).transform.GetChild(k).gameObject.SetActive(true);
+        //bulletUIs[k].SetActive(true);
         k++;
     }
 }
