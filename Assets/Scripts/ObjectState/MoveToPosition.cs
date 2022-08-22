@@ -5,10 +5,13 @@ using UnityEngine;
 public class MoveToPosition : MonoBehaviour
 {
     public Vector3 targetPosition;
-    public float speed;
+    public float speed = 0.008f;
     public Vector3 direction;
 
-
+    private void Awake()
+    {
+        speed = 0.01f;
+    }
     public void Init(Vector3 targetPosition)
     {
         this.targetPosition = targetPosition;

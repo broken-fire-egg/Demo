@@ -52,13 +52,21 @@ public class BossPhoenix : BossState
     public class BurnAroundBulletPool : ObjectPooling<PheonixFlameBullet>
     {
         public GameObject center;
+        public MoveToPosition MTP;
         public void Init(GameObject go)
         {
             center = new GameObject("bac", typeof(TurnAround), typeof(ShrinkChildrenPosition),typeof(MoveToPosition),typeof(DisableInvoke));
             center.SetActive(false);
+            MTP = center.GetComponent<MoveToPosition>();
+            
             defaultCap = 60;
             origin = go;
             base.Start();
+            foreach (var po in poolObjects)
+            {
+                po.gameObject.transform.SetParent(center.transform);
+                po.spriteRenderer.sortingOrder = 10;
+            }
             ResetPosition();
         }
         public void ResetPosition()
@@ -66,17 +74,14 @@ public class BossPhoenix : BossState
             center.transform.position = transform.position;
             int i;
             float angle;
-            center.GetComponent<MoveToPosition>().Init(Hero.instance.transform.position);
             foreach (var po in poolObjects)
             {
-                po.gameObject.transform.SetParent(center.transform);
                 i = po.gameObject.transform.GetSiblingIndex();
                 angle = (360f / defaultCap) * i;
                 po.gameObject.transform.localPosition = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
                 po.gameObject.transform.localPosition *= 30;
                 po.gameObject.transform.localRotation = Quaternion.Euler(0, 0, angle);
                 po.gameObject.SetActive(true);
-                po.spriteRenderer.sortingOrder = 10;
             }
         }
     }
@@ -91,7 +96,7 @@ public class BossPhoenix : BossState
     Vector2 bombPos = Vector2.zero;
     Thread serverReadThread;
 
-
+    bool isburningUI;
     new void Start()
     {
         Application.runInBackground = true;
@@ -106,6 +111,7 @@ public class BossPhoenix : BossState
         bullet_Normal_Pool.Init(bullet_Normal);
         bullet_Flame_Pool.Init(bullet_Flame);
         bullet_ba_Pool.Init(bullet_Normal);
+        bullet_ba_Pool.center.GetComponent<ShrinkChildrenPosition>().bossState = this;
         base.Start();
 #if (!UNITY_EDITOR)
         serverReadThread = new Thread(ServerThread_Read);
@@ -135,7 +141,28 @@ public class BossPhoenix : BossState
             default:
                 break;
         }
+        
+        if(hp < 100&&!isburningUI)
+        {
+            isburningUI = true;
+            StartCoroutine(BurnUI());
+        }
+
         base.Update();
+    }
+    
+    IEnumerator BurnUI()
+    {
+        float value = 1;
+        int id = Shader.PropertyToID("Vector1_84921ca3896643a2ac0fa168f895bd1e");
+        while (value >= 0)
+        {
+            hpGage.mat.SetFloat(id, value);
+            yield return new WaitForSeconds(0.02f);
+            value -= 0.01f;
+        }
+        hpGage.transform.parent.parent.gameObject.SetActive(false);
+        hpGage.mat.SetFloat(id, 1);
     }
     public void StartPattern()
     {
@@ -148,9 +175,21 @@ public class BossPhoenix : BossState
         switch (n)
         {
             case 0:
-                return ScreenShot();
+                if (!BurnArounding)
+                {
+                    BurnArounding = true;
+                    return BurnAround();
+                }
+                else
+                    return ScreenShot();
             case 1:
-                return FlameShot();
+                if (!BurnArounding)
+                {
+                    BurnArounding = true;
+                    return BurnAround();
+                }
+                else
+                    return FlameShot();
             case 2:
                 if (!winBomb)
                 {
@@ -172,7 +211,7 @@ public class BossPhoenix : BossState
     }
 
     WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.8f);
-    WaitForSeconds ss_AfterDelay = new WaitForSeconds(3f);
+    WaitForSeconds ss_AfterDelay = new WaitForSeconds(2f);
 
     public void DecreaseAttackCount()
     {
@@ -190,7 +229,7 @@ public class BossPhoenix : BossState
 
     WaitForSeconds fs_BeforeDelay = new WaitForSeconds(1.5f);
     WaitForSeconds fs_FireDelay = new WaitForSeconds(0.05f);
-    WaitForSeconds fs_AfterDelay = new WaitForSeconds(3f);
+    WaitForSeconds fs_AfterDelay = new WaitForSeconds(2f);
     Vector3 bulletdir;
     IEnumerator FlameShot()
     {
@@ -228,7 +267,7 @@ public class BossPhoenix : BossState
 
     }
     WaitForSeconds sb_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds sb_AfterDelay = new WaitForSeconds(3f);
+    WaitForSeconds sb_AfterDelay = new WaitForSeconds(2f);
     void ServerThread_Read()
     {
         namedPipeServerStream = new NamedPipeServerStream("BombPipe", PipeDirection.In);
@@ -275,7 +314,7 @@ public class BossPhoenix : BossState
     }
 
     WaitForSeconds ba_BeforeDelay = new WaitForSeconds(0.2f);
-    WaitForSeconds ba_AfterDelay = new WaitForSeconds(3f);
+    WaitForSeconds ba_AfterDelay = new WaitForSeconds(2f);
 
     IEnumerator BurnAround()
     {
@@ -283,6 +322,7 @@ public class BossPhoenix : BossState
         animator.SetInteger("LeftAttack", 1);
         yield return ba_BeforeDelay;
         bullet_ba_Pool.center.SetActive(true);
+        bullet_ba_Pool.MTP.Init(Hero.instance.transform.position);
         yield return ba_AfterDelay;
     }
     public override void SendMessageToBoss(string msg)
@@ -291,6 +331,7 @@ public class BossPhoenix : BossState
         switch(msg)
         {
             case "resetSCP":
+                bullet_ba_Pool.center.SetActive(false);
                 bullet_ba_Pool.ResetPosition();
                 BurnArounding = false;
                 break;

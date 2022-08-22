@@ -21,7 +21,7 @@ public class HeroMove : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         dashindex = 0;
-        dashmaxindex = 12;
+        dashmaxindex = 6;
     }
 
     private void Start()
@@ -35,13 +35,15 @@ public class HeroMove : MonoBehaviour
         if (DialogDisplayer.instance)
             if (DialogDisplayer.instance.displaying)
                 return;
+
         if (dashprogress > ((float)1 / dashmaxindex) * dashindex)
         {
             dashindex++;
-            if(DashEffect.instance)
-                DashEffect.instance.MakeAfterImage(sr,transform.position,transform.rotation);
+            if (DashEffect.instance)
+                DashEffect.instance.MakeAfterImage(sr, transform.position, transform.rotation);
             Hero.instance.pgs[Hero.instance.selectedWeapon].MakeDashEffect();
         }
+
         KeyCheck();
 
     }
@@ -102,6 +104,7 @@ public class HeroMove : MonoBehaviour
         {
             dashinput = true;
         }
+
 
 
         if (!onground)

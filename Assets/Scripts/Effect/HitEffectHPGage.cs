@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HitEffectHPGage : MonoBehaviour
 {
     Image img;
+    public Material mat;
     RectTransform rectTransform;
     public BossState boss;
     public float val;
@@ -15,6 +16,7 @@ public class HitEffectHPGage : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
         img = GetComponent<Image>();
         val = 69;
+        mat = img.material;
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class HitEffectHPGage : MonoBehaviour
         if (val > 255f)
             val = 255f;
         if (val > 69)
-            val -= 4f;
+            val -= 1f;
         else
             val = 69f;
         img.color = new Color(245f / 255f, val / 255f, val / 255f);

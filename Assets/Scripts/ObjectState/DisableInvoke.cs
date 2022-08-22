@@ -15,4 +15,8 @@ public class DisableInvoke : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+    private void OnDisable()
+    {
+        lefttime = 10;
+    }
 }
