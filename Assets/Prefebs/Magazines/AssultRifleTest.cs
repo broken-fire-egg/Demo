@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class AssultRifle : PlayerGun
+public class AssultRifleTest : PlayerGun
 {
     private new void Start()
     {

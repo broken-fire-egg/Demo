@@ -20,7 +20,8 @@ public class PlayerGun : MonoBehaviour
     public List<GameObject> bulletUIs;
 
     public Vector3 Spriteoffset;
-
+    public GameObject GunMagazine;
+    public GameObject OriginGunMagazine;
     protected CameraMove cam;
     protected Camera mainCamera;
     protected SpriteRenderer weaponRenderer;
