@@ -71,7 +71,7 @@ public class BossPhoenix : BossState
         }
         public void ResetPosition()
         {
-            center.transform.position = transform.position;
+            center.transform.position = Vector3.zero;
             int i;
             float angle;
             foreach (var po in poolObjects)
@@ -101,14 +101,14 @@ public class BossPhoenix : BossState
     {
         Application.runInBackground = true;
         bullet_Screen_Pool = gameObject.AddComponent<ScreenBulletPool>();
-        bullet_Normal_Pool = gameObject.AddComponent<NormalBulletpool>();
+        //bullet_Normal_Pool = gameObject.AddComponent<NormalBulletpool>();
 
         
 
         bullet_Flame_Pool = new GameObject("bfp").AddComponent<FlameBulletPool>();
         bullet_ba_Pool = gameObject.AddComponent<BurnAroundBulletPool>();
         bullet_Screen_Pool.Init(bullet_Screen);
-        bullet_Normal_Pool.Init(bullet_Normal);
+        //bullet_Normal_Pool.Init(bullet_Normal);
         bullet_Flame_Pool.Init(bullet_Flame);
         bullet_ba_Pool.Init(bullet_Normal);
         bullet_ba_Pool.center.GetComponent<ShrinkChildrenPosition>().bossState = this;
@@ -328,7 +328,7 @@ public class BossPhoenix : BossState
     public override void SendMessageToBoss(string msg)
     {
         base.SendMessageToBoss(msg);
-        switch(msg)
+        switch (msg)
         {
             case "resetSCP":
                 bullet_ba_Pool.center.SetActive(false);

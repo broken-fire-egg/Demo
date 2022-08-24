@@ -19,8 +19,12 @@ public class ObjectPooling<T> : MonoBehaviour
     public int defaultCap;
     public GameObject origin;
     public List<PoolObject> poolObjects;
+    private bool alreadyInit;
     public void Start()
     {
+        if (alreadyInit)
+            return;
+        alreadyInit = true;
         poolObjects = new List<PoolObject>();
         for (int i = 0; i < defaultCap; i++)
         {
@@ -36,6 +40,11 @@ public class ObjectPooling<T> : MonoBehaviour
                 po.spriteRenderer.sortingOrder = n;
             }
     }
+    /// <summary>
+    /// 오브젝트 풀에서 쉬는놈 가져옴
+    /// </summary>
+    /// <returns>쉬는놈,
+    /// <para>없으면 null</para></returns>
     public PoolObject GetRestingPoolObject()
     {
         foreach (var po in poolObjects)
