@@ -19,9 +19,11 @@ public class PlayerGun : MonoBehaviour
     public RectTransform bulletUIsParent;
     public List<GameObject> bulletUIs;
 
-    public Vector3 Spriteoffset;
     public GameObject GunMagazine;
     public GameObject OriginGunMagazine;
+    public Transform instancePosition;
+
+    public Vector3 Spriteoffset;
     protected CameraMove cam;
     protected Camera mainCamera;
     protected SpriteRenderer weaponRenderer;
@@ -120,12 +122,12 @@ public class PlayerGun : MonoBehaviour
     public virtual void SetSequence() {
         reloadSeq = DOTween.Sequence();
         reloadSeq.Pause();
-        reloadSeq.AppendCallback(() => { magazineUI.anchoredPosition = new Vector2(-70, 145); });
-        reloadSeq.Append(magazineUI.DOLocalMoveX(1000, 0.5f));
+        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2(-70, 145); });
+        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOLocalMoveX(1000, 0.5f));
         reloadSeq.AppendInterval(0.5f);
-        reloadSeq.AppendCallback(() => { magazineUI.anchoredPosition = new Vector2(-70, -120); });
         reloadSeq.AppendCallback(ChangeMagazine);
-        reloadSeq.Append(magazineUI.DOMoveY(145, 0.5f));
+        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2(-136, -120); });
+        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOMoveY(145, 0.5f));
         reloadSeq.SetAutoKill(false);
         reloadSeq.AppendCallback(() => { reloading = false; });
     }
