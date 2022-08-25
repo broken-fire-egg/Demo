@@ -97,7 +97,7 @@ public class BossState : MonoBehaviour
     {
         if(hit_effect_cooltime <= 0f)
         {
-            hit_effect_cooltime = 1.5f;
+            hit_effect_cooltime = 0.75f;
             hpGage.val = 255f;
             hit_effect_glow_time = 1;
 

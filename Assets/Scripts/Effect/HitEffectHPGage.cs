@@ -25,7 +25,7 @@ public class HitEffectHPGage : MonoBehaviour
         if (val > 255f)
             val = 255f;
         if (val > 69)
-            val -= 1f;
+            val -= 4f;
         else
             val = 69f;
         img.color = new Color(245f / 255f, val / 255f, val / 255f);

@@ -15,13 +15,14 @@ public class PlayerGun : MonoBehaviour
 
     private Transform PlayerCenter;
     public GameObject bulletUI;
-    public RectTransform magazineUI;
     public RectTransform bulletUIsParent;
     public List<GameObject> bulletUIs;
 
     public GameObject GunMagazine;
     public GameObject OriginGunMagazine;
     public Transform instancePosition;
+
+    public GameObject bulletObject;
 
     public Vector3 Spriteoffset;
     protected CameraMove cam;
@@ -30,8 +31,35 @@ public class PlayerGun : MonoBehaviour
     protected List<RectTransform> bulletRects;
     protected Sequence reloadSeq;
     protected Transform gunpoint;
+    protected Transform WCanvas;
     Vector3 originalGunpoint;
     Vector3 previousMousePosition;
+
+    public class BulletInfo
+    {
+        public GameObject gameobject;
+        public Rigidbody2D rigidbody2D;
+        public RectTransform transform;
+
+        public BulletInfo(GameObject gameobject)
+        {
+            this.gameobject = gameobject;
+            this.rigidbody2D = gameobject.GetComponent<Rigidbody2D>();
+            this.transform = gameobject.GetComponent<RectTransform>();
+        }
+    }
+
+
+    public List<BulletInfo> bulletList = new List<BulletInfo>();
+
+    public List<BulletInfo> bulletListCopied = new List<BulletInfo>();
+    public List<BulletInfo> OriginbulletList = new List<BulletInfo>();
+
+
+
+
+
+
     public void Start()
     {
         previousMousePosition = Vector3.zero;
@@ -39,11 +67,14 @@ public class PlayerGun : MonoBehaviour
         cam = mainCamera.GetComponent<CameraMove>();
         bulletRects = new List<RectTransform>();
         weaponRenderer = GetComponent<SpriteRenderer>();
-        if(bulletUIsParent)
-        initBulletUIPos = bulletUIsParent.anchoredPosition;
         gunpoint = transform.GetChild(0);
         originalGunpoint = gunpoint.localPosition;
         PlayerCenter = transform.parent;
+        WCanvas = GameObject.Find("WCanvas").transform;
+        GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
+        if(GunMagazine)
+            initBulletUIPos = GunMagazine.GetComponent<RectTransform>().anchoredPosition;
+
     }
     public void Update()
     {
@@ -113,7 +144,8 @@ public class PlayerGun : MonoBehaviour
     {
         if (!BulletObjectPool.instance)
             return;
-        BulletObjectPool.instance.Shot(gunpoint.position,transform.rotation,speed);
+        if(!BulletObjectPool.instance.Shot(gunpoint.position,transform.rotation,speed))
+            return;
         bulletcount--;
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
         MagazineMove();
@@ -122,11 +154,10 @@ public class PlayerGun : MonoBehaviour
     public virtual void SetSequence() {
         reloadSeq = DOTween.Sequence();
         reloadSeq.Pause();
-        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2(-70, 145); });
-        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOLocalMoveX(1000, 0.5f));
+        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOMoveX(-100, 0.5f));
         reloadSeq.AppendInterval(0.5f);
         reloadSeq.AppendCallback(ChangeMagazine);
-        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2(-136, -120); });
+        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2( initBulletUIPos.x, initBulletUIPos.y - 145); });
         reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOMoveY(145, 0.5f));
         reloadSeq.SetAutoKill(false);
         reloadSeq.AppendCallback(() => { reloading = false; });

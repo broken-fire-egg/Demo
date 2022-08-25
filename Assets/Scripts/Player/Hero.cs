@@ -253,12 +253,12 @@ public class Hero : MonoBehaviour
             if (w != pgs[num])
             {
                 w.gameObject.SetActive(false);
-                w.magazineUI.gameObject.SetActive(false);
+                w.GunMagazine.gameObject.SetActive(false);
             }
             else
             {
                 w.gameObject.SetActive(true);
-                w.magazineUI.gameObject.SetActive(true);
+                w.GunMagazine.gameObject.SetActive(true);
             }
         }
     }
