@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5969548893304685034}
   - component: {fileID: 5969548893304685037}
+  - component: {fileID: 713714487253840503}
   m_Layer: 0
   m_Name: ObjectPoolManager
   m_TagString: Untagged
@@ -43,6 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b12b38205f7a6d6419e2ee3d2b32eb29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero_bullet_origin: {fileID: 6676142785535826582, guid: c324da95fda6187428a861ec333a05e5, type: 3}
-  hero_Bullets: []
-  hero_bullet_max: 50
+--- !u!114 &713714487253840503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5969548893304685036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d0b570caef76a46a3239a34a683ffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCap: 10
+  origin: {fileID: 0}

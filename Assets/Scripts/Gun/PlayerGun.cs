@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.UI;
+
 public class PlayerGun : MonoBehaviour
 {
     public int magazineCapacity;
@@ -40,18 +42,20 @@ public class PlayerGun : MonoBehaviour
         public GameObject gameobject;
         public Rigidbody2D rigidbody2D;
         public RectTransform transform;
-
+        public Image image;
+        
         public BulletInfo(GameObject gameobject)
         {
             this.gameobject = gameobject;
             this.rigidbody2D = gameobject.GetComponent<Rigidbody2D>();
             this.transform = gameobject.GetComponent<RectTransform>();
+            this.image = gameobject.GetComponent<Image>();
         }
     }
 
 
     public List<BulletInfo> bulletList = new List<BulletInfo>();
-
+    public Sprite[] BulletUISprites;
     public List<BulletInfo> bulletListCopied = new List<BulletInfo>();
     public List<BulletInfo> OriginbulletList = new List<BulletInfo>();
 
@@ -72,8 +76,11 @@ public class PlayerGun : MonoBehaviour
         PlayerCenter = transform.parent;
         WCanvas = GameObject.Find("WCanvas").transform;
         GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
-        if(GunMagazine)
+        if (GunMagazine)
+        {
             initBulletUIPos = GunMagazine.GetComponent<RectTransform>().anchoredPosition;
+            bulletUIsParent = GunMagazine.transform.GetChild(1).GetComponent<RectTransform>();
+        }
 
     }
     public void Update()
@@ -152,14 +159,18 @@ public class PlayerGun : MonoBehaviour
     }
     public virtual void MagazineMove() { }
     public virtual void SetSequence() {
+        var rect = GunMagazine.GetComponent<RectTransform>();
+
         reloadSeq = DOTween.Sequence();
         reloadSeq.Pause();
-        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOMoveX(-100, 0.5f));
+        reloadSeq.AppendCallback(() => { rect.anchoredPosition = initBulletUIPos; });
+        reloadSeq.Append(rect.DOAnchorPosX(initBulletUIPos.x - 300, 0.5f));
         reloadSeq.AppendInterval(0.5f);
         reloadSeq.AppendCallback(ChangeMagazine);
-        reloadSeq.AppendCallback(() => { GunMagazine.GetComponent<RectTransform>().anchoredPosition = new Vector2( initBulletUIPos.x, initBulletUIPos.y - 145); });
-        reloadSeq.Append(GunMagazine.GetComponent<RectTransform>().DOMoveY(145, 0.5f));
+        reloadSeq.AppendCallback(() => { rect.anchoredPosition = new Vector2( initBulletUIPos.x, initBulletUIPos.y - 350); });
+        reloadSeq.Append(rect.DOAnchorPosY(initBulletUIPos.y, 0.5f));
         reloadSeq.SetAutoKill(false);
+        reloadSeq.AppendInterval(0.5f);
         reloadSeq.AppendCallback(() => { reloading = false; });
     }
 }

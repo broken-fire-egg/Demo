@@ -56,7 +56,7 @@ MonoBehaviour:
   - {x: -0.20670295, y: 0.40001237, z: 0}
   m_ShapePathHash: 1912138909
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1310
+  m_InstanceId: -36456
 --- !u!1 &253256148
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,13 +473,19 @@ MonoBehaviour:
   bulletcount: 30
   initBulletUIPos: {x: 0, y: 0}
   rebound: 2
-  weaponDist: 0.6
+  weaponDist: 0.5
   reloading: 0
   bulletUI: {fileID: 4825586641741455334, guid: 1b00a148e6393d64c81a014ade09b007, type: 3}
-  magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
   bulletUIs: []
+  GunMagazine: {fileID: 0}
+  OriginGunMagazine: {fileID: 3283203143776480142, guid: a7edea49e6e41e3409e0f2a55d4577d1, type: 3}
+  instancePosition: {fileID: 0}
+  bulletObject: {fileID: 6676142785535826582, guid: c324da95fda6187428a861ec333a05e5, type: 3}
   Spriteoffset: {x: 0, y: -0.12, z: 0}
+  BulletUISprites:
+  - {fileID: 3861142537164484405, guid: 80116b73c82a702409364eedaac70d85, type: 3}
+  - {fileID: 1476074696170609752, guid: 80116b73c82a702409364eedaac70d85, type: 3}
 --- !u!1 &7368567016365631668
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,8 +591,8 @@ MonoBehaviour:
   ismoving: 0
   rb2d: {fileID: 0}
   sr: {fileID: 0}
-  dashpower: 30
-  dashspeed: 0.02
+  dashpower: 40
+  dashspeed: 0.12
   dashprogress: 0
   onground: 1
 --- !u!114 &7368567016365631672
@@ -651,7 +657,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &737108181
 CapsuleCollider2D:
@@ -772,10 +778,14 @@ MonoBehaviour:
   weaponDist: 0.5
   reloading: 0
   bulletUI: {fileID: 3279469789436829614, guid: c3bb6f5220812f14f97de9a4945c1cd7, type: 3}
-  magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
   bulletUIs: []
+  GunMagazine: {fileID: 0}
+  OriginGunMagazine: {fileID: 0}
+  instancePosition: {fileID: 0}
+  bulletObject: {fileID: 0}
   Spriteoffset: {x: 0, y: 0.12, z: 0}
+  BulletUISprites: []
   angle: 0
 --- !u!1 &7368567017280124520
 GameObject:
@@ -943,7 +953,11 @@ MonoBehaviour:
   weaponDist: 0.6
   reloading: 0
   bulletUI: {fileID: 8890467602230324598, guid: 8af1c0e8a1a355147a5a6cd69ee8e86b, type: 3}
-  magazineUI: {fileID: 0}
   bulletUIsParent: {fileID: 0}
   bulletUIs: []
+  GunMagazine: {fileID: 0}
+  OriginGunMagazine: {fileID: 0}
+  instancePosition: {fileID: 0}
+  bulletObject: {fileID: 0}
   Spriteoffset: {x: 0, y: 0, z: 0}
+  BulletUISprites: []

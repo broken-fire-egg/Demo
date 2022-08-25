@@ -12,6 +12,7 @@ TagManager:
   - MLBlueTeam
   - MLRedTeam
   - EnemyBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
