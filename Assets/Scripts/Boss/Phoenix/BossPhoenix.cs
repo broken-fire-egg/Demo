@@ -124,6 +124,12 @@ public class BossPhoenix : BossState
         serverReadThread.Abort();
 #endif
     }
+
+    private void FixedUpdate()
+    {
+        rigid.velocity = rigid.velocity * 0.99f;
+    }
+
     private new void Update()
     {
 
@@ -175,21 +181,14 @@ public class BossPhoenix : BossState
         switch (n)
         {
             case 0:
-                if (!BurnArounding)
-                {
-                    BurnArounding = true;
-                    return BurnAround();
-                }
-                else
                     return ScreenShot();
             case 1:
                 if (!BurnArounding)
                 {
-                    BurnArounding = true;
-                    return BurnAround();
+                    return FlameShot();
                 }
                 else
-                    return FlameShot();
+                    return ScreenShot();
             case 2:
                 if (!winBomb)
                 {

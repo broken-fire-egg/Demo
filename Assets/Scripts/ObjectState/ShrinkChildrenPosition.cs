@@ -10,7 +10,7 @@ public class ShrinkChildrenPosition : MonoBehaviour
     public BossState bossState;
     void Start()
     {
-        speed = 0.9975f;
+        speed = 0.995f;
         minlength = 6f;
         lefttime = 9;
     }
@@ -35,7 +35,7 @@ public class ShrinkChildrenPosition : MonoBehaviour
             }
             else
             {
-                value *= 1.00250626566416f;
+                value *= 1f / speed;
                 target.localPosition = value;
             }
         }

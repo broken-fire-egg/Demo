@@ -9,7 +9,7 @@ public class TurnAround : MonoBehaviour
     private void Start()
     {
         value = 0;
-        speed = 10f;
+        speed = 25f;
     }
     void Update()
     {
