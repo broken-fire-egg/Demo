@@ -69,7 +69,7 @@ public class BossState : MonoBehaviour
     }
     public virtual float GetHPGage()
     {
-        return hp / max_hp * 950f;
+        return hp / max_hp * 836f;
 
     }
     protected IEnumerator CheckQueue()
