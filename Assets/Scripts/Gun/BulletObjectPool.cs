@@ -9,17 +9,29 @@ public class BulletObjectPool : MonoBehaviour
     public class BulletPO
     {
         public GameObject origin;
+        public GameObject caseOrigin;
         public List<GameObject> hero_Bullets;
+        public List<GameObject> bullet_cases;
         public int hero_bullet_max;
 
-        public BulletPO(GameObject origin, int hero_bullet_max, Transform poolT)
+        public BulletPO(GameObject origin, int hero_bullet_max, Transform poolT, GameObject caseOrigin = null)
         {
             this.origin = origin;
             this.hero_bullet_max = hero_bullet_max;
             this.hero_Bullets = new List<GameObject>();
+            bullet_cases = new List<GameObject>();
             for (int i = 0; i < hero_bullet_max; i++)
             {
                 hero_Bullets.Add(Instantiate(origin, poolT));
+            }
+
+            if (caseOrigin)
+            {
+                for (int i = 0; i < hero_bullet_max * 2; i++)
+                {
+                    bullet_cases.Add(Instantiate(caseOrigin, poolT));
+                }
+                this.caseOrigin = caseOrigin;
             }
         }
     }
@@ -37,7 +49,7 @@ public class BulletObjectPool : MonoBehaviour
         for (int i = 0; i < bulletPools.Length; i++)
         {
             if(hero.pgs[i].bulletObject)
-                bulletPools[i] = new BulletPO(hero.pgs[i].bulletObject, hero.pgs[i].magazineCapacity, transform);
+                bulletPools[i] = new BulletPO(hero.pgs[i].bulletObject, hero.pgs[i].magazineCapacity, transform, hero.pgs[i].bulletCaseOrigin);
         }
         
     }
@@ -50,7 +62,17 @@ public class BulletObjectPool : MonoBehaviour
                 return bullet;
         return res;
     }
-
+    public void SpawnCase()
+    {
+        foreach (var bulletcase in bulletPools[hero.selectedWeapon].bullet_cases)
+        {
+            if (!bulletcase.activeInHierarchy)
+            {
+                bulletcase.SetActive(true);
+                return;
+            }
+        }
+    }
     public bool Shot(Vector3 pos, Quaternion rot, float speed, int bulletnum = 0)
     {
         var newBullet = FindDisabledBullet();
@@ -60,6 +82,8 @@ public class BulletObjectPool : MonoBehaviour
             newBullet.transform.rotation = rot;
             newBullet.SetActive(true);
             newBullet.GetComponent<HeroBullet>().SetValue(rot, speed);
+            SpawnCase();
+
             return true;
         }
         else

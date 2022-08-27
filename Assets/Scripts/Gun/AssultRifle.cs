@@ -51,7 +51,7 @@ public class AssultRifle : PlayerGun
         bulletList[0].rigidbody2D.AddForce(new Vector2(Random.Range(-2.5f, -1.5f), 0) * 2000);
         bulletList[0].rigidbody2D.gravityScale = 60;
         bulletList[0].image.sprite = BulletUISprites[1];
-        bulletList[0].transform.parent = WCanvas;
+        bulletList[0].transform.SetParent(WCanvas,true);
         bulletList.Remove(bulletList[0]);
     }
 
@@ -66,7 +66,7 @@ public class AssultRifle : PlayerGun
         bulletList = new List<BulletInfo>(bulletListCopied);
         for (int i = 0; i < bulletList.Count; i++)
         {
-            bulletList[i].transform.parent = bulletUIsParent;
+            bulletList[i].transform.SetParent(bulletUIsParent, true);
             bulletList[i].image.sprite = BulletUISprites[0];
             bulletList[i].rigidbody2D.freezeRotation = true;
             bulletList[i].transform.anchoredPosition = OriginbulletList[i].transform.anchoredPosition;

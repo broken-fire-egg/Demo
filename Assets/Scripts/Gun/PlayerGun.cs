@@ -25,7 +25,7 @@ public class PlayerGun : MonoBehaviour
     public Transform instancePosition;
 
     public GameObject bulletObject;
-
+    public GameObject bulletCaseOrigin;
     public Vector3 Spriteoffset;
     protected CameraMove cam;
     protected Camera mainCamera;
@@ -156,6 +156,7 @@ public class PlayerGun : MonoBehaviour
         bulletcount--;
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
         MagazineMove();
+        SystemInit.instance.MakeCursorBigger();
     }
     public virtual void MagazineMove() { }
     public virtual void SetSequence() {

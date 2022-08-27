@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class SystemInit : MonoBehaviour
 {
+    static public SystemInit instance;
     public Texture2D cursorTexture;
     Texture2D copiedCursorTexture;
     //public Texture2D[] cursor
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
+
+    float minSize = 2f;
+
+    float maxSize = 4f;
+
     private void Awake()
     {
+        if(instance == null)
+            instance = this;
         Application.targetFrameRate = 60;
     }
     private void Start()
@@ -72,14 +80,24 @@ public class SystemInit : MonoBehaviour
 
 
     public float size;
+    public float shrinkSpeed;
     int currentFrame;
     float frameTimer;
 
     private void Update()
     {
+        if (size < minSize)
+            size = minSize;
+        else if (size > maxSize)
+            size = maxSize;
+
         copiedCursorTexture = ScaleTexture(cursorTexture, size);
         Cursor.SetCursor(copiedCursorTexture, new Vector2(copiedCursorTexture.width / 2, copiedCursorTexture.height / 2), cursorMode);
+        size -= shrinkSpeed;
     }
-
+    public void MakeCursorBigger(float amount = 0.25f)
+    {
+        size += amount;
+    }
 
 }
