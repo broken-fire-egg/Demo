@@ -151,15 +151,27 @@ public class BossPhoenix : BossState
         if(hp < 100&&!isburningUI)
         {
             isburningUI = true;
+            animator.SetTrigger("Dead");
+            Invoke("ReallyFinallyAbsolutelySurelyTrueDead", 4f);
             StartCoroutine(BurnUI());
         }
 
         base.Update();
     }
+    public void ReallyFinallyAbsolutelySurelyTrueDead()
+    {
+        animator.SetTrigger("RealyDead");
 
+    }
+    private void OnGUI()
+    {
+        if(hp < 100)
+            GUI.Label(new Rect(400, 200, 150, 30), "발악패턴 미구현");
+    }
     int id;
     IEnumerator BurnUI()
     {
+
         float value = 1;
         while (value >= 0)
         {
