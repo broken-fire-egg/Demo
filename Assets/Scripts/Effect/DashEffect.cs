@@ -15,6 +15,7 @@ public class DashEffect : ObjectPooling<AfterImage>
     public void MakeAfterImage(SpriteRenderer sr, Vector3 pos, Quaternion rot)
     {
         PoolObject po = GetRestingPoolObject();
+        if(po != null)
         if (po.gameObject)
         {
             po.component.targetsr = sr;

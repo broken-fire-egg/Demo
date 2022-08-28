@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class BulletObjectPool : MonoBehaviour
 {
     public static BulletObjectPool instance;
@@ -62,12 +62,21 @@ public class BulletObjectPool : MonoBehaviour
                 return bullet;
         return res;
     }
-    public void SpawnCase()
+    public void SpawnCase(Quaternion rot)
     {
+        Vector3 casePos;
         foreach (var bulletcase in bulletPools[hero.selectedWeapon].bullet_cases)
         {
             if (!bulletcase.activeInHierarchy)
             {
+                bulletcase.transform.position = hero.pgs[hero.selectedWeapon].transform.position;
+                bulletcase.transform.rotation = rot;
+                casePos = bulletcase.transform.position + (rot * -transform.up);
+                
+                casePos = new Vector3(casePos.x + Random.Range(-0.25f, 0.25f), casePos.y + Random.Range(-0.25f, 0.25f));
+                bulletcase.transform.DOJump(casePos, 0.2f, 1, 0.5f);
+                bulletcase.transform.DORotateQuaternion(Quaternion.Euler(0, 0, rot.eulerAngles.z + Random.Range(-360f, 360f)),0.5f);
+                bulletcase.GetComponent<SpriteRenderer>().DOColor(Color.gray, 0.5f);
                 bulletcase.SetActive(true);
                 return;
             }
@@ -82,7 +91,7 @@ public class BulletObjectPool : MonoBehaviour
             newBullet.transform.rotation = rot;
             newBullet.SetActive(true);
             newBullet.GetComponent<HeroBullet>().SetValue(rot, speed);
-            SpawnCase();
+            SpawnCase(rot);
 
             return true;
         }

@@ -102,8 +102,8 @@ public class BossPhoenix : BossState
         Application.runInBackground = true;
         bullet_Screen_Pool = gameObject.AddComponent<ScreenBulletPool>();
         //bullet_Normal_Pool = gameObject.AddComponent<NormalBulletpool>();
-
-        
+        id = Shader.PropertyToID("Vector1_84921ca3896643a2ac0fa168f895bd1e");
+        hpGage.mat.SetFloat(id, 1);
 
         bullet_Flame_Pool = new GameObject("bfp").AddComponent<FlameBulletPool>();
         bullet_ba_Pool = gameObject.AddComponent<BurnAroundBulletPool>();
@@ -156,11 +156,11 @@ public class BossPhoenix : BossState
 
         base.Update();
     }
-    
+
+    int id;
     IEnumerator BurnUI()
     {
         float value = 1;
-        int id = Shader.PropertyToID("Vector1_84921ca3896643a2ac0fa168f895bd1e");
         while (value >= 0)
         {
             hpGage.mat.SetFloat(id, value);

@@ -12,6 +12,9 @@ public class PlayerGun : MonoBehaviour
     public Vector2 initBulletUIPos;
     public float rebound;
     public float weaponDist;
+    public float weaponCooledtime;
+    public float weaponSpeed;
+    public float weaponManualSpeed;
     protected float gunAngle;
     public bool reloading;
 
@@ -85,6 +88,7 @@ public class PlayerGun : MonoBehaviour
     }
     public void Update()
     {
+        weaponCooledtime += Time.deltaTime;
         if (DialogDisplayer.instance)
             if (DialogDisplayer.instance.displaying)
             return;
@@ -104,11 +108,11 @@ public class PlayerGun : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(gunAngle, Vector3.back);
 
 
-        weaponRenderer.sortingOrder = Hero.instance.heroRenderer.sortingOrder - 1;
+        weaponRenderer.sortingOrder = Hero.instance.heroRenderer.sortingOrder - 2;
 
         if (gunAngle > 0)
         {
-            weaponRenderer.sortingOrder = Hero.instance.heroRenderer.sortingOrder + 1;
+            weaponRenderer.sortingOrder = Hero.instance.heroRenderer.sortingOrder + 2;
         }
         
         transform.localPosition = mouseVector * weaponDist;
@@ -133,10 +137,14 @@ public class PlayerGun : MonoBehaviour
     public bool CanShot()
     {
         if (bulletcount <= 0)
+        {
+            Reload();
             return false;
+        }
         if (reloading)
             return false;
-
+        if (weaponSpeed > weaponCooledtime)
+            return false;
         return true;
     }
     public virtual void Reload()
@@ -153,7 +161,10 @@ public class PlayerGun : MonoBehaviour
             return;
         if(!BulletObjectPool.instance.Shot(gunpoint.position,transform.rotation,speed))
             return;
+
+        weaponCooledtime = 0f;
         bulletcount--;
+        
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
         MagazineMove();
         SystemInit.instance.MakeCursorBigger();

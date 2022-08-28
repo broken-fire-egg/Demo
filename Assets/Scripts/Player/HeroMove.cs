@@ -9,6 +9,7 @@ public class HeroMove : MonoBehaviour
     public Rigidbody2D rb2d;
     public SpriteRenderer sr;
     public float dashpower;
+    public float dashCoolTime;
     public float dashspeed;
     public float dashprogress;
     public bool onground;
@@ -36,13 +37,7 @@ public class HeroMove : MonoBehaviour
             if (DialogDisplayer.instance.displaying)
                 return;
 
-        if (dashprogress > ((float)1 / dashmaxindex) * dashindex)
-        {
-            dashindex++;
-            if (DashEffect.instance)
-                DashEffect.instance.MakeAfterImage(sr, transform.position, transform.rotation);
-            Hero.instance.pgs[Hero.instance.selectedWeapon].MakeDashEffect();
-        }
+
 
         KeyCheck();
 
@@ -81,8 +76,10 @@ public class HeroMove : MonoBehaviour
         if (vec3.magnitude == 0)
             ismoving = false;
 
-        if(dashinput)
+        if (dashinput && dashCoolTime <= 0)
         {
+
+            dashCoolTime = 0.5f;
             dashinput = false;
             Debug.Log("Trydash");
             if (vec3.magnitude != 0)
@@ -104,8 +101,7 @@ public class HeroMove : MonoBehaviour
         {
             dashinput = true;
         }
-
-
+        dashCoolTime -= Time.deltaTime;
 
         if (!onground)
         {
@@ -123,6 +119,14 @@ public class HeroMove : MonoBehaviour
                 onground = true;
                 Hero.instance.animator.enabled = true;
             }
+            if (dashprogress > ((float)1 / dashmaxindex) * dashindex)
+            {
+                dashindex++;
+                if (DashEffect.instance)
+                    DashEffect.instance.MakeAfterImage(sr, transform.position, transform.rotation);
+                Hero.instance.pgs[Hero.instance.selectedWeapon].MakeDashEffect();
+            }
         }
+
     }
 }

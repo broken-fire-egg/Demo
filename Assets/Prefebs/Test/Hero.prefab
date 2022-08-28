@@ -56,7 +56,7 @@ MonoBehaviour:
   - {x: -0.20670295, y: 0.40001237, z: 0}
   m_ShapePathHash: 1912138909
   m_Mesh: {fileID: 0}
-  m_InstanceId: -36456
+  m_InstanceId: -1318
 --- !u!1 &253256148
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +482,7 @@ MonoBehaviour:
   OriginGunMagazine: {fileID: 3283203143776480142, guid: a7edea49e6e41e3409e0f2a55d4577d1, type: 3}
   instancePosition: {fileID: 0}
   bulletObject: {fileID: 6676142785535826582, guid: c324da95fda6187428a861ec333a05e5, type: 3}
+  bulletCaseOrigin: {fileID: 392167831859668381, guid: 27bf8fe3b5cd0424c8139974529c0784, type: 3}
   Spriteoffset: {x: 0, y: -0.12, z: 0}
   BulletUISprites:
   - {fileID: 3861142537164484405, guid: 80116b73c82a702409364eedaac70d85, type: 3}
@@ -591,7 +592,7 @@ MonoBehaviour:
   ismoving: 0
   rb2d: {fileID: 0}
   sr: {fileID: 0}
-  dashpower: 40
+  dashpower: 10
   dashspeed: 0.12
   dashprogress: 0
   onground: 1
@@ -784,6 +785,7 @@ MonoBehaviour:
   OriginGunMagazine: {fileID: 0}
   instancePosition: {fileID: 0}
   bulletObject: {fileID: 0}
+  bulletCaseOrigin: {fileID: 0}
   Spriteoffset: {x: 0, y: 0.12, z: 0}
   BulletUISprites: []
   angle: 0
@@ -959,5 +961,6 @@ MonoBehaviour:
   OriginGunMagazine: {fileID: 0}
   instancePosition: {fileID: 0}
   bulletObject: {fileID: 0}
+  bulletCaseOrigin: {fileID: 0}
   Spriteoffset: {x: 0, y: 0, z: 0}
   BulletUISprites: []
