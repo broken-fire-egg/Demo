@@ -8,10 +8,13 @@ public class FPSCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       Application.targetFrameRate = 60;
+        Invoke("SetFPS60", 1.5f);
        text = GetComponent<UnityEngine.UI.Text>();
     }
-
+    public void SetFPS60()
+    {
+        Application.targetFrameRate = 60;
+    }
     // Update is called once per frame
     void Update()
     {

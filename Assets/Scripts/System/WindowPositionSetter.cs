@@ -42,7 +42,7 @@ public class WindowPositionSetter : MonoBehaviour
     private void Start()
     {
         Screen.fullScreen = false;
-        //SetPosition(Screen.currentResolution.width / 2 - Screen.width, Screen.currentResolution.height / 2 - Screen.height / 2);
+        SetPosition(Screen.currentResolution.width / 2 - Screen.width / 2, Screen.currentResolution.height / 2 - Screen.height / 2);
 
 
     }
@@ -52,7 +52,7 @@ public class WindowPositionSetter : MonoBehaviour
         GetWindowRect(hndl, ref Srect);
         if(text)
             text.text =(Screen.currentResolution.width / 2 - Screen.width / 2).ToString() + "," + (Screen.currentResolution.height / 2 - Screen.height / 2).ToString();
-        SetPosition(Screen.currentResolution.width / 2 - Screen.width / 2, Screen.currentResolution.height / 2 - Screen.height / 2);
+        //SetPosition(Screen.currentResolution.width / 2 - Screen.width / 2, Screen.currentResolution.height / 2 - Screen.height / 2);
     }
     public IEnumerator Shake(float duration, float magnitude, Vector2 ForceDir = new Vector2())
     {
