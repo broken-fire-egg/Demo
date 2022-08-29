@@ -164,7 +164,7 @@ public class PlayerGun : MonoBehaviour
 
         weaponCooledtime = 0f;
         bulletcount--;
-        
+        //SystemInit.instance.CursorChange();
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
         MagazineMove();
     }

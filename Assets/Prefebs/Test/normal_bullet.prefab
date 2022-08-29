@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 6676142785535826602}
-  damage: 1
+  damage: 1.33
   BarrierMask: {fileID: 9029599965636240365}
 --- !u!58 &6467755779002600556
 CircleCollider2D:

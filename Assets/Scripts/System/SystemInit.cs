@@ -6,6 +6,7 @@ public class SystemInit : MonoBehaviour
 {
     static public SystemInit instance;
     public Texture2D cursorTexture;
+    public Texture2D clickedCursorTexture;
     //public Texture2D[] cursor
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
@@ -14,11 +15,11 @@ public class SystemInit : MonoBehaviour
     {
         if(instance == null)
             instance = this;
-        Application.targetFrameRate = 60;
     }
     private void Start()
     {
         
+        Application.targetFrameRate = 60;
         if (cursorTexture)
             Cursor.SetCursor(cursorTexture, new Vector2( cursorTexture.width / 2, cursorTexture.height / 2), cursorMode);
     }
@@ -32,6 +33,20 @@ public class SystemInit : MonoBehaviour
         if (cursorTexture)
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
     }
+
+
+
+    private void Update()
+    {
+        if(Input.GetMouseButtonUp(0))
+            Cursor.SetCursor(cursorTexture, new Vector2(cursorTexture.width / 2, cursorTexture.height / 2), cursorMode);
+        else if (Input.GetMouseButtonDown(0))
+            Cursor.SetCursor(clickedCursorTexture, new Vector2(cursorTexture.width / 2, cursorTexture.height / 2), cursorMode);
+
+
+    }
+
+
     //public Texture2D ScaleTexture(Texture2D source, float _scaleFactor)
     //{
     //    if (_scaleFactor == 1f)
