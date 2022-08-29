@@ -899,7 +899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7368567016365631675, guid: 0d992cd5d9a812046baa16f864a3d7ff, type: 3}
       propertyPath: dashpower
-      value: 10
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7368567016365631675, guid: 0d992cd5d9a812046baa16f864a3d7ff, type: 3}
+      propertyPath: dashspeed
+      value: 0.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d992cd5d9a812046baa16f864a3d7ff, type: 3}
@@ -1630,8 +1634,8 @@ MonoBehaviour:
   - {fileID: 2147075609}
   - {fileID: 1008758206}
   hpGage: {fileID: 1360448951}
-  max_hp: 1000
-  hp: 1000
+  max_hp: 400
+  hp: 400
   bullet_Screen: {fileID: 2036448760}
   bullet_Normal: {fileID: 427150130}
   bullet_Flame: {fileID: 1300735692}
@@ -11367,10 +11371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 535a699be1babbe4988e0ca2b56f5efe, type: 3}
-  cursorMode: 1
+  cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  size: 1
-  shrinkSpeed: 0.01
 --- !u!1 &1672160437
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,14 +6,9 @@ public class SystemInit : MonoBehaviour
 {
     static public SystemInit instance;
     public Texture2D cursorTexture;
-    Texture2D copiedCursorTexture;
     //public Texture2D[] cursor
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-
-    float minSize = 2f;
-
-    float maxSize = 4f;
 
     private void Awake()
     {
@@ -37,67 +32,44 @@ public class SystemInit : MonoBehaviour
         if (cursorTexture)
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
     }
-    public Texture2D ScaleTexture(Texture2D source, float _scaleFactor)
-    {
-        if (_scaleFactor == 1f)
-        {
-            return source;
-        }
-        else if (_scaleFactor == 0f)
-        {
-            return Texture2D.blackTexture;
-        }
+    //public Texture2D ScaleTexture(Texture2D source, float _scaleFactor)
+    //{
+    //    if (_scaleFactor == 1f)
+    //    {
+    //        return source;
+    //    }
+    //    else if (_scaleFactor == 0f)
+    //    {
+    //        return Texture2D.blackTexture;
+    //    }
 
-        int _newWidth = Mathf.RoundToInt(source.width * _scaleFactor);
-        int _newHeight = Mathf.RoundToInt(source.height * _scaleFactor);
-
-
-
-        Color[] _scaledTexPixels = new Color[_newWidth * _newHeight];
-
-        for (int _yCord = 0; _yCord < _newHeight; _yCord++)
-        {
-            float _vCord = _yCord / (_newHeight * 1f);
-            int _scanLineIndex = _yCord * _newWidth;
-
-            for (int _xCord = 0; _xCord < _newWidth; _xCord++)
-            {
-                float _uCord = _xCord / (_newWidth * 1f);
-
-                _scaledTexPixels[_scanLineIndex + _xCord] = source.GetPixelBilinear(_uCord, _vCord);
-            }
-        }
-
-        // Create Scaled Texture
-        Texture2D result = new Texture2D(_newWidth, _newHeight, source.format, false);
-        result.SetPixels(_scaledTexPixels, 0);
-        result.Apply();
-
-        return result;
-    }
+    //    int _newWidth = Mathf.RoundToInt(source.width * _scaleFactor);
+    //    int _newHeight = Mathf.RoundToInt(source.height * _scaleFactor);
 
 
 
+    //    Color[] _scaledTexPixels = new Color[_newWidth * _newHeight];
 
-    public float size;
-    public float shrinkSpeed;
-    int currentFrame;
-    float frameTimer;
+    //    for (int _yCord = 0; _yCord < _newHeight; _yCord++)
+    //    {
+    //        float _vCord = _yCord / (_newHeight * 1f);
+    //        int _scanLineIndex = _yCord * _newWidth;
 
-    private void Update()
-    {
-        if (size < minSize)
-            size = minSize;
-        else if (size > maxSize)
-            size = maxSize;
+    //        for (int _xCord = 0; _xCord < _newWidth; _xCord++)
+    //        {
+    //            float _uCord = _xCord / (_newWidth * 1f);
 
-        copiedCursorTexture = ScaleTexture(cursorTexture, size);
-        Cursor.SetCursor(copiedCursorTexture, new Vector2(copiedCursorTexture.width / 2, copiedCursorTexture.height / 2), cursorMode);
-        size -= shrinkSpeed;
-    }
-    public void MakeCursorBigger(float amount = 0.25f)
-    {
-        size += amount;
-    }
+    //            _scaledTexPixels[_scanLineIndex + _xCord] = source.GetPixelBilinear(_uCord, _vCord);
+    //        }
+    //    }
+
+    //    // Create Scaled Texture
+    //    Texture2D result = new Texture2D(_newWidth, _newHeight, source.format, false);
+    //    result.SetPixels(_scaledTexPixels, 0);
+    //    result.Apply();
+
+    //    return result;
+    //}
+
 
 }

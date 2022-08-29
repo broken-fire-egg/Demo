@@ -167,7 +167,6 @@ public class PlayerGun : MonoBehaviour
         
         cam.Shake((PlayerCenter.position - transform.position).normalized, rebound, 0.05f);
         MagazineMove();
-        SystemInit.instance.MakeCursorBigger();
     }
     public virtual void MagazineMove() { }
     public virtual void SetSequence() {

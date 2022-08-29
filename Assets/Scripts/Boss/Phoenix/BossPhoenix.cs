@@ -221,7 +221,7 @@ public class BossPhoenix : BossState
         }
     }
 
-    WaitForSeconds ss_BeforeDelay = new WaitForSeconds(0.8f);
+    WaitForSeconds ss_BeforeDelay = new WaitForSeconds(1.333f);
     WaitForSeconds ss_AfterDelay = new WaitForSeconds(2f);
 
     public void DecreaseAttackCount()
@@ -320,7 +320,10 @@ public class BossPhoenix : BossState
         winBomb = true;
         yield return sb_BeforeDelay;
         Debug.Log("Bomb Planted");
+#if (!UNITY_EDITOR)
+        Process.Start("TouchBomb.exe");
         
+#endif
         yield return sb_AfterDelay;
     }
 

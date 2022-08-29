@@ -81,7 +81,8 @@ public class WindowPositionSetter : MonoBehaviour
             Ypos += (int)dir.y  + (int)(movedir * -magnitude / 1.2f).y;
 
             Offset += (movedir * magnitude / 1.2f);
-            text.text = movedir.x.ToString() + "," + movedir.y.ToString();
+            if(text)
+                text.text = movedir.x.ToString() + "," + movedir.y.ToString();
 
             if (Xpos >= maxW)
             {

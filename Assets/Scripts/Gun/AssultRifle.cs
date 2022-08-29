@@ -45,12 +45,14 @@ public class AssultRifle : PlayerGun
     public override void MagazineMove()
     {
         bulletList[0].rigidbody2D.freezeRotation = false;
-        bulletList[0].transform.position = bulletList[bulletList.Count - 1].transform.position;
+        bulletList[0].image.sprite = BulletUISprites[1];
+        bulletList[0].image.SetNativeSize();
+        var b = bulletList[bulletList.Count - 1];
+        bulletList[0].transform.position = new Vector3(b.transform.position.x-10, b.transform.position.y);
         bulletList[0].rigidbody2D.AddTorque(20);
         bulletList[0].rigidbody2D.AddForce(Vector2.up * Random.Range(5f, 8f) * 2500);
         bulletList[0].rigidbody2D.AddForce(new Vector2(Random.Range(-2.5f, -1.5f), 0) * 2000);
         bulletList[0].rigidbody2D.gravityScale = 60;
-        bulletList[0].image.sprite = BulletUISprites[1];
         bulletList[0].transform.SetParent(WCanvas,true);
         bulletList.Remove(bulletList[0]);
     }
@@ -73,6 +75,7 @@ public class AssultRifle : PlayerGun
             bulletList[i].transform.rotation = OriginbulletList[i].transform.rotation;
             bulletList[i].rigidbody2D.velocity = new Vector2(0, 0);
             bulletList[i].rigidbody2D.gravityScale = 0;
+            bulletList[i].image.SetNativeSize();
         }
     }
     bool ColCheck = false;
