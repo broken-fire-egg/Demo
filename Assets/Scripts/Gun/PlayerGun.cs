@@ -53,6 +53,7 @@ public class PlayerGun : MonoBehaviour
             this.rigidbody2D = gameobject.GetComponent<Rigidbody2D>();
             this.transform = gameobject.GetComponent<RectTransform>();
             this.image = gameobject.GetComponent<Image>();
+            
         }
     }
 
@@ -77,8 +78,10 @@ public class PlayerGun : MonoBehaviour
         gunpoint = transform.GetChild(0);
         originalGunpoint = gunpoint.localPosition;
         PlayerCenter = transform.parent;
+        
         WCanvas = GameObject.Find("WCanvas").transform;
-        GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
+        if(WCanvas != null)
+            GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
         if (GunMagazine)
         {
             initBulletUIPos = GunMagazine.GetComponent<RectTransform>().anchoredPosition;

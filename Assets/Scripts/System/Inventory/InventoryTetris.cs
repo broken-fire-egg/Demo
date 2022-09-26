@@ -8,8 +8,10 @@ public class InventoryTetris : MonoBehaviour {
     public static InventoryTetris Instance { get; private set; }
     public InventoryTetrisBackground InventoryBackground;
     public event EventHandler<PlacedObject> OnObjectPlaced;
-    public int gridWidth = 10;
-    public int gridHeight = 10;
+    public int gridWidth;
+    public int gridHeight;
+
+    public float cellSize = 90f;
     private Grid<GridObject> grid;
     [HideInInspector] public RectTransform itemContainer;
 
@@ -19,7 +21,6 @@ public class InventoryTetris : MonoBehaviour {
 
        
         
-        float cellSize = 50f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
 
         itemContainer = transform.Find("ItemContainer").GetComponent<RectTransform>();
@@ -115,8 +116,14 @@ public class InventoryTetris : MonoBehaviour {
 
         foreach(var xy in gridPositionList)
         {
-            if(xy.x < GetGrid().GetWidth() && xy.x >= 0 && xy.y < GetGrid().GetHeight() && xy.y >= 0)
-                InventoryBackground.backgrounds[xy.y, xy.x].color = Color.gray;
+            if (xy.x < GetGrid().GetWidth() && xy.x >= 0 && xy.y < GetGrid().GetHeight() && xy.y >= 0)
+            try{
+                InventoryBackground.backgrounds[xy.x, xy.y].color = Color.gray;
+                }
+                catch
+                {
+                    Debug.Log(xy.x.ToString() + "/" + xy.y.ToString());
+                }
         }
 
 

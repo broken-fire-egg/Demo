@@ -13,11 +13,13 @@ public class InventoryTetrisBackground : MonoBehaviour {
         Transform template = transform.Find("Template");
         template.gameObject.SetActive(false);
         backgrounds = new Image[inventoryTetris.GetGrid().GetWidth(), inventoryTetris.GetGrid().GetHeight()];
-
-        for (int x = 0; x < inventoryTetris.GetGrid().GetWidth(); x++) {
-            for (int y = 0; y < inventoryTetris.GetGrid().GetHeight(); y++) {
+        
+        for (int y = 0; y < inventoryTetris.GetGrid().GetHeight(); y++)
+            for (int x = 0; x < inventoryTetris.GetGrid().GetWidth(); x++) {
+             {
                 Transform backgroundSingleTransform = Instantiate(template, transform);
                 backgroundSingleTransform.gameObject.SetActive(true);
+                backgroundSingleTransform.name = x.ToString() + "," + y.ToString();
                 backgrounds[x, y] = backgroundSingleTransform.GetComponent<Image>();
             }
         }

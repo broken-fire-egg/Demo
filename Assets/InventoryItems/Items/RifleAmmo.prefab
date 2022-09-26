@@ -30,14 +30,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6709856898587124662}
+  - {fileID: 7369163130988329463}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 935, y: 515}
-  m_SizeDelta: {x: 50, y: 50}
+  m_SizeDelta: {x: 92, y: 92}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &4429278080450039216
 MonoBehaviour:
@@ -75,45 +75,13 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!1001 &929348008392200058
+--- !u!1001 &4016929979024839995
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1711419159805185040}
     m_Modifications:
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1241363778249973536, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1446106255684176545, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
       propertyPath: m_Name
       value: RifleAmmoVisual
@@ -148,11 +116,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5907463059430075596, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 5907463059430075596, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 5907463059430075596, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -204,8 +172,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
---- !u!224 &6709856898587124662 stripped
+--- !u!224 &7369163130988329463 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5907463059430075596, guid: 106aaedb101169a4fa5d7cda027659b1, type: 3}
-  m_PrefabInstance: {fileID: 929348008392200058}
+  m_PrefabInstance: {fileID: 4016929979024839995}
   m_PrefabAsset: {fileID: 0}

@@ -15,5 +15,5 @@ MonoBehaviour:
   nameString: Shotgun
   prefab: {fileID: 1078287113941316644, guid: 9d9ca4982e333384b8bc799d9b5fcfe1, type: 3}
   visual: {fileID: 8234798693508592692, guid: 6127d540b699c224280697c142a68157, type: 3}
-  width: 2
-  height: 5
+  width: 5
+  height: 2

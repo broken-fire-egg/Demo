@@ -8,7 +8,7 @@ public class MobileUICtrl : MonoBehaviour
 {
     public GameObject BlackSprite;
     public GameObject PhoneSprite;
-
+    Transform _PhoneSpritetf;
     Sequence seq;
 
     public bool Phonebool;                  //핸드폰 활성화확인
@@ -16,7 +16,7 @@ public class MobileUICtrl : MonoBehaviour
     public bool AppActivate = false;
     bool PhoneAnimation = false;
     private bool PhoneBool = false;
-
+    public List<GameObject> phone_Screen_UIs;
     public enum State
     {
         None = 0,
@@ -26,36 +26,40 @@ public class MobileUICtrl : MonoBehaviour
         Alarm = 4,
         Call = 5,
         Camera = 6,
-        Create = 7
+        Craft = 7
     }
 
     
-    List<GameObject> UiButton = new List<GameObject>();
-
+    public List<GameObject> UiButton = new List<GameObject>();
+    private void Awake()
+    {
+        _PhoneSpritetf = PhoneSprite.GetComponent<RectTransform>();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 7; i++)
-        {
-            UiButton.Add(gameObject.transform.GetChild(2).gameObject.transform.GetChild(i).gameObject);
-        }
+
+        
         //MapGame.transform.GetChild(1).gameObject.GetComponent<Image>().color = new Color(MapGame.transform.GetChild(1).gameObject.GetComponent<Image>().color.r, MapGame.transform.GetChild(1).gameObject.GetComponent<Image>().color.g, MapGame.transform.GetChild(1).gameObject.GetComponent<Image>().color.b, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (PhoneBool == false)
             {
-                gameObject.transform.DOMoveY(300, 1.0f).SetEase(Ease.OutBounce);
+                _PhoneSpritetf.DOMoveY(300, 1.0f).SetEase(Ease.OutBounce);
                 PhoneBool = true;
             }
             else
             {
-                gameObject.transform.DOMoveY(-865, 1.0f).SetEase(Ease.Flash);
-                PhoneBool = false;
+                if (PhoneState == State.None)
+                {
+                    _PhoneSpritetf.DOMoveY(-865, 1.0f).SetEase(Ease.Flash);
+                    PhoneBool = false;
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -68,9 +72,23 @@ public class MobileUICtrl : MonoBehaviour
             else if (AppActivate == true && PhoneAnimation == false)
             {
                 AllButtonOn();
+                foreach(var ui in phone_Screen_UIs)
+                {
+                    ui.SetActive(false);
+                }
             }
             PhoneState = State.None;
         }
+    }
+    public void InvokeAppearObj(GameObject obj)
+    {
+        StartCoroutine(InvokeAppearObjCor(obj));
+    }
+    WaitForSeconds ws = new WaitForSeconds(0.5f);
+    IEnumerator InvokeAppearObjCor(GameObject obj)
+    {
+        yield return ws;
+        obj.SetActive(true);
     }
 
     public void testButton()
@@ -130,7 +148,7 @@ public class MobileUICtrl : MonoBehaviour
 
     public void CraftButton()
     {
-        PhoneState = State.Create;
+        PhoneState = State.Craft;
         AllButtonOff(6, true);
         PhoneAnimation = true;
 
@@ -171,10 +189,9 @@ public class MobileUICtrl : MonoBehaviour
     void PhoneRemove()
     {
         seq = DOTween.Sequence();
-
-        PhoneSprite.GetComponent<RectTransform>().DOScale(new Vector3(1, 2, 1), 1f);
-        PhoneSprite.GetComponent<RectTransform>().DOMove(gameObject.transform.GetChild(0).transform.position, 1f);
-        PhoneSprite.GetComponent<RectTransform>().DORotate(new Vector3(0, 0, 0), 1f);
+        _PhoneSpritetf.DOScale(new Vector3(1, 2, 1), 1f);
+        _PhoneSpritetf.DOMove(gameObject.transform.GetChild(0).transform.position, 1f);
+        _PhoneSpritetf.DORotate(new Vector3(0, 0, 0), 1f);
         BlackSprite.GetComponent<Image>().DOFade(0, 1.0f);
 
         seq.AppendInterval(1f);

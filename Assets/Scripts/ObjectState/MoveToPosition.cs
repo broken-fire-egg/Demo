@@ -11,6 +11,7 @@ public class MoveToPosition : MonoBehaviour
     private void Awake()
     {
         speed = 0.015f;
+
     }
     public void Init(Vector3 targetPosition)
     {

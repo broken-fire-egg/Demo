@@ -5199,6 +5199,7 @@ MonoBehaviour:
   InventoryBackground: {fileID: 76105256}
   gridWidth: 10
   gridHeight: 10
+  cellSize: 90
   itemContainer: {fileID: 0}
 --- !u!224 &400950696
 RectTransform:
@@ -16275,7 +16276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392798132}
   m_Layer: 0
-  m_Name: Systems
+  m_Name: InteractUISystems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16954,6 +16955,7 @@ MonoBehaviour:
   InventoryBackground: {fileID: 269545660}
   gridWidth: 10
   gridHeight: 10
+  cellSize: 90
   itemContainer: {fileID: 0}
 --- !u!114 &1459633951
 MonoBehaviour:
@@ -24354,6 +24356,7 @@ MonoBehaviour:
   InventoryBackground: {fileID: 1976688337}
   gridWidth: 10
   gridHeight: 10
+  cellSize: 90
   itemContainer: {fileID: 0}
 --- !u!1 &2089012175
 GameObject:

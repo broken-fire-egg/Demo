@@ -22,7 +22,7 @@ public class Hero : MonoBehaviour
     public SpriteRenderer heroRenderer;
 
     public bool ishand = true;
-
+    int UILayer;
     private void Awake()
     {
         move = GetComponent<HeroMove>();
@@ -30,6 +30,7 @@ public class Hero : MonoBehaviour
     }
     private void Start()
     {
+        UILayer = LayerMask.NameToLayer("UI");
         mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
         animator = GetComponent<Animator>();
         heroRenderer = GetComponent<SpriteRenderer>();
@@ -41,7 +42,34 @@ public class Hero : MonoBehaviour
     {
         Debug.LogError("¾Æ! ¾ÆÆÄ¿ê!!");
     }
+    public bool IsPointerOverUIElement()
+    {
+        return IsPointerOverUIElement(GetEventSystemRaycastResults());
+    }
 
+
+    //Returns 'true' if we touched or hovering on Unity UI element.
+    private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
+    {
+        for (int index = 0; index < eventSystemRaysastResults.Count; index++)
+        {
+            RaycastResult curRaysastResult = eventSystemRaysastResults[index];
+            if (curRaysastResult.gameObject.layer == UILayer)
+                return true;
+        }
+        return false;
+    }
+
+
+    //Gets all event system raycast results of current mouse or touch position.
+    static List<RaycastResult> GetEventSystemRaycastResults()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> raysastResults = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, raysastResults);
+        return raysastResults;
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,8 +77,10 @@ public class Hero : MonoBehaviour
         if (DialogDisplayer.instance)
             if (DialogDisplayer.instance.displaying)
             return;
+        if(!ishand)
         if (Input.GetMouseButtonDown(0) && pgs[selectedWeapon].gameObject.activeInHierarchy)
-            GunShot();
+            if(!IsPointerOverUIElement())
+                GunShot();
 
         KeyCheck();
 
@@ -232,6 +262,7 @@ public class Hero : MonoBehaviour
 
     private void KeyCheck()
     {
+        if (!ishand) return;
         if (Input.GetKeyDown(KeyCode.R))
         {
             pgs[selectedWeapon].Reload();
@@ -253,12 +284,14 @@ public class Hero : MonoBehaviour
             if (w != pgs[num])
             {
                 w.gameObject.SetActive(false);
-                w.GunMagazine.gameObject.SetActive(false);
+                if(w.GunMagazine)
+                    w.GunMagazine.gameObject.SetActive(false);
             }
             else
             {
                 w.gameObject.SetActive(true);
-                w.GunMagazine.gameObject.SetActive(true);
+                if (w.GunMagazine)
+                    w.GunMagazine.gameObject.SetActive(true);
             }
         }
     }
