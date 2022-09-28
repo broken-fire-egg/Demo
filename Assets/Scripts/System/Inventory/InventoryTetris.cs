@@ -10,7 +10,7 @@ public class InventoryTetris : MonoBehaviour {
     public event EventHandler<PlacedObject> OnObjectPlaced;
     public int gridWidth;
     public int gridHeight;
-
+    public bool onlyTake;
     public float cellSize = 90f;
     private Grid<GridObject> grid;
     [HideInInspector] public RectTransform itemContainer;
@@ -86,6 +86,8 @@ public class InventoryTetris : MonoBehaviour {
     {
         List<Vector2Int> gridPositionList = itemTetrisSO.GetGridPositionList(placedObjectOrigin, dir);
         bool canPlace = true;
+        if (onlyTake)
+            canPlace = false;
         foreach (Vector2Int gridPosition in gridPositionList)
         {
             bool isValidPosition = grid.IsValidGridPosition(gridPosition);
@@ -137,6 +139,8 @@ public class InventoryTetris : MonoBehaviour {
         // Test Can Build
         List<Vector2Int> gridPositionList = itemTetrisSO.GetGridPositionList(placedObjectOrigin, dir);
         bool canPlace = true;
+        if (onlyTake)
+            canPlace = false;
         foreach (Vector2Int gridPosition in gridPositionList) {
             bool isValidPosition = grid.IsValidGridPosition(gridPosition);
             if (!isValidPosition) {
