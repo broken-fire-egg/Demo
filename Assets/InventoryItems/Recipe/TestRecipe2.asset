@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: TestRecipe2
   m_EditorClassIdentifier: 
   materials:
-  - {fileID: 11400000, guid: 2e75cc21479b29a4c974f667a17d8a11, type: 2}
+  - material: {fileID: 11400000, guid: 2e75cc21479b29a4c974f667a17d8a11, type: 2}
+    count: 3
   results:
-  - {fileID: 11400000, guid: 79d1df27ff1694d419a16518eac63490, type: 2}
+  - material: {fileID: 11400000, guid: 79d1df27ff1694d419a16518eac63490, type: 2}
+    count: 1

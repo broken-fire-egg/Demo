@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlacedObject : MonoBehaviour {
+public class PlacedObject : MonoBehaviour
+{
 
-    public static PlacedObject Create(Vector3 worldPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO) {
+    public static PlacedObject Create(Vector3 worldPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO)
+    {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, worldPosition, Quaternion.Euler(0, placedObjectTypeSO.GetRotationAngle(dir), 0));
         placedObjectTransform.name = placedObjectTransform.name.Replace("(Clone)", "");
         PlacedObject placedObject = placedObjectTransform.GetComponent<PlacedObject>();
@@ -17,7 +19,8 @@ public class PlacedObject : MonoBehaviour {
         return placedObject;
     }
 
-    public static PlacedObject CreateCanvas(Transform parent, Vector2 anchoredPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO) {
+    public static PlacedObject CreateCanvas(Transform parent, Vector2 anchoredPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO)
+    {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, parent);
         placedObjectTransform.name = placedObjectTransform.name.Replace("(Clone)", "");
         placedObjectTransform.rotation = Quaternion.Euler(0, placedObjectTypeSO.GetRotationAngle(dir), 0);
@@ -38,53 +41,85 @@ public class PlacedObject : MonoBehaviour {
     private PlacedObjectTypeSO placedObjectTypeSO;
     private Vector2Int origin;
     private PlacedObjectTypeSO.Dir dir;
+    private UnityEngine.UI.Image poImage;
+    private bool ghost;
 
-    protected virtual void Setup() {
+    public bool Ghost
+    {
+        get => ghost; 
+        set
+        {
+            ghost = value; 
+            if (value) 
+                poImage.color = new Color(1, 0.5f, 0.5f, 0.5f);
+            else
+                poImage.color = Color.white;
+        }
+    }
+
+    private void Awake()
+    {
+        poImage = GetComponentInChildren<UnityEngine.UI.Image>();
+    }
+    protected virtual void Setup()
+    {
         //Debug.Log("PlacedObject.Setup() " + transform);
     }
 
-    public virtual void GridSetupDone() {
+    public virtual void GridSetupDone()
+    {
         //Debug.Log("PlacedObject.GridSetupDone() " + transform);
     }
 
-    protected virtual void TriggerGridObjectChanged() {
-        foreach (Vector2Int gridPosition in GetGridPositionList()) {
+    protected virtual void TriggerGridObjectChanged()
+    {
+        foreach (Vector2Int gridPosition in GetGridPositionList())
+        {
             GridBuildingSystem3D.Instance.GetGridObject(gridPosition).TriggerGridObjectChanged();
         }
     }
 
-    public Vector2Int GetGridPosition() {
+    public Vector2Int GetGridPosition()
+    {
         return origin;
     }
 
-    public void SetOrigin(Vector2Int origin) {
+    public void SetOrigin(Vector2Int origin)
+    {
         this.origin = origin;
     }
 
-    public List<Vector2Int> GetGridPositionList() {
+    public List<Vector2Int> GetGridPositionList()
+    {
         return placedObjectTypeSO.GetGridPositionList(origin, dir);
     }
 
-    public PlacedObjectTypeSO.Dir GetDir() {
+    public PlacedObjectTypeSO.Dir GetDir()
+    {
         return dir;
     }
 
-    public virtual void DestroySelf() {
+    public virtual void DestroySelf()
+    {
         Destroy(gameObject);
     }
 
-    public override string ToString() {
+    public override string ToString()
+    {
         return placedObjectTypeSO.nameString;
     }
 
-    public PlacedObjectTypeSO GetPlacedObjectTypeSO() {
+    public PlacedObjectTypeSO GetPlacedObjectTypeSO()
+    {
         return placedObjectTypeSO;
     }
 
 
 
-    public SaveObject GetSaveObject() {
-        return new SaveObject {
+    public SaveObject GetSaveObject()
+    {
+        return new SaveObject
+        {
             placedObjectTypeSOName = placedObjectTypeSO.name,
             origin = origin,
             dir = dir,
@@ -93,7 +128,8 @@ public class PlacedObject : MonoBehaviour {
     }
 
     [System.Serializable]
-    public class SaveObject {
+    public class SaveObject
+    {
 
         public string placedObjectTypeSOName;
         public Vector2Int origin;

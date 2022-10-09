@@ -16,6 +16,9 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
     private Vector2 mouseDragAnchoredPositionOffset;
     private PlacedObjectTypeSO.Dir dir;
 
+    private InventoryTetris playerInv;
+    private InventoryTetris craftingInv;
+    private InventoryTetris resultInv;
 
     private void Awake() {
         Instance = this;
@@ -27,6 +30,9 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
 
             };
         }
+        playerInv = inventoryTetrisList[0];
+        craftingInv = inventoryTetrisList[1];
+        resultInv = inventoryTetrisList[2];
     }
 
     public InventoryTetris GetInventoryTetrisByMouse()
@@ -105,6 +111,9 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
     }
 
     public void StartedDragging(InventoryTetris inventoryTetris, PlacedObject placedObject) {
+        if (placedObject.Ghost)
+            return;
+
         // Started Dragging
         draggingInventoryTetris = inventoryTetris;
         draggingPlacedObject = placedObject;
@@ -134,6 +143,8 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
         draggingInventoryTetris = null;
         draggingPlacedObject = null;
 
+
+
         Cursor.visible = true;
 
         // Remove item from its current inventory
@@ -161,17 +172,22 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
             Vector2Int placedObjectOrigin = toInventoryTetris.GetGridPosition(anchoredPosition);
             placedObjectOrigin = placedObjectOrigin - mouseDragGridPositionOffset;
 
-            bool tryPlaceItem = toInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObjectOrigin, dir);
+            bool tryPlaceItem = toInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObjectOrigin, dir,true,placedObject.Ghost);
 
             if (tryPlaceItem) {
+
                 // Item placed!
+                if (toInventoryTetris == playerInv && fromInventoryTetris == resultInv)
+                    CraftingSystem.instance.ClearMaterials();
+                else if (toInventoryTetris == playerInv && fromInventoryTetris == craftingInv)
+                    CraftingSystem.instance.ClearGhost();
             } else {
                 // Cannot drop item here!
                 //TooltipCanvas.ShowTooltip_Static("Cannot Drop Item Here!");
                 //FunctionTimer.Create(() => { TooltipCanvas.HideTooltip_Static(); }, 2f, "HideTooltip", true, true);
 
                 // Drop on original position
-                fromInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObject.GetGridPosition(), placedObject.GetDir());
+                fromInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObject.GetGridPosition(), placedObject.GetDir(),false, placedObject.Ghost);
             }
         } else {
             // Not on top of any Inventory Tetris!
@@ -181,7 +197,7 @@ public class InventoryTetrisDragDropSystem : MonoBehaviour {
             //FunctionTimer.Create(() => { TooltipCanvas.HideTooltip_Static(); }, 2f, "HideTooltip", true, true);
 
             // Drop on original position
-            fromInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObject.GetGridPosition(), placedObject.GetDir());
+            fromInventoryTetris.TryPlaceItem(placedObject.GetPlacedObjectTypeSO() as ItemTetrisSO, placedObject.GetGridPosition(), placedObject.GetDir(),false, placedObject.Ghost);
         }
 
 

@@ -43,5 +43,21 @@ public class ItemTetrisGhost : MonoBehaviour {
             visual.localEulerAngles = Vector3.zero;
         }
     }
+    public void RefreshVisual(ItemTetrisSO item)
+    {
+        if (visual != null)
+        {
+            Destroy(visual.gameObject);
+            visual = null;
+        }
 
+        PlacedObjectTypeSO placedObjectTypeSO = item;
+
+        if (placedObjectTypeSO != null)
+        {
+            visual = Instantiate(placedObjectTypeSO.visual, transform);
+            visual.localPosition = Vector3.zero;
+            visual.localEulerAngles = Vector3.zero;
+        }
+    }
 }

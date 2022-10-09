@@ -14,6 +14,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 
 public class InventoryTetrisDragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler {
 
@@ -36,6 +37,9 @@ public class InventoryTetrisDragDrop : MonoBehaviour, IPointerDownHandler, IBegi
     }
 
     public void OnBeginDrag(PointerEventData eventData) {
+        if (placedObject.Ghost)
+            return;
+
         //Debug.Log("OnBeginDrag");
         canvasGroup.alpha = .7f;
         canvasGroup.blocksRaycasts = false;
@@ -53,6 +57,10 @@ public class InventoryTetrisDragDrop : MonoBehaviour, IPointerDownHandler, IBegi
     }
 
     public void OnEndDrag(PointerEventData eventData) {
+        if (placedObject.Ghost)
+            return;
+
+
         //Debug.Log("OnEndDrag");
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;

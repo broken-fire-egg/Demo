@@ -78,8 +78,7 @@ public class PlayerGun : MonoBehaviour
         gunpoint = transform.GetChild(0);
         originalGunpoint = gunpoint.localPosition;
         PlayerCenter = transform.parent;
-        
-        WCanvas = GameObject.Find("WCanvas").transform;
+        WCanvas = GameObject.FindGameObjectWithTag("WCanvas").transform;
         if(WCanvas != null)
             GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
         if (GunMagazine)

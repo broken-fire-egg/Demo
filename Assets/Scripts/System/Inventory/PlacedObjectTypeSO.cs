@@ -12,6 +12,8 @@ public class PlacedObjectTypeSO : ScriptableObject {
             case Dir.Left:      return Dir.Up;
             case Dir.Up:        return Dir.Right;
             case Dir.Right:     return Dir.Down;
+            case Dir.None: return Dir.None;
+
         }
     }
 
@@ -22,6 +24,7 @@ public class PlacedObjectTypeSO : ScriptableObject {
             case Dir.Left: return new Vector2Int(-1, 0);
             case Dir.Up: return new Vector2Int(0, +1);
             case Dir.Right: return new Vector2Int(+1, 0);
+            case Dir.None: return Vector2Int.zero;
         }
     }
 
@@ -42,6 +45,7 @@ public class PlacedObjectTypeSO : ScriptableObject {
     }
 
     public enum Dir {
+        None,
         Down,
         Left,
         Up,
@@ -53,7 +57,7 @@ public class PlacedObjectTypeSO : ScriptableObject {
     public Transform visual;
     public int width;
     public int height;
-
+    public Dir defaultDir;
 
     public int GetRotationAngle(Dir dir) {
         switch (dir) {

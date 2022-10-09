@@ -7,7 +7,6 @@ public class test : MonoBehaviour
 {
     public GameObject a;
     public GameObject[] bullet;
-    int i = 0;
 
     private bool PhoneBool = false;
     // Start is called before the first frame update

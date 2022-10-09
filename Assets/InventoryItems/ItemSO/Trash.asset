@@ -17,3 +17,4 @@ MonoBehaviour:
   visual: {fileID: 5815868893378138079, guid: e62a02bb7e1e62e42b1095a2c6d8c46a, type: 3}
   width: 1
   height: 1
+  defaultDir: 1
