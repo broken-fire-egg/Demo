@@ -36,6 +36,7 @@ public class Hero : MonoBehaviour
         heroRenderer = GetComponent<SpriteRenderer>();
         for(int i=0;i<3;i++)
             pgs[i] = transform.GetChild(0).GetChild(i).GetComponent<PlayerGun>();
+
     }
 
     public void Hit()

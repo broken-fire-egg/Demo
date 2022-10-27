@@ -1,7 +1,193 @@
 fileFormatVersion: 2
 guid: 1477c9103a78ca643953223a7525dd63
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1126670600195125081
+    second: enemy_boss_snow_0
+  - first:
+      213: 6004224201642061867
+    second: enemy_boss_snow_1
+  - first:
+      213: -7823515363196313916
+    second: enemy_boss_snow_2
+  - first:
+      213: -1345165461502646710
+    second: enemy_boss_snow_3
+  - first:
+      213: 3000472803089012959
+    second: enemy_boss_snow_4
+  - first:
+      213: -7885201740489738393
+    second: enemy_boss_snow_5
+  - first:
+      213: 3978445672561226260
+    second: enemy_boss_snow_6
+  - first:
+      213: 6554044585086909547
+    second: enemy_boss_snow_7
+  - first:
+      213: 5479733175028052920
+    second: enemy_boss_snow_8
+  - first:
+      213: 5404479308587086621
+    second: enemy_boss_snow_9
+  - first:
+      213: 6124732562941561511
+    second: enemy_boss_snow_10
+  - first:
+      213: 4517259515594184912
+    second: enemy_boss_snow_11
+  - first:
+      213: 6977855443406871176
+    second: enemy_boss_snow_12
+  - first:
+      213: -2996897506535589364
+    second: enemy_boss_snow_13
+  - first:
+      213: 1013411008706938139
+    second: enemy_boss_snow_14
+  - first:
+      213: 2478314656267255149
+    second: enemy_boss_snow_15
+  - first:
+      213: 5878616472370368201
+    second: enemy_boss_snow_16
+  - first:
+      213: 273953979454767054
+    second: enemy_boss_snow_17
+  - first:
+      213: -3123827751703515583
+    second: enemy_boss_snow_18
+  - first:
+      213: -2795545475835014457
+    second: enemy_boss_snow_19
+  - first:
+      213: 1090763764850648284
+    second: enemy_boss_snow_20
+  - first:
+      213: 5563574750493273512
+    second: enemy_boss_snow_21
+  - first:
+      213: -1764220748104275589
+    second: enemy_boss_snow_22
+  - first:
+      213: 6816370859370165085
+    second: enemy_boss_snow_23
+  - first:
+      213: -2625852413288231215
+    second: enemy_boss_snow_24
+  - first:
+      213: 1078671009735693261
+    second: enemy_boss_snow_25
+  - first:
+      213: -8748578251185345018
+    second: enemy_boss_snow_26
+  - first:
+      213: 7239086600929236246
+    second: enemy_boss_snow_27
+  - first:
+      213: 7721110934461746789
+    second: enemy_boss_snow_28
+  - first:
+      213: 7194884714563019774
+    second: enemy_boss_snow_29
+  - first:
+      213: 1470063627072782019
+    second: enemy_boss_snow_30
+  - first:
+      213: -6225078697079839054
+    second: enemy_boss_snow_31
+  - first:
+      213: -6926698348893974983
+    second: enemy_boss_snow_32
+  - first:
+      213: -4749539033467142466
+    second: enemy_boss_snow_33
+  - first:
+      213: -7479003114447610930
+    second: enemy_boss_snow_34
+  - first:
+      213: -2151490829921686968
+    second: enemy_boss_snow_35
+  - first:
+      213: -4558685300302043509
+    second: enemy_boss_snow_36
+  - first:
+      213: 1017315856724040474
+    second: enemy_boss_snow_37
+  - first:
+      213: 2047934513722916012
+    second: enemy_boss_snow_38
+  - first:
+      213: 6898489534774921184
+    second: enemy_boss_snow_39
+  - first:
+      213: 7430938671943326235
+    second: enemy_boss_snow_40
+  - first:
+      213: -2558529234326154128
+    second: enemy_boss_snow_41
+  - first:
+      213: 8997191271656701289
+    second: enemy_boss_snow_42
+  - first:
+      213: 9059163563993785748
+    second: enemy_boss_snow_43
+  - first:
+      213: 3262634160215123992
+    second: enemy_boss_snow_44
+  - first:
+      213: 1488571661358876117
+    second: enemy_boss_snow_45
+  - first:
+      213: 3656515164549482195
+    second: enemy_boss_snow_46
+  - first:
+      213: 4434680056752958198
+    second: enemy_boss_snow_47
+  - first:
+      213: 830266533042040069
+    second: enemy_boss_snow_48
+  - first:
+      213: -5223958238844580322
+    second: enemy_boss_snow_49
+  - first:
+      213: 1338348960526743872
+    second: enemy_boss_snow_50
+  - first:
+      213: 127618341499619135
+    second: enemy_boss_snow_51
+  - first:
+      213: 3402256666188164898
+    second: enemy_boss_snow_52
+  - first:
+      213: -7402504687548878368
+    second: enemy_boss_snow_53
+  - first:
+      213: 3787568706427387190
+    second: enemy_boss_snow_54
+  - first:
+      213: -6156378641801418117
+    second: enemy_boss_snow_55
+  - first:
+      213: -6322114543506939684
+    second: enemy_boss_snow_56
+  - first:
+      213: 4138242382535541294
+    second: enemy_boss_snow_57
+  - first:
+      213: 5956328865951499121
+    second: enemy_boss_snow_58
+  - first:
+      213: 175697549469166065
+    second: enemy_boss_snow_59
+  - first:
+      213: 5287034225567187034
+    second: enemy_boss_snow_60
+  - first:
+      213: 7489256838661314549
+    second: enemy_boss_snow_61
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +218,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +227,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -68,7 +254,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +287,1309 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enemy_boss_snow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fa18701fcb2af00800000000000000
+      internalID: 1126670600195125081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_1
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20bda2891a435350800000000000000
+      internalID: 6004224201642061867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_2
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce5fd95a3a4d6390800000000000000
+      internalID: -7823515363196313916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_3
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46a207c323055de0800000000000000
+      internalID: -1345165461502646710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_4
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd857520e12d3a920800000000000000
+      internalID: 3000472803089012959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_5
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76731db6bc2229290800000000000000
+      internalID: -7885201740489738393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_6
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412b33fa247463730800000000000000
+      internalID: 3978445672561226260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_7
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 2464
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c7d2843d4a4fa50800000000000000
+      internalID: 6554044585086909547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b378713a4ceb0c40800000000000000
+      internalID: 5479733175028052920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_9
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1338480c41900b40800000000000000
+      internalID: 5404479308587086621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_10
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa4666d0db6ff450800000000000000
+      internalID: 6124732562941561511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_11
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d89e31989780be30800000000000000
+      internalID: 4517259515594184912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_12
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ada463e8256d060800000000000000
+      internalID: 6977855443406871176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_13
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a31b69891e866d0800000000000000
+      internalID: -2996897506535589364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_14
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15827171fb501e00800000000000000
+      internalID: 1013411008706938139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_15
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d34789c0eb46220800000000000000
+      internalID: 2478314656267255149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_16
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce456e098a059150800000000000000
+      internalID: 5878616472370368201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_17
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 2112
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfb43e51b74dc300800000000000000
+      internalID: 273953979454767054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1760
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e6438e53fe5a4d0800000000000000
+      internalID: -3123827751703515583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_19
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1760
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2576f733a3439d0800000000000000
+      internalID: -2795545475835014457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_20
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1760
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd46ac17ddb232f00800000000000000
+      internalID: 1090763764850648284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adeb7c22c9c53d40800000000000000
+      internalID: 5563574750493273512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_22
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79eedba39a3487e0800000000000000
+      internalID: -1764220748104275589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_23
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5335129e2d989e50800000000000000
+      internalID: 6816370859370165085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_24
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de4a5974291f8bd0800000000000000
+      internalID: -2625852413288231215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_25
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3decc719538fe00800000000000000
+      internalID: 1078671009735693261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_26
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ea368be6ec69680800000000000000
+      internalID: -8748578251185345018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_27
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6155da2c8e6667460800000000000000
+      internalID: 7239086600929236246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_28
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 1408
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e0af79c75e62b60800000000000000
+      internalID: 7721110934461746789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3aa6b178d59d360800000000000000
+      internalID: 7194884714563019774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_30
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce35e08417b66410800000000000000
+      internalID: 1470063627072782019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b664b928e31c99a0800000000000000
+      internalID: -6225078697079839054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_32
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ec3e70d8c6fdf90800000000000000
+      internalID: -6926698348893974983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_33
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebeb657c96f361eb0800000000000000
+      internalID: -4749539033467142466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_34
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb5f49fa4e353890800000000000000
+      internalID: -7479003114447610930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_35
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1056
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ae1014d7e5422e0800000000000000
+      internalID: -2151490829921686968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86a3b05fdb4cb0c0800000000000000
+      internalID: -4558685300302043509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_37
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b9868b16b3e1e00800000000000000
+      internalID: 1017315856724040474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_38
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac77bdf699bb6c10800000000000000
+      internalID: 2047934513722916012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_39
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7420f9eab5cbf50800000000000000
+      internalID: 6898489534774921184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_40
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a15e0f95fff1760800000000000000
+      internalID: 7430938671943326235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_41
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074998097374e7cd0800000000000000
+      internalID: -2558529234326154128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_42
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96db75bdac17cdc70800000000000000
+      internalID: 8997191271656701289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_43
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495e202934d98bd70800000000000000
+      internalID: 9059163563993785748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_44
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8186da78b74374d20800000000000000
+      internalID: 3262634160215123992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_45
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 704
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5420a0a0878a410800000000000000
+      internalID: 1488571661358876117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d60dca4b2d8eb230800000000000000
+      internalID: 3656515164549482195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_47
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fae44304062b8d30800000000000000
+      internalID: 4434680056752958198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_48
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dadda4303b58b00800000000000000
+      internalID: 830266533042040069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_49
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e8134d8a5c087b0800000000000000
+      internalID: -5223958238844580322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_50
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049b5b9e945c29210800000000000000
+      internalID: 1338348960526743872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_51
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37c8e7943465c100800000000000000
+      internalID: 127618341499619135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_52
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fa9d6796e373f20800000000000000
+      internalID: 3402256666188164898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_53
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e13c72f435054990800000000000000
+      internalID: -7402504687548878368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_54
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 352
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d7dfccba5209430800000000000000
+      internalID: 3787568706427387190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7aef904e36209aa0800000000000000
+      internalID: -6156378641801418117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_56
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd020f491565348a0800000000000000
+      internalID: -6322114543506939684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_57
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e224f75858dfd6930800000000000000
+      internalID: 4138242382535541294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_58
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173c17cab8129a250800000000000000
+      internalID: 5956328865951499121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_59
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f924088df3307200800000000000000
+      internalID: 175697549469166065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_60
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50c342cd915f5940800000000000000
+      internalID: 5287034225567187034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_boss_snow_61
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 0
+        width: 496
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7921c3a6f2fe760800000000000000
+      internalID: 7489256838661314549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
