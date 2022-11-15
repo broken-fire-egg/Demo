@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlacedObject : MonoBehaviour
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+public class PlacedObject : MonoBehaviour, IPointerEnterHandler , IPointerExitHandler
 {
-
+    bool isMouseOver;
     public static PlacedObject Create(Vector3 worldPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO)
     {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, worldPosition, Quaternion.Euler(0, placedObjectTypeSO.GetRotationAngle(dir), 0));
@@ -19,6 +20,7 @@ public class PlacedObject : MonoBehaviour
         return placedObject;
     }
 
+   
     public static PlacedObject CreateCanvas(Transform parent, Vector2 anchoredPosition, Vector2Int origin, PlacedObjectTypeSO.Dir dir, PlacedObjectTypeSO placedObjectTypeSO)
     {
         Transform placedObjectTransform = Instantiate(placedObjectTypeSO.prefab, parent);
@@ -125,6 +127,63 @@ public class PlacedObject : MonoBehaviour
             dir = dir,
             //floorPlacedObjectSave = (this is FloorPlacedObject) ? ((FloorPlacedObject)this).Save() : "",
         };
+    }
+
+    string GenerateTooltipText()
+    {
+        string res = "<align=\"center\"><b>";
+        switch (placedObjectTypeSO.rarity)
+        {
+            case PlacedObjectTypeSO.Rarity.Uncommon:
+                res += "<color=green>";
+                break;
+            case PlacedObjectTypeSO.Rarity.Rare:
+                res += "<color=blue>";
+                break;
+            case PlacedObjectTypeSO.Rarity.Unique:
+                res += "<color=purple>";
+                break;
+            case PlacedObjectTypeSO.Rarity.Legend:
+                res += "<color=orange>";
+                break;
+            default:
+                res += "<color=white>";
+                break;
+        }
+
+        res += placedObjectTypeSO.nameString + "</color></b></align>\n\n<align=\"left\">";
+
+        if(!placedObjectTypeSO.effectText.Equals(""))
+            res += placedObjectTypeSO.effectText + "\n\n";
+
+        res += placedObjectTypeSO.description;
+
+        return res;
+    }
+
+    private void Update()
+    {
+        if (isMouseOver)
+            if (Input.GetMouseButtonDown(1))
+                UseItem();
+    }
+    void UseItem()
+    {
+        ConsumableItemEventLibrary.PlayEvent(placedObjectTypeSO.nameString);
+        ToolTip.instance.HideToolTip();
+        DestroySelf();
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isMouseOver = true;
+        ToolTip.instance.ShowToolTip(GenerateTooltipText());
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isMouseOver = false;
+        Debug.Log(placedObjectTypeSO.nameString + " Exit");
+        ToolTip.instance.HideToolTip();
     }
 
     [System.Serializable]

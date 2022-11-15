@@ -36,7 +36,7 @@ public class PlayerGun : MonoBehaviour
     protected List<RectTransform> bulletRects;
     protected Sequence reloadSeq;
     protected Transform gunpoint;
-    protected Transform WCanvas;
+    public Transform WCanvas;
     Vector3 originalGunpoint;
     Vector3 previousMousePosition;
 
@@ -78,7 +78,8 @@ public class PlayerGun : MonoBehaviour
         gunpoint = transform.GetChild(0);
         originalGunpoint = gunpoint.localPosition;
         PlayerCenter = transform.parent;
-        WCanvas = GameObject.FindGameObjectWithTag("WCanvas").transform;
+        if (!WCanvas)
+            WCanvas = GameObject.FindGameObjectWithTag("WCanvas").transform;
         if(WCanvas != null)
             GunMagazine = Instantiate(OriginGunMagazine, WCanvas);
         if (GunMagazine)

@@ -58,6 +58,14 @@ public class PlacedObjectTypeSO : ScriptableObject {
     public int width;
     public int height;
     public Dir defaultDir;
+    public enum Rarity { Common, Uncommon, Rare, Unique, Legend, YDoUHaveThisItem}
+    public Rarity rarity;
+    public enum ItemType { Material, Gun, Consumable, Module, YDoUHaveThisItem}
+    public ItemType itemType;
+    public string effectText;
+    public string description;
+
+
 
     public int GetRotationAngle(Dir dir) {
         switch (dir) {

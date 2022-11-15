@@ -18,3 +18,7 @@ MonoBehaviour:
   width: 1
   height: 1
   defaultDir: 1
+  rarity: 4
+  itemType: 2
+  effectText: 
+  description: "\uADF8\uB0E5 \uD3C9\uBC94\uD574 \uBCF4\uC774\uB294 \uC804\uC124 \uC4F0\uB808\uAE30\uB2E4."
