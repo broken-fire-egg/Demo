@@ -14,7 +14,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PhoenixBossScene.unity
     guid: b41b18f5dd63ba24d938127a05c47da1
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: e6da801dc3165c64fbd4da6389038b25
   m_configObjects: {}

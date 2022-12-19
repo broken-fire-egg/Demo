@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogDisplayer : MonoBehaviour
 {
     static public DialogDisplayer instance;
+
     void Awake()
     {
         instance = this;
@@ -25,10 +26,39 @@ public class DialogDisplayer : MonoBehaviour
     public AudioSourceGroup audioSourceGroup;
     public Image leftPortrait;
     public Image rightPortrait;
+    public DataMappingSO mappedData;
     bool lpFocus;
     bool rpFocus;
 
-    public void SetPortaritFocus(int n)
+    public void SetPortrait(string[] info)
+    {
+        SetPortaritFocus(int.Parse(info[4]));
+        SetPortraitSprite(info);
+    }
+    void SetPortraitSprite(string[] info)
+    {
+        Debug.Log(info[2] + info[3]);
+        foreach (var md in mappedData.portraits)
+        {
+            if (md.key.Equals(info[2].Trim()))
+            {
+                leftPortrait.sprite = md.value;
+                leftPortrait.SetNativeSize();
+                break;
+            }
+        }
+        foreach (var md in mappedData.portraits)
+        {
+            if (md.key.Equals(info[3].Trim()))
+            {
+                rightPortrait.sprite = md.value;
+
+                rightPortrait.SetNativeSize();
+                break;
+            }
+        }
+    }
+    void SetPortaritFocus(int n)
     {
         switch(n)
         {

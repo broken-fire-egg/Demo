@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2287f96fa0d7a354abde2db404aafbfc, type: 3}
+  m_Name: DataMapping
+  m_EditorClassIdentifier: 
+  portraits:
+  - key: None
+    value: {fileID: 21300000, guid: f7992dcc41fc056469618ad056656235, type: 3}
+  - key: Hero
+    value: {fileID: 21300000, guid: 192a457472a281c4aa1a4232ea82e084, type: 3}
+  - key: Simgeun
+    value: {fileID: 21300000, guid: bc557779027a2564fab57b4316ec32dd, type: 3}
+  - key: Supportbot
+    value: {fileID: 21300000, guid: 6f3eb877b6ae52f408e48d1538690d86, type: 3}

@@ -25,7 +25,7 @@ public class DialogueVertexAnimator
     public IEnumerator AnimateTextIn(List<DialogueCommand> commands, string processedMessage, AudioClip voice_sound, Action onFinish)
     {
         textAnimating = true;
-        float secondsPerCharacter = 1f / 150f;
+        float secondsPerCharacter = 1f / 75f;
         float timeOfLastCharacter = 0;
 
         TextAnimInfo[] textAnimInfo = SeparateOutTextAnimInfo(commands);

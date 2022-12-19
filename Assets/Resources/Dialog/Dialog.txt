@@ -1,0 +1,33 @@
+Index, Number, Left, Right, Focus, Text
+start_0, 1, Hero, None, 1, 여기가 다내놔… 
+start_0, 2, Hero, Simgeun, 2, 자네는 누구지?
+start_0, 3, Hero, Simgeun, 1, 아^ 안녕하십니까. 이번에 행동 요원으로 새로 들어왔습니다.
+start_0, 4, Hero, Simgeun, 2, 아~ 자네가 이번에 들어온다는 신입이구나. 기초 훈련은 받았나?
+start_0, 5, Hero, Simgeun, 1, 훈련...? 아직 안 받았습니다.
+start_0, 6, Hero, Simgeun, 2, 그래? 저기 앞에 가면 안내용 로봇이 있을 꺼야. 그 친구에게 안내 받고 훈련 먼저 해봐.
+start_0, 7, Hero, Simgeun, 1, 아^ 넵.
+start_0, 8, None, None, 0, WASD를 사용하여 위로 플레이어를 이동하십시오.
+start_1, 1, Hero, Supportbot, 2, 다내놔 시큐리티 도우미 로봇 다도와 입니다! 무엇을 도와드릴까요?  
+start_1, 2, Hero, Supportbot, 1, 이번에 처음 들어온 신입인데 훈련을 받아야 한다고 들었어.
+start_1, 3, Hero, Supportbot, 2, 아^ 신입이시군요! 그럼 저를 따라오세요!
+tutorial_0, 1, Hero, Supportbot, 2, 아아^ 잘 들려요? 마이크 테스트. 완^ 뚜^ 완^ 뚜.
+tutorial_0, 2, Hero, Supportbot, 1, 어^ 잘 들려.
+tutorial_0, 3, Hero, Supportbot, 2, 아^ 그래요? 사실 이 마이크가 밀당을 오지게 하는 친구로 유명하거든요. 오늘따라 얌전하네?
+tutorial_0, 4, Hero, Supportbot, 1, 그래서^ 지금 여기서 뭘 하면 되는데?
+tutorial_0, 5, Hero, Supportbot, 2, 별건 아니고^ 그 흔히 말하는 아침체조 아시죠? 그런거에요. 운동하기 전에 스트레칭을 해줘야 몸이 덜 상한다고 하자나요? 체력 측정도 할 겸^ 역량 파악도 하는 거죠. 먼저 기초 행동 체계부터 살펴보자고요!
+tutorial_1, 1, None, Supportbot, 2, 주위에 번호가 새겨진 발판이 보이나요? 그걸 번호 순서대로 밟기만 하면 됩니다! 참 쉽죠? 참고로 <slow><highlight><close>절.대</close></highlight></slow>그럴 일은 없겠지만, 순대로 밟지 않으면 초기화 되기 때문에 주의하세요! 
+tutorial_1_warning, 1, None, Supportbot, 2, 지금 내 기분이 그래^ 어이가 없네? 아니^ 로봇 청소기도 아니고 <fast><shake1><highlight>사람이 걷는 거 하나제대로 못하면 어떡해요?! </highlight></shake1></fast>
+tutorial_2, 1, None, Supportbot, 2, 이번에는 순발력 테스트네요. 저기 앞에 움직이는 장애물 보이죠? 그걸 <move1>슈슉 </move1>하고 피하면 됩니다. 참 쉽죠?
+tutorial_2_warning1, 1, None, Supportbot, 2, 뭐… 그럴 수 있다 생각합니다! 둔한 몸을 푸는 게 이 훈련의 목적이니까요!
+tutorial_2_warning2, 1, None, Supportbot, 2, … 당신 입사할 마음이 있긴 하죠?
+bus_crash_event, 1, None, None, 0, <shake1><highlight><close> (쾅!) </close></highlight></shake1>
+bus_crash_event, 2, Hero, None, 1, …! 뭐지?! (경계)
+bus_crash_event, 3, Hero, None, 0, <shake1><highlight><close> (카가가ㅏㅏ가ㅏㅏ가ㅏㄱ) </close></highlight></shake1>
+bus_crash_event, 4, Hero, None, 1, 일단 차를 세워야겠어!
+bus_crash_event, 5, Hero, None, 0, <shake1><highlight> (끼기기ㅣㅣ…) </highlight></shake1>
+bus_crash_event, 6, Hero, None, 1, 후^ 무슨 일이지? 무언가에 부딫힌건가?
+bus_crash_event, 7, Hero, None, 0, (덜컥)
+bus_crash_event, 8, Hero, None, 1, 차가 이 지경이면 더는 움직일 수 없겠군. 그럼 본부에 연락을…
+bus_crash_event, 9, Hero, Drone, 2, 어라…? 나 어째서 전파가… (신호 약함.)
+bus_crash_event, 10, Hero, Drone, 1, 어쩔 수 없군. 그럼^ 주변 상황부터 살펴볼까.
+snow_first_meet, 

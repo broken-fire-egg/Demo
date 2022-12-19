@@ -9,17 +9,17 @@ public class NPC : MonoBehaviour
     bool triedToInteract;
     private void Update()
     {
-        if (closed)
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                if (firsttalk)
-                {
-                    DialogReader.instance.Read(1);
-                    firsttalk = false;
-                }
-                else
-                    DialogReader.instance.ReadNext();
-            }
+        //if (closed)
+        //    if (Input.GetKeyDown(KeyCode.F))
+        //    {
+        //        if (firsttalk)
+        //        {
+        //            DialogReader.instance.Read(1);
+        //            firsttalk = false;
+        //        }
+        //        else
+        //            DialogReader.instance.ReadNext();
+        //    }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
