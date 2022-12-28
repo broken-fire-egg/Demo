@@ -12,4 +12,12 @@ public class LoadingManager : MonoBehaviour
         if (instance == null)
             instance = this;
     }
+
+    public void SceneLoad(string scenename)
+    {
+        SceneManager.LoadSceneAsync(scenename);
+
+    }
+
+
 }
